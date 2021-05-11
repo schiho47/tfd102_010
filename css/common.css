@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+  font-family: "Noto Sans CJK TC";
+}
+
+
+div.logo_nav img, div.small_things{
+  display: inline-block;
+}
+
+div.logo_nav img{
+  border:1px solid red;
+  height:100%;
+  width: 150px;
+}
+
+div.small_things img{
+  height:30px;
+  width:auto;
+}
+
+div.small_things{
+ border:1px solid red;
+ transform: translatex(600%);
+}
+
+div.small_things span a{
+  text-decoration: none;
+  color:black;
+}
+
+
+div.lang{
+  position:relative;
+  display: inline-block;
+}
+
+ul.lang {
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: black;
+  margin: 0;
+  padding:3px 3px;
+  z-index: 2;
+}
+
+ul.lang li a{
+  color:white;
+  cursor: pointer;
+}
+
+
+div.lang:hover ul.lang {
+  display:block;
+  cursor: pointer;
+}
+
+
+
+ul.nav>li {
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  padding:0 10px;
+}
+
+ul.nav>li a{
+text-decoration: none;
+}
+
+ul.nav>li>a{
+  color:black;
+}
+
+div.spot a,div.gift a{
+  color:black;
+}
+
+div.spot,div.gift{
+  position:relative;
+  z-index: 2;
+}
+
+ul.spot,ul.gift {
+  list-style: none;
+  background-color:#1a1a1a;
+  padding:0;
+  display: none;
+  position: absolute;
+  width:100%;
+}
+
+ul.spot a, ul.gift a{
+  text-decoration: none;
+  color: white;
+  padding:0;
+}
+
+ul.spot{
+  text-align: center;
+}
+
+div.spot:hover{
+  color: #be3128;
+  font-weight: bold;
+}
+
+div.spot:hover ul.spot{
+cursor: pointer;
+display: block;
+}
+
+div.gift:hover ul.gift{
+  cursor:pointer;
+  display:block;
+}
+
+div.gift:hover{
+  color: #be3128;
+  font-weight: bold;
+}
+
+ul.nav li>a:hover{
+  color: #be3128;
+  font-weight: bold;
+}
+
+
+
+
+footer{
+  background-color: #1a1a1a;
+  color:white;
+  font-size: 12px;
+  margin:0,auto;
+  text-align: center;
+}
+
+footer span{
+  display: block;
+}
+
+footer a{
+  text-decoration: none;
+  color:white;
+  font-size: 14px;
+}
+div.roll1,div.roll2,div.roll3,div.contact,div.p{
+  display: inline-block;
+  padding:10px 10px;
+  vertical-align: top;
+  transform: translateX(50%);
+}
+
+div.roll1,div.roll2,div.roll3{
+  margin-top: 10px;
+}
+
+div.p{
+  width:200px;
+}
+
+div.contact span{
+  font-size: 16px;
+  padding:10px;
+  font-weight:400;
+
+}
+
+div.contact img{
+  width:40px;
+  padding:5px;
+}
+
+img.footer{
+  width:300px;
+  text-align: right;
+  margin-right: 0;
+  transform: translateX(50%);
+
+
+}

@@ -1,0 +1,206 @@
+main.main{
+  background-color:#fed9c9;
+  font-size: 0px;
+}
+
+
+img.one{
+  height:400px;
+}
+
+img.two{
+  height:400px;
+}
+
+img.three,img.four{
+  height:200px;
+  width:auto;
+  display: block;
+}
+
+
+
+div.imgpart1,div.imgpart2{
+  display: inline-block;
+}
+
+div.tourh1{
+  position: relative;
+  z-index: 1;
+}
+
+div.h1p{
+  background-color:hsla(0, 0%, 0%, 0.4);;
+  width:400px;
+  text-align: center;
+  padding: 5px 15px;
+  position:absolute;
+  transform: translateX(-100%);
+  margin-top: 30px;
+  margin-right: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+
+div.tourh1,div.h1p{
+  display: inline-block;
+}
+
+img.two_one{
+  height:400px;
+}
+
+img.two_two,img.two_three{
+  height:200px;
+  display: block;
+
+}
+
+img.two_four{
+  height:400px;
+}
+
+img.two_one,div.twotwo,img.two_four{
+  display: inline-block;
+}
+
+div.h2p{
+  background-color:hsla(0, 0%, 0%, 0.4);
+  height:400px;
+  width:300px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  padding: 5px 15px;
+  transform: translate(11%,-14.5%);
+
+}
+
+div.h2p p{
+  margin: 0;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+div.h2imgs{
+  margin-left: 33px;
+  margin-top: 30px;
+}
+
+
+div.h2imgs,div.h2p{
+  display: inline-block;
+}
+
+div.tourch2{
+  width:1200px;
+  height:400px;
+}
+
+div.three1 img{
+  height:200px;
+  display: block;
+}
+
+img.three_three{
+  height:400px;
+  margin-left: -35px;
+}
+
+div.three2 img{
+  height:200px;
+  display: block;
+}
+
+img.three_six{
+  height:400px;
+  width:340px;
+}
+
+div.three1 ,img.three_three,div.three2,img.three_six{
+  display: inline-block;
+}
+
+
+div.h3p{
+  font-size: 16px;
+  background-color:hsla(0, 0%, 0%, 0.6);
+  color:white;
+  height:350px;
+  width:300px;
+  position: absolute;
+  z-index: 2;
+  transform: translateX(-100%);
+  padding:5px 15px;
+  text-align: center;
+  /* margin-top: 30px; */
+}
+
+div.h3imgs,div.h3p{
+  display: inline-block;
+}
+
+img.four_one{
+  height:400px;
+  position: relative;
+  z-index: 1;
+}
+div.four1 img{
+  height:200px;
+  display: block;
+}
+
+div.four2 img{
+  height:200px;
+  display: block;
+}
+
+img.four_one,div.four1,div.four2{
+  display: inline-block;
+}
+
+img.four_two{
+  margin-left: -40px;
+  z-index: 0;
+  position: relative;
+}
+
+div.tourh4{
+  margin-top: 40px;
+  position: relative;
+}
+
+div.h4p{
+  font-size: 16px;
+  background-color:hsla(0, 0%, 0%, 0.4);
+  color:white;
+  height:330px;
+  width:300px;
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: 2;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+div.button{
+  height: 100px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+button.button{
+  margin: 30px;
+  padding:15px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+button  a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 30px 20px;
+}

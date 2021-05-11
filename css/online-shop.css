@@ -1,0 +1,47 @@
+main{
+  background-color: #f1d9c9;
+}
+
+body{
+  margin: 0;
+}
+
+div.gift>a{
+  color:#be3128;
+  font-weight: bold;
+}
+
+div.form img{
+  width:20px;
+  margin-bottom: -10px;
+}
+
+div.form input{
+  height:22.34px;
+}
+
+div.form button{
+  height: 22.34px;
+  margin-bottom: -12px;
+  margin-left: -4px;
+  
+}
+
+div.form{
+  margin-right: 0;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+span.shop{
+  color:#be3128;
+}
+
+div.bread{
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+
+
+
