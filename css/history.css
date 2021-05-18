@@ -1,19 +1,39 @@
 main.main{
   background-color: #f1d9c9;
 }
+
+body{
+  margin:0;
+}
+
+ul.nav li:first-child{
+  color: #be3128;
+  font-weight: bold;
+}
+
+img.first,div.first{
+  display: inline-block;
+}
 img.first{
   border:1px solid black;
-  width:900px;
+  width:700px;
   transform: translateX(20%);
   margin-top: 50px;
+  height: 500px;
+  position: relative;
+  z-index: 0;
 }
 
 div.first{
   background-color: white;
   border:1px solid black;
-  width:600px;
-  transform: translate(100%,-110%);
+  width:500px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  /* transform: translate(100%,-110%); */
 }
+
 
 div.first p{
   padding: 10px 15px;
@@ -32,7 +52,7 @@ div.first a{
 div.first span{
   font-weight: bold;
   color:#fed9c9;
-  padding-bottom: :3px;
+  padding-bottom:3px;
   margin-bottom: 10px;
   transform: translateY(-50%);
 }
@@ -49,18 +69,28 @@ div.first a:hover{
 
 div.his2{
   background-color: #74AF5A;
-  transform: translateY(-20%);
+  /* transform: translateY(-20%); */
+  font-size: 16px;
 }
 
 img.teatrade{
   float: left;
-  margin-right: 30px;
+  margin-top: 50px;
+  margin-left: 60px;
+  width:500px;
+  transform: translateY(15%);
+  
+}
+
+img.teatrade2{
+  height:400px;
+  padding-top: 50px;
 }
 
 
-div.h2_1 h1{
+div.his2 h1{
   background-color: white;
-  width:450px;
+  width:600px;
   display: inline-block;
   text-align: center;
 }
@@ -68,6 +98,7 @@ div.h2_1 h1{
 h1.two{
   margin-top: 0;
   color:#74af5a;
+  transform: translateX(-35%);
 }
 
 h1 img{
@@ -77,9 +108,7 @@ h1 img{
 
 div.h2_1{
   display: inline-block;
-  padding:10px 15px;
-  width:1000px;
-  margin: 15px;
+   width:300px;
 }
 
 div.h2_1::after{
@@ -90,6 +119,15 @@ div.h2_1::after{
 
 div.h2_1 p{
   color:white;
+  width:300px;
+  height:150px;
+
+}
+
+div.h2_1 p::after{
+  content:"";
+  display:block;
+  clear:both;
 }
 
 div.h2_2 {
@@ -110,9 +148,9 @@ img.tea_ad1{
 }
 
 div.h2_2 h2 div.h2_2 p{
-  padding:3px;
+  padding:13px;
   margin-right: 0;
-  padding-right:0;
+  padding-right:10px;
   text-align: center;
 }
 
@@ -172,6 +210,7 @@ div.his3{
   background-color: #0f0f0f;
   position: relative;
   color:white;
+  text-align: center;
 }
 
 div.h3_1 h1.three{
@@ -179,6 +218,7 @@ div.h3_1 h1.three{
   color:#1a1a1a;
   width:500px;
   text-align: center;
+  transform: translateX(80%);
 }
 
 div.h3_1>img{
@@ -221,6 +261,7 @@ div.h3_2{
 
 div.h3_2 h2{
   padding-top: 50px;
+  margin:0;
 }
 
 div.h3_3 img{
@@ -242,6 +283,7 @@ div.h3_3::after{
 div.h3_3 h2{
   padding-top: 50px;
   padding-left: 10px;
+  margin-top: 0;
 }
 
 div.h3_3 p{
@@ -267,6 +309,7 @@ div.h3_4::after{
 div.h3_4 h2{
   padding-top: 30px;
   padding-left: 10px;
+  margin-top: 0;
 }
 
 div.h3_4 a{

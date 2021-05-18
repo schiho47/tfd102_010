@@ -1,0 +1,269 @@
+main{
+    background-color: #f1d9c9;
+}
+
+body{
+    margin:0;
+}
+
+li.event{
+    color: #be3128;
+    font-weight: bold;
+}
+
+div h1 {
+    text-align: center;
+    padding-top: 30px;
+    width:1000px;
+    margin:0 auto;
+    margin-bottom: 5px;
+}
+
+div.span{
+    color:#be3128;
+    font-weight: bolder;
+    padding-bottom:30px;
+    width:1000px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+div.event1 img{
+    width:500px;
+    padding:10px 20px;
+    padding-top:30px;
+    margin-left: 30px;
+
+}
+
+div.event1{
+    border: 1px solid black;
+    width:1200px;
+    margin:0 auto;
+    background-color:#FFFAFA;
+}
+
+div.first_p h2{
+    border:1px solid black;
+    width:200px;
+    transform: translateX(70%);
+}
+
+div.first_p{
+    width:500px;
+    text-align: center;
+    padding:5px 20px;
+    padding-bottom: 30px;
+    margin:0 auto;
+    margin-left: 30px;
+   
+
+}
+
+div.first_p,div.event1 img{
+    display: inline-block;
+}
+
+div.first_p button{
+    width:100px; 
+    background-color: #444444;
+   
+}
+
+div.first_p button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+div.first_p button a {
+    text-decoration: none;
+    color:white;
+}
+
+
+div.event1 img{
+    width:500px;
+    padding:10px 20px;
+    padding-top:30px;
+
+}
+
+div.event1{
+    border: 1px solid black;
+    width:1200px;
+    margin:0 auto;
+    background-color:#FFFAFA;
+}
+
+div.first_p h2{
+    border:1px solid black;
+    width:200px;
+    transform: translateX(70%);
+}
+
+div.event2{
+    width:1200px;
+    border:1px solid black;
+    background-color: white;
+    margin:0 auto;
+    margin-top:30px;
+}
+
+div.event2>img{
+    width:500px;
+    padding:10px 20px;
+    padding-top:30px;
+    margin-left: 30px;
+}
+
+div.second_p{
+    width:500px;
+    padding-bottom:30px;
+    transform: translateY(-10%);
+    text-align: center;
+    margin-left: 30px;
+}
+
+div.second_p, div.event2 img{
+    display:inline-block;
+}
+
+div.second_p h2{
+    border:1px solid black;
+    width:200px;
+    text-align: center;
+    transform: translateX(75%);
+    padding:10px;
+}
+
+div.second_p button{
+    width:100px; 
+    background-color: #444444;
+    margin-top: 10px;
+}
+
+
+div.second_p button a {
+    text-decoration: none;
+    color:white;
+}
+
+div.second_p button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+div.event3{
+    width:1200px;
+    border:1px solid black;
+    background-color: white;
+    margin:0 auto;
+    margin-top:30px;
+    padding:20px;
+}
+
+div.event3 img{
+    width:500px;
+    margin-left: 30px;
+}
+
+div.third_p{
+    width:500px;
+    text-align: center;
+    height:300px;
+    transform: translateY(-20%);
+    padding:0 20px;
+    margin-left: 30px;
+}
+
+div.event3 img, div.third_p{
+    display: inline-block;
+}
+
+div.third_p h2{
+    border:1px solid black;
+    width:200px;
+    text-align: center;
+    transform: translateX(75%);
+}
+
+div.third_p button{
+    width:100px; 
+    background-color: #444444;
+    margin-top: 10px;
+}
+
+
+div.third_p button a {
+    text-decoration: none;
+    color:white;
+}
+
+div.third_p button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+div.event4{
+    width:1200px;
+    height:400px;
+    background-color: white;
+    border:1px solid black;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 30px;
+}
+
+div.event4 img{
+    width:500px;
+}
+
+div.forth_p{
+    width:600px;
+    text-align: center;
+    height:300px;
+    padding:0 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+div.forth_p h2{
+    border:1px solid black;
+    width:400px;
+    text-align: center;
+    transform: translateX(15%);
+    padding:10px;
+}
+
+div.event4 img,div.forth_p{
+    display: inline-block;
+}
+
+div.forth_p button{
+    width:100px; 
+    background-color: #444444;
+    margin-top: 10px;
+}
+
+
+div.forth_p button a {
+    text-decoration: none;
+    color:white;
+}
+
+div.forth_p button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+div.eventlink{
+    column-count: 3;
+    column-gap: 10px;
+} 
+
+div.part2 h1,div.part2 span{
+    width:1000px;
+    
+}
