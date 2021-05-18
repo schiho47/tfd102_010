@@ -3,6 +3,16 @@ main.main{
   font-size: 0px;
 }
 
+body{
+  margin:0;
+}
+
+span.tour{
+  font-weight: bold;
+  color:#be3128;
+
+}
+
 
 img.one{
   height:400px;

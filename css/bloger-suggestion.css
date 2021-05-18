@@ -1,0 +1,190 @@
+body{
+    margin:0;
+}
+
+main{
+    background-color: #f1d9c9;
+    width:100%;
+    margin:0 auto;
+}
+
+
+
+li.bloger{
+    color:#be3128;
+    font-weight: bold;
+}
+
+div.youtube{
+    width:1000px;
+    margin:0 auto;
+}
+div.youtube iframe{
+    width:500px;
+    height:350;
+    padding-top: 10px;
+}
+
+div.ytp img{
+    width:100px;
+    border-radius: 100px;
+    transform: translateX(155%);
+}
+
+div.ytp{
+    height:350px;
+}
+
+div.screen{
+    border:1px solid black;
+    border-radius: 30px;
+    height: 190px;
+    width:420px;
+    padding:5px 15px;
+    margin-left: 25px;
+    text-align: center;
+    position: relative;
+}
+
+div.ytp>img,div.ytp>span{
+   display: block;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+
+
+div.ytp>span{
+    padding: 10px 10px;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+div.ytp,div.youtube iframe{
+    display:inline-block;
+}
+
+img{
+    width:100px;
+    border-radius: 100px;
+}
+
+div.blog{
+    padding:30px;
+    margin-left:10px;
+}
+div.blog p{
+    width:600px;
+    border:1px solid black;
+    padding:10px 15px;
+    border-radius: 30px;
+}
+
+h2{
+    border:1px solid black;
+    width:350px;
+    text-align: center;
+} 
+
+div.blog p,button{
+    display: block;
+}
+
+
+
+
+button>a{
+    text-decoration: none;
+    color:white;
+    padding:10px 5px;
+    cursor: pointer;
+}
+
+button{
+    background-color: #be3128;
+    border-radius: 20px;
+    border:#be3128;
+    width:100px;
+    text-align: center;
+    cursor: pointer;
+    margin:15px;
+}
+
+button>a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* div.blog1 span:nth-child(2),div.blog1 img{
+    display: block;
+} */
+
+div.blog1,.blog2,.blog3,.blog4,.blog5,.blog6{
+    width:900px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    transform:translateX(10%);
+}
+
+
+div.name1,div.first_p{
+    display: inline-block;
+}
+
+
+div.name2,div.second_p{
+    display: inline-block;
+}
+
+div.name3,div.blog3p{
+    display: inline-block;
+}
+
+div.name4,div.blog4p{
+    display: inline-block;
+}
+
+div.name5,div.blog5p{
+    display: inline-block;
+}
+
+div.name6,div.blog6p{
+    display: inline-block;
+}
+
+div.name1 img,div.name1 span{
+    display: block;
+}
+
+
+div.name2 img,div.name2 span{
+    display: block;
+}
+
+div.name3 img,div.name3 span{
+    display: block;
+}
+
+div.name4 img,div.name4 span{
+    display: block;
+}
+
+div.name5 img,div.name5 span{
+    display: block;
+}
+
+div.name6 img,div.name6 span{
+    display: block;
+}
+
+span{
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+div.blog6p h2{
+    width:400px;
+}

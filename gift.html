@@ -5,13 +5,13 @@
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/gift.css" rel="stylesheet">
     <title>禮品商家</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   </head>
   <body>
     <header>
       <div class="logo_nav">
 
-        <a href="#">  <img src="./images/logo.png"></a>
+        <a href="./index.html">  <img class="logo" src="./images/logo.png"></a>
         <div class="small_things">
           <div class="lang">
             <img src="./images/lan.png">
@@ -29,9 +29,9 @@
 
 
     <ul class="nav">
-      <li><a href="#">歷史大稻埕</a></li>
-      <li><a href="#">美食大稻埕</a></li>
-      <li><div class="spot"><a href="#">景點大稻埕</a>
+      <li><a href="./history.html">歷史大稻埕</a></li>
+      <li><a href="./food.html">美食大稻埕</a></li>
+      <li><div class="spot"><a href="./tour.html">景點大稻埕</a>
             <ul class="spot">
               <li><a href="#">博物館</a></li>
               <li><a href="#">名人縮影</a></li>
@@ -41,63 +41,68 @@
           </div>
         </li>
 
-      <li><div class="gift"><a href="#">禮品商家</a>
+      <li><div class="gift"><a href="./gift.html">禮品商家</a>
           <ul class="gift">
-            <li><a href="#">線上購物</a></li>
+            <li><a href="./online-shop.html">線上購物</a></li>
           </ul>
         </div>
       </li>
 
-      <li><a href="#">特色活動</a></li>
-      <li><a href="#">部落客教你玩</a></li>
+      <li><a href="./event.html">特色活動</a></li>
+      <li><a href="./bloger-suggestion.html">部落客教你玩</a></li>
     </ul>
   <div class="banner"></div>
 
 </header>
 
 <main class="gift">
-
-
-  <div class="swiper-container mySwiper">
+  <div class=sec_back>
+    <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./images/gift/slide1.jpg"></div>
-        <div class="swiper-slide"><img src="./images/gift/slide2.jpg"></div>
-        <div class="swiper-slide"><img src="./images/gift/slide3.jpg"></div>
-        <div class="swiper-slide"><img src="./images/gift/slide4.jpg"></div>
+        <div class="swiper-slide"><img src="./images/gift/slide1.jpg" alt="抱歉圖不見了!"></div>
+        <div class="swiper-slide"><img src="./images/gift/slide2.jpg" alt="抱歉圖不見了!"></div>
+        <div class="swiper-slide"><img src="./images/gift/slide3.jpg" alt="抱歉圖不見了!"></div>
+        <div class="swiper-slide"><img src="./images/gift/slide4.jpg" alt="抱歉圖不見了!"></div>
+      
       </div>
-
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
 
 
-  <div class="shop">
-      <div class="1_shop">
-        <img class="shop_one" src="./images/gift/1.jpg" alt="抱歉圖片不見了!" title="李亭香">
-        <div class="shop1">
+  
+
+    <div class="shop">
+      <div class="shop_first">
+        <img class="shop_img shop_one" src="./images/gift/1.jpg" alt="抱歉圖片不見了!" title="李亭香">
+        <div class="shop_shop shop1">
           <h2>李亭香 </h2>
-          <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-          title="加入最愛">
-          <span class="favhover"><a href="#">
-            <img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+          <span class="fav">
+              <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
+              title="加入最愛">
+              <span class="favhover"><a href="#">
+                <img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
               title="加入最愛"></a></span>
+          </span>
 
               <p>位於迪化街一段309號，
-                1895年創立的台派糕點店，
+                1895年創立的臺派糕點店，
                 已傳承百年
                 並持續創新臺灣糕點。<p>
         </div>
       </div>
 
-      <div class="2_shop">
-        <img class="shop_two" src="./images/gift/2.jpg" alt="抱歉圖片不見了!" title="滋養豆餡舖">
-        <div class="shop2">
+      <div class="shop_second">
+        <img class="shop_img shop_two" src="./images/gift/2.jpg" alt="抱歉圖片不見了!" title="滋養豆餡舖">
+        <div class="shop_shop shop2">
           <h2>滋養豆餡舖</h2>
-          <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
+          <span class="fav">
+            <img class="favimg"src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
           title="加入最愛">
-          <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+            <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
            title="加入最愛"></span>
+           </span>
            <p>滋養製菓成立於1953年，已經有六十多年的歷史。
              正統日式糕點 造型多以季節 自然為題材 用以豐富佐茶之雅趣
              食材以甜而不膩口感細緻之高級豆餡為其最大特色
@@ -106,131 +111,176 @@
       </div>
 
 
+      <div class="shop_third">
+        <img class="shop_img shop_three" src="./images/gift/3.jpg" alt="抱歉圖片不見了!" title="民藝埕">
+        <div class="shop_shop shop3">
+          <h2>民藝埕</h2>
+          <span class="fav">
+            <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+            <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+            title="加入最愛"></span>
+          </span>
+            <p>位於迪化街霞海城隍廟旁，為一棟百年的三進式街屋，以民藝精神為主題。一樓第一、二進為亞洲陶、瓷、
+          民藝品賣店「陶一二」，一樓三進為咖啡小酒館「Le Zinc 洛」，二樓為茶屋「南街得意」。 </p>
+          
+        </div>
+      </div>
+
+      <div class="shop_forth">
+        <img class="shop_img shop_four" src="./images/gift/4.jpg" alt="抱歉圖片不見了!" title="大華行">
+        <div class="shop_shop shop4">
+          <h2>大華行</h2>
+          <span class="fav">
+            <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+            <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+            title="加入最愛"></span>
+          </span>
+          <p>在地經營150餘年，現為第四代經營，主要產品是竹編類，蒸籠、飯桶以及各類竹木製品
+          的餐具及生活用品，最廣為人知的熱銷產品是復古茄芷袋，除了古早的形式及顏色外，更
+          加入文創的精神，而將古早的生活提袋多樣化成後背包，書包、收納袋、化妝包、便當袋、
+          水壺袋、零錢包等等同時致力於開發各式環保材質的生活用品，例如竹牙刷竹吸管等。 </p>
+        </div>
+      </div>
 
 
+      <div class="shop_fifth">
+        <img class="shop_img shop_five" src="./images/gift/5.jpg" alt="抱歉圖片不見了!" title="印花樂">
+        <div class="shop_shop shop5">
+          <h2>印花樂</h2>
+          <span class="fav">
+            <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+            <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+            title="加入最愛"></span>
+          </span>
+      
+          <p>成立於2008年，由三位從大學美術系畢業的創辦人，推出第一款「台灣八哥」印花圖案
+            開始，即專注於開發台灣原創的印花布料商品，並致力於透過設計，傳播社會共好與環境保護的理念。
+            大稻埕店為首間直營店，於2011年創立。 </p>
+        </div>
+      </div>
+      
+      <div class="shop_sixth">
+        <img class="shop_img shop_six" src="./images/gift/6.jpg" alt="抱歉圖片不見了!" title="印花樂">
+        <div class="shop_shop shop6">
+          <h2>花生騷</h2>
+          <span class="fav">
+            <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+            <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+            title="加入最愛"></span>
+          </span>
+          <p>「花生騷 WasangShow」是臺灣獨創原住民潮流品牌，每個商品細節融合原民與自然界最
+          緊密的圖騰元素或神話故事，打造出獨一無二的風格與設計感。名稱取自臺灣原住民太魯閣
+          族話「Derlabers Saw」意謂「花生」，加上廣東話「花生騷」指的是 「Fashion Show」，
+          團隊秉持著「把門打得更開，讓更多人認識原住民」的初衷，推出富有原民文化內涵的創意作品。 </p>
+        </div>
+      </div>
 
+      <div class="seventh">
+        <img class="shop_img shop_seven" src="./images/gift/7.jpg" alt="抱歉圖片不見了!" title="青鳥書店">
+         <div class="shop_shop shop7">
+            <h2>青鳥書店</h2>
+            <span class="fav">
+              <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+              <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+              title="加入最愛"></span>
+            </span>
+            <p>2019年底正式開幕，座落位置在迪化街鄉藝埕二樓，店內有東南亞、香港、臺灣特色選
+              書，並附設咖啡與座位，供來訪者悠閒品書。 </p>
+          </div>
+      </div>
 
+      <div class="eighth">
+        <img class="shop_img shop_eight" src="./images/gift/8.jpg" alt="抱歉圖片不見了!" title="江記華隆">
+        <div class="shop_shop shop8">
+        <h2>江記華隆</h2>
+        <span class="fav">
+          <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+          <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+          title="加入最愛"></span>
+        </span>
+        <p>創立於1970年，座落於迪化老街的街尾，原本在臺北橋下的市場裡，2004年，
+        因市場改建搬遷，本棟是迪化街都更後的巴洛式建築。
 
+        2004年研發出超薄杏仁豬肉紙引發熱銷，薄度介於0.1mm~0.2mm，是臺北最夯伴手禮之一。</p>
+        </div>
+      </div>
 
-    <img class="shop_three" src="./images/gift/3.jpg" alt="抱歉圖片不見了!" title="民藝埕">
-    <div class="shop3">
-      <h2>民藝埕</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-       <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
-           title="加入最愛"></span>
-      <p>位於迪化街霞海城隍廟旁，為一棟百年的三進式街屋，以民藝精神為主題。一樓第一、二進為亞洲陶、瓷、
-        民藝品賣店「陶一二」，一樓三進為咖啡小酒館「Le Zinc 洛」，二樓為茶屋「南街得意」。 </p>
+      <div class="ninth">
+          <img class="shop_img shop_nine" src="./images/gift/9.jpg" alt="抱歉圖片不見了!" title="生元藥行">
+          <div class="shop_shop shop9">
+            <h2>生元藥行</h2>
+            <span class="fav">
+              <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+              <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+              title="加入最愛"></span>
+            </span>
+            <p>一九四六年創業以來，已七十載。一向精選道地藥材，服務周到，而獲各界好評。一直以
+              來更秉持『良心製藥、誠信經營』的理念，把握『炮製雖煩、必不敢省工。品味雖貴、必
+              不敢省物力。』的原則，故而名馳中外。目前也發展出「生元草本」品牌，將中藥從調理身
+              體發展至保養身體的新領域。</p>
+          </div>
+      </div>
+
+      <div class="tenth">
+          <img class="shop_img shop_ten" src="./images/gift/10.jpg" alt="抱歉圖片不見了!" title="乾元參藥行">
+          <div class="shop_shop shop10">
+              <h2>乾元參藥行</h2>
+              <span class="fav">
+                 <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+                 <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+                  title="加入最愛"></span>
+               </span>
+              <p>「 乾元參藥行 」成立於 1875 年，佇立於迪化街上，有著宏偉的牌樓外觀，是日治時期
+                的老舊建築物。從藥材的選購開始，就秉持著「貨真價實、童叟無欺」的原則；藥材的炮製
+                更是遵循古法，期能達到藥物的最高效能，保留著老師傅的獨門經驗，並提供親切的藥材諮
+                詢服務。</p>
+            </div>
+        </div>
+
+        <div class="eleventh">
+            <img class="shop_img shop_eleven" src="./images/gift/11.jpg" alt="抱歉圖片不見了!" title="天山行">
+            <div class="shop_shop shop11">
+                <h2>天山行</h2>
+                <span class="fav">
+                    <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+                    <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+                    title="加入最愛"></span>
+                </span>
+                <p>質樸木架上，整齊陳列著小巧商品，溫暖黃光灑落，剎那間以為自己來到了精緻的日式雜
+                貨店，其實這裡是販售傳統南北貨的「天山行」。2013年，在第二代老闆周家安的規劃下，
+                賦予南北貨行嶄新面貌，一掃過去大袋裝的批發乾貨形象。</p>
+              </div>
+        </div>
+
+        <div class="twelfth">
+          <img class="shop_img shop_twelve" src="./images/gift/12.jpg" alt="抱歉圖片不見了!" title="火星猴子">
+          <div class="shop_shop shop12">
+            <h2>火星猴子</h2>
+            <span class="fav">
+              <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"title="加入最愛">
+              <span class="favhover"><img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+              title="加入最愛"></span>
+            </span>
+          <p>Monkey Mars嚴選食材、手工製作，帶給你無添加物，天然的美味。
+            門市地址:台北市大同區迪化街一段96號，霞海城隍廟附近。</p>
+          </div>
+        </div>
+
+      <div class="pagination_block">
+        <ul class="pagination">
+          <li><a href="#">&lt;</a></li>
+          <li><a href="#" class="-on">1</a></li>
+          <li><a href="#" >2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+         <li><a href="#">&gt;</a></li>
+       </ul>
+     </div>
+
+      <button type="button"><a href="./online-shop.html"> 線上購物</a></button>
+
     </div>
-
-    <img class="shop_four" src="./images/gift/4.jpg" alt="抱歉圖片不見了!" title="大華行">
-    <div class="shop4">
-      <h2>大華行</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>在地經營150餘年，現為第四代經營，主要產品是竹編類，蒸籠、飯桶以及各類竹木製品
-        的餐具及生活用品，最廣為人知的熱銷產品是復古茄芷袋，除了古早的形式及顏色外，更
-        加入文創的精神，而將古早的生活提袋多樣化成後背包，書包、收納袋、化妝包、便當袋、
-        水壺袋、零錢包等等同時致力於開發各式環保材質的生活用品，例如竹牙刷竹吸管等。 </p>
-    </div>
-
-    <img class="shop_five" src="./images/gift/5.jpg" alt="抱歉圖片不見了!" title="印花樂">
-    <div class="shop5">
-      <h2>印花樂</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>成立於2008年，由三位從大學美術系畢業的創辦人，推出第一款「台灣八哥」印花圖案
-        開始，即專注於開發台灣原創的印花布料商品，並致力於透過設計，傳播社會共好與環境保護的理念。
-        大稻埕店為首間直營店，於2011年創立。 </p>
-    </div>
-
-    <img class="shop_six" src="./images/gift/6.jpg" alt="抱歉圖片不見了!" title="印花樂">
-    <div class="shop6">
-      <h2>花生騷</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>「花生騷 WasangShow」是臺灣獨創原住民潮流品牌，每個商品細節融合原民與自然界最
-        緊密的圖騰元素或神話故事，打造出獨一無二的風格與設計感。名稱取自臺灣原住民太魯閣
-        族話「Derlabers Saw」意謂「花生」，加上廣東話「花生騷」指的是 「Fashion Show」，
-        團隊秉持著「把門打得更開，讓更多人認識原住民」的初衷，推出富有原民文化內涵的創意作品。 </p>
-    </div>
-
-    <img class="shop_seven" src="./images/gift/7.jpg" alt="抱歉圖片不見了!" title="青鳥書店">
-    <div class="shop7">
-      <h2>青鳥書店</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>2019年底正式開幕，座落位置在迪化街鄉藝埕二樓，店內有東南亞、香港、臺灣特色選
-        書，並附設咖啡與座位，供來訪者悠閒品書。 </p>
-    </div>
-
-    <img class="shop_eight" src="./images/gift/8.jpg" alt="抱歉圖片不見了!" title="江記華隆">
-    <div class="shop8">
-      <h2>江記華隆</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>創立於1970年，座落於台北市迪化老街的街尾，原本是在台北橋下的市場裡，2004年，
-        市場要改建於是便搬遷到目前的位置，本棟巴洛式建築，也是首棟迪化街都更後的建築。
-
-        2004年研發出超薄杏仁豬肉紙引發熱銷，薄度介於0.1mm~0.2mm，好吃豬肉紙，薄薄脆脆，
-        吃起來喀哩喀哩的，其實很難想像常吃得豬肉乾可以做得這麼的薄，因此成為臺北最夯伴手禮之一。</p>
-    </div>
-
-    <img class="shop_nine" src="./images/gift/9.jpg" alt="抱歉圖片不見了!" title="生元藥行">
-    <div class="shop9">
-      <h2>生元藥行</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>一九四六年創業以來，已七十載。一向精選道地藥材，服務周到，而獲各界好評。一直以
-        來更秉持『良心製藥、誠信經營』的理念，把握『炮製雖煩、必不敢省工。品味雖貴、必
-        不敢省物力。』的原則，故而名馳中外。目前也發展出「生元草本」品牌，將中藥從調理身
-        體發展至保養身體的新領域。</p>
-    </div>
-
-    <img class="shop_ten" src="./images/gift/10.jpg" alt="抱歉圖片不見了!" title="乾元參藥行">
-    <div class="shop10">
-      <h2>乾元參藥行</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>「 乾元參藥行 」成立於 1875 年，佇立於迪化街上，有著宏偉的牌樓外觀，是日治時期
-        的老舊建築物。從藥材的選購開始，就秉持著「貨真價實、童叟無欺」的原則；藥材的炮製
-        更是遵循古法，期能達到藥物的最高效能，保留著老師傅的獨門經驗，並提供親切的藥材諮
-        詢服務。</p>
-    </div>
-
-    <img class="shop_eleven" src="./images/gift/11.jpg" alt="抱歉圖片不見了!" title="天山行">
-    <div class="shop11">
-      <h2>天山行</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>質樸木架上，整齊陳列著小巧商品，溫暖黃光灑落，剎那間以為自己來到了精緻的日式雜
-        貨店，其實這裡是販售傳統南北貨的「天山行」。2013年，在第二代老闆周家安的規劃下，
-        賦予南北貨行嶄新面貌，一掃過去大袋裝的批發乾貨形象。</p>
-    </div>
-
-    <img class="shop_twelve" src="./images/gift/12.jpg" alt="抱歉圖片不見了!" title="火星猴子">
-    <div class="shop12">
-      <h2>火星猴子</h2>
-      <img src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
-       title="加入最愛">
-      <p>Monkey Mars嚴選食材、手工製作，帶給你無添加物，天然的美味。
-        門市地址:台北市大同區迪化街一段96號，霞海城隍廟附近。</p>
-    </div>
-
-    <div class="pagination_block">
-      <ul class="pagination">
-        <li><a href="#">&lt;</a></li>
-        <li><a href="#" class="-on">1</a></li>
-        <li><a href="#" >2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">&gt;</a></li>
-      </ul>
-    </div>
-
-    <button type="button"><a href="#"> 線上購物</a></button>
-
   </div>
 </main>
 
@@ -276,32 +326,27 @@
 
 </footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        //   loop:true;
-        //   autoplay: {
-        //   disableOnInteraction: false;
-        // }
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
-
-
-
-  </script>
-
-
-
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 
 </body>
 </html>
