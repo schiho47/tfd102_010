@@ -1,6 +1,6 @@
 main{
   background-color: #f1d9c9;
-  height: 1400px;
+  height: auto;
 }
 
 body{
@@ -44,20 +44,26 @@ div.form{
   margin-right: 0;
   text-align: right;
   padding-bottom: 10px;
-  width:1000px;
+  max-width:100%;
+
+  /* padding-left: 50px; */
+  margin-right: 30px;
 }
 
-div.form,div.bread{
+/* div.form,div.bread{
   display: inline-block;
-}
+} */
+
+
 
 span.shop{
   color:#be3128;
 }
 
 div.bread{
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: 10px;
+  margin-left: 30px;
 }
 
 .item > a img {
@@ -108,10 +114,10 @@ div.item2p span{
 div.item2p img{
   width:25px;
 }
-
+/* 
 div.item2{
   transform: translate(5%,25%);
-}
+} */
 
 
 div.item3p{
@@ -129,9 +135,9 @@ div.item3p img{
   width:25px;
 }
 
-div.item3{
+/* div.item3{
   transform: translate(10%,40%);
-}
+} */
 
 
 div.item4p{
@@ -276,11 +282,22 @@ div.item10p img{
 
 div.items{
  padding:20px;
- column-count: 3;
+ display: flex;
+ flex-wrap: wrap;
+ /* column-count: 3;
  column-gap: 30px;
- column-width: 50px;
- width:1200px;
+ column-width: 50px;  */
+ max-width:1200px;
  margin: 0 auto;
+ flex-direction: row;
+ justify-content: space-between;
+ align-self: center;
+ 
+ 
+}
+
+div.item{
+  width:300px;
 }
 
 
@@ -309,10 +326,13 @@ div.item_p{
 }
 
 div.pagination_block{
-  display: inline-block;
-  width:1200px;
-  margin-top: 10px;
+  display: block;
+  max-width:1200px;
+  margin:0 auto;
   text-align: center;
+  height:50px;
+  transform: translateY(-50%);
+
 }
 
 div.pagination_block > ul.pagination{

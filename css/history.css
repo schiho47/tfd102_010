@@ -1,3 +1,6 @@
+img.cute1{
+  visibility: visible;
+}
 main.main{
   background-color: #f1d9c9;
 }
@@ -6,7 +9,14 @@ body{
   margin:0;
 }
 
-ul.nav li:first-child{
+/* 源起 */
+
+div.history_first{
+  width:1200px;
+  margin: 0 auto;
+}
+
+ul.nav li:first-child a{
   color: #be3128;
   font-weight: bold;
 }
@@ -16,7 +26,7 @@ img.first,div.first{
 }
 img.first{
   border:1px solid black;
-  width:700px;
+  width:650px;
   transform: translateX(20%);
   margin-top: 50px;
   height: 500px;
@@ -67,6 +77,70 @@ div.first a:hover{
   color:#be3128;
 }
 
+@media (min-width:768px) and (max-width:992px){
+  div.history_first{
+     max-width: 100%; 
+     height:700px;
+  }  
+  div.first{
+    background-color: hsla(0,100%,100%,.8);
+    border:1px solid black;
+    max-width:500px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    transform: translate(58%,-101%); 
+    height:501px;
+  }
+  
+}
+
+@media (min-width:576px) and (max-width:767px){
+
+  div.history_first{
+    max-width: 100%;
+  }
+  img.first{
+    display: none;
+  }
+  
+  div.first{
+    background-color: hsla(0,100%,100%,.8);
+    border:1px solid black;
+    max-width:500px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    transform: translate(10%,4%);
+    height:501px;
+    background-image: url(../images/history/his1_rwd.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width:575px){
+  div.history_first{
+    max-width: 100%;
+  }
+  img.first{
+    display: none;
+  }
+  
+  div.first{
+    background-color: hsla(0,100%,100%,.8);
+    border:1px solid black;
+    max-width:100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    transform: translate(0%,4%);
+    height:auto;
+    background-image: url(../images/history/his1_rwd.png);
+    background-repeat: no-repeat;
+  }
+}
+/* 商業歷史 */
+
 div.his2{
   background-color: #74AF5A;
   /* transform: translateY(-20%); */
@@ -78,7 +152,7 @@ img.teatrade{
   margin-top: 50px;
   margin-left: 60px;
   width:500px;
-  transform: translateY(15%);
+  /* transform: translateY(18.5%); */
   
 }
 
@@ -88,17 +162,20 @@ img.teatrade2{
 }
 
 
-div.his2 h1{
-  background-color: white;
+/* div.his2 h1{
+  background-color: white
   width:600px;
   display: inline-block;
   text-align: center;
-}
+} */
 
 h1.two{
-  margin-top: 0;
+  background-color: white;
   color:#74af5a;
-  transform: translateX(-35%);
+  width:1200px;
+  margin:0 auto;
+  text-align: center;
+  font-size: 30px;
 }
 
 h1 img{
@@ -108,7 +185,9 @@ h1 img{
 
 div.h2_1{
   display: inline-block;
-   width:300px;
+  width:1200px;
+  margin:0 auto;
+  height:470px;
 }
 
 div.h2_1::after{
@@ -121,6 +200,7 @@ div.h2_1 p{
   color:white;
   width:300px;
   height:150px;
+  padding-left: 10px;
 
 }
 
@@ -130,9 +210,130 @@ div.h2_1 p::after{
   clear:both;
 }
 
+div.h2_1 img,div.h2_1 p{
+  display: inline-block;
+}
+
+div.h2_1rwd{
+  display: none;
+}
+
+@media (min-width:768px) and (max-width:992px){
+  div.h2_1{
+    display: none;
+  }
+
+  div.h2_1rwd{
+    display:block;
+    max-width: 100%;
+    font-size: 0;
+  }
+
+  h1.two{
+    max-width:100%;
+    text-align: center;
+  }
+
+  div.h2_1rwd img{
+    height:300px;
+    padding-top: 20px;
+  }
+
+  img.teatrade_rwd{
+    padding-left:20px;
+  }
+
+  div.h2_1rwd p{
+    font-size: 16px;
+    color:white;
+    max-width:100%;
+    padding:3px 20px;
+  }
+
+}
+
+@media (min-width:576px) and (max-width:767px){
+
+  div.h2_1{
+    display: none;
+  }
+
+  div.h2_1rwd{
+    display:block;
+    max-width: 100%;
+    font-size: 0;
+  }
+
+  h1.two{
+    max-width:100%;
+    text-align: center;
+  }
+
+  div.h2_1rwd img{
+    height:300px;
+    padding-top: 20px;
+  }
+
+  img.teatrade_rwd{
+    padding-left:20px;
+  }
+
+  div.h2_1rwd p{
+    font-size: 16px;
+    color:white;
+    max-width:100%;
+    padding:3px 20px;
+  }
+
+}
+
+@media(max-width:575px){
+  div.h2_1{
+    display: none;
+  }
+
+  div.h2_1rwd{
+    display:block;
+    max-width: 100%;
+    font-size: 0;
+  }
+
+  h1.two{
+    max-width:100%;
+    text-align: center;
+  }
+
+  div.h2_1rwd img{
+    height:350px;
+    padding-top: 20px;
+  }
+
+  img.teatrade_rwd{
+    padding-left:10px;
+  }
+
+  div.h2_1rwd p{
+    font-size: 16px;
+    color:white;
+    max-width:100%;
+    padding:3px 20px;
+    width:200px;
+    height:auto;
+    margin-bottom: 10px;
+  }
+  div.h2_1rwd p,img.teatrade2{
+    display: inline-block;
+  }
+  
+}
+
+/*杜德與李春生*/
+
 div.h2_2 {
   color: white;
   padding: 3px;
+  width:1200px;
+  margin:0 auto;
 }
 
 div.h2_2::after{
@@ -144,29 +345,103 @@ div.h2_2::after{
 img.tea_ad1{
   float: left;
   width: 500px;
-  margin-right: 15px;
+  margin-right: 30px;
 }
 
-div.h2_2 h2 div.h2_2 p{
+div.h2_2 h2,div.h2_2 p{
   padding:13px;
   margin-right: 0;
   padding-right:10px;
-  text-align: center;
+  text-align: left;
+  width:1100px;
 }
+
+div.h2_2rwd{
+  display: none;
+}
+
+@media (min-width:768px) and (max-width:992px){
+  div.h2_2{
+    max-width: 100%;
+  }
+
+  img.tea_ad1{
+    max-width:100%;
+  }
+
+  div.h2_2 h2, div.h2_2 p{
+    max-width: 100%;
+  }
+
+  div.h2_2 h2{
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.h2_2{
+   display: none;
+  }
+
+  div.h2_2rwd{
+    display: block;
+  }
+
+  img.tea_ad1_rwd{
+    max-width:100%;
+    margin: 0 auto;
+  }
+  img.tea_ad1_rwd,div.h2_2p_rwd{
+    display: block;
+  }
+  div.h2_2p_rwd{
+    color:white;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media(max-width:575px){
+  div.h2_2{
+    display: none;
+   }
+ 
+   div.h2_2rwd{
+     display: block;
+   }
+ 
+   img.tea_ad1_rwd{
+     max-width:100%;
+     margin: 0 auto;
+   }
+   img.tea_ad1_rwd,div.h2_2p_rwd{
+     display: block;
+   }
+   div.h2_2p_rwd{
+     color:white;
+     max-width: 100%;
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+}
+
+/* ===商業第三段=== */
 
 img.tea_ad2{
   width:1200px;
 }
 div.h2_3 p{
-  width:1200px;
+  width:1000px;
   color:white;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 40px;
+  padding-right: 20px;
 }
 
 div.h2_3{
   width:1200px;
   padding-top: 13px;
+  margin:0 auto;
 
 }
 
@@ -206,42 +481,170 @@ div.h23a a:hover{
   font-weight: bold;
 }
 
+
+
+@media (min-width:768px) and (max-width:992px){
+  div.h2_3{
+    max-width: 100%;
+  }
+
+  img.tea_ad2{
+    max-width: 100%;
+  }
+
+  div.h2_3 p, div.h23a{
+    max-width: 100%;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.h2_3{
+    max-width: 100%;
+  }
+
+  img.tea_ad2{
+    max-width: 100%;
+  }
+
+  div.h2_3 p, div.h23a{
+    max-width: 100%;
+  }
+
+}
+
+@media(max-width:575px){
+  div.h2_3{
+    max-width: 100%;
+  }
+
+  img.tea_ad2{
+    max-width: 100%;
+  }
+
+  div.h2_3 p, div.h23a{
+    max-width: 100%;
+  }
+}
+
+
+
+
+/* ===政治歷史=== */
+
 div.his3{
-  background-color: #0f0f0f;
+  background-color: hsla(0,0%,0%,.6);
   position: relative;
   color:white;
-  text-align: center;
+  text-align: left;
 }
 
 div.h3_1 h1.three{
   background-color: white;
   color:#1a1a1a;
-  width:500px;
+  width:1200px;
   text-align: center;
-  transform: translateX(80%);
+  margin:0 auto;
+  font-size: 30px;
 }
 
-div.h3_1>img{
+div.h3p img{
   width:600px;
   padding: 20px;
 }
 
-div.h3_1 p{
+div.h3p p{
   color:white;
   width:500px;
+  height:100px;
+  margin:0;
+  transform: translateY(-20%);
 }
 
-div.h3_1{
-  background-color:hsla(0,0%,100%,.2)
+div.h3p img, div.h3p p{
+  display: inline-block;
 }
+
+
 
 div.h3_1>img,div.h3p{
   display: inline-block;
 }
 
+
 div.h3p{
-  transform: translateY(-100%)
+  width:1200px;
+  margin:0 auto;
+  padding:0 15px;
 }
+
+@media (min-width:768px) and (max-width:992px){
+ div.h3_1 h1,div.h3p{
+   max-width: 100%;
+   margin:0 auto;
+
+ }
+
+ div.h3p img,div.h3p p {
+   max-width: 100%;
+   display: block;
+ 
+ }
+
+ div.h3p p{
+   margin-top: 20px;
+   margin-left: 30px;
+ }
+
+
+}
+@media (min-width:576px) and (max-width:767px){
+  div.h3_1 h1,div.h3p{
+    max-width: 100%;
+    margin:0 auto;
+ 
+  }
+ 
+  div.h3p img,div.h3p p {
+    max-width: 100%;
+    display: block;
+  
+  }
+ 
+  div.h3p p{
+    margin-top: 20px;
+    margin-left: 30px;
+    max-width: 100%;
+  }
+
+}
+
+@media(max-width:575px){
+  div.h3_1 h1,div.h3p{
+    max-width: 100%;
+    margin:0 auto;
+ 
+  }
+ 
+  div.h3p img,div.h3p p {
+    max-width: 100%;
+    display: block;
+  
+  }
+ 
+  div.h3p p{
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 100%;
+    margin-right: 10px;
+    padding-right: 10px;
+    height:auto;
+  }
+}
+
+
+
+
+/* ===臺灣文化協會=== */
 
 div.h3_2 img{
   float:left;
@@ -255,14 +658,45 @@ div.h3_2::after{
   clear: both;
 }
 
-div.h3_2{
-  background-color:hsla(0,0%,100%,.2)
-}
 
 div.h3_2 h2{
   padding-top: 50px;
   margin:0;
 }
+
+div.h3_2 p{
+  padding:0 20px;
+}
+
+@media (min-width:768px) and (max-width:992px){
+  div.h3_2{
+    max-width: 100%;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.h3_2 img{
+    max-width: 100%;
+    display: block;
+  }
+
+  div.h3_2 h2{
+    padding-left: 10px;
+  }
+}
+
+@media(max-width:575px){
+  div.h3_2 img{
+    max-width: 100%;
+  }
+
+  div.h3_2 h2{
+    padding-left: 10px;
+  }
+}
+
+
+/* ===國際書局與臺灣共產黨=== */
 
 div.h3_3 img{
   float:right;
@@ -270,9 +704,6 @@ div.h3_3 img{
   padding-left: 20px;
 }
 
-div.h3_3{
-  background-color:hsla(0,0%,100%,.2)
-}
 
 div.h3_3::after{
   content: "";
@@ -282,23 +713,111 @@ div.h3_3::after{
 
 div.h3_3 h2{
   padding-top: 50px;
-  padding-left: 10px;
   margin-top: 0;
+  margin-left: 40px;
 }
 
 div.h3_3 p{
-  padding-left: 10px;
+  width:650px;
+  margin-left: 40px;
 }
+
+div.h3_3_rwd{
+  display: none;
+}
+
+@media (min-width:768px) and (max-width:992px){
+  div.h3_3 img{
+    max-width: 100%;
+    margin: 5px 10px;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.h3_3{
+    display: none;
+  }
+
+  div.h3_3_rwd{
+    display: block;
+  }
+
+  div.h3_3_rwdp,div.h3_3_rwd img{
+    display: block;
+  }
+  div.h3_3_rwd img{
+    max-width: 100%;
+    margin: 5px 0;
+  }
+
+  div.h3_3_rwd h2,div.h3_3_rwd p{
+    max-width: 100%;
+    margin: 10 auto;
+    height:auto;
+    
+  }
+  div.h3_3_rwd p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  div.h3_3_rwdp h2{
+    padding-left: 20px;
+  }
+
+
+
+
+}
+
+
+@media(max-width:575px){
+ 
+  div.h3_3{
+    display: none;
+  }
+
+  div.h3_3_rwd{
+    display: block;
+  }
+
+  div.h3_3_rwdp,div.h3_3_rwd img{
+    display: block;
+  }
+  div.h3_3_rwd img{
+    max-width: 100%;
+    margin: 10px 0;
+ 
+  }
+
+  div.h3_3_rwd h2,div.h3_3_rwd p{
+    max-width: 100%;
+    margin: 10 auto;
+    height:auto;
+    
+  }
+  div.h3_3_rwd p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  div.h3_3_rwdp h2{
+    padding-left: 20px;
+  }
+}
+
+
+/* ===二二八事件爆發地=== */
 
 div.h3_4 img{
   float: left;
   width:400px;
   margin-right: 10px;
+  padding-right: 20px;
 }
 
-div.h3_4{
-  background-color:hsla(0,0%,100%,.2)
+div.h3_4 p{
+  padding:0 20px;
 }
+
 
 div.h3_4::after{
   content: "";
@@ -324,6 +843,7 @@ div.h3_4 a,div.h3_4 span{
 }
 
 div.h3_4 span{
+  margin-bottom: 10px;
   margin-top: -10px;
 }
 
@@ -332,40 +852,146 @@ div.h3_4 a:hover{
   font-weight: bold;
 }
 
+
+
+/* ===文藝大稻埕=== */
+
 div.his4{
   background-color: #be3128;
   color:white;
+  font-size: 0;
+  margin-top: 30px;
 }
 
 h1.four{
   background-color: white;
   color:#be3128;
-  width:500px;
+  width:1200px;
+  margin:0 auto;
   text-align: center;
+  font-size:30px;
 }
 
-div.h41p p{
-  width:500px;
+div.h4_1 p{
+  width:350px;
+  height: 100px;
+  margin-top: 0;
+  font-size: 16px;
+  padding:0 20px;
 }
 
 
 div.h4_1>img{
   height: 400px;
-  padding: 15px;
-  border-radius: 10px;
+  padding-top:15px;
 }
 
-div.h4_1>img,div.h41p{
+
+div.h4_1{
+  width:1200px;
+  margin: 0 auto;
+  height:460px;
+}
+
+div.h4_1 img,div.h4_1 p{
   display: inline-block;
 }
 
-div.h4_1{
-  width:800px;
-  margin: 0 auto;
+div.h4_1_rwd{
+  display: none;
 }
 
-div.h41p{
-  transform: translateY(-50px);
+@media (min-width:768px) and (max-width:992px){
+    div.his4{
+      max-width: 100%; 
+    }
+
+    div.his4 h1{
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    div.h4_1{
+      display: none;
+    }
+
+    div.h4_1_rwd{
+      display: block;
+    }
+
+
+    div.h4_1_rwd img:nth-child(2){
+      max-width: 100%;
+      margin: 0 auto;
+    }  
+    div.h4_1_rwd p{
+      font-size: 16px;
+      padding-top: 10px 20px;
+      margin: 5px 20px;
+    }
+
+
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.his4{
+    max-width: 100%; 
+  }
+
+  div.his4 h1{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  div.h4_1{
+    display: none;
+  }
+
+  div.h4_1_rwd{
+    display: block;
+  }
+
+  div.h4_1_rwd p{
+    font-size: 16px;
+    padding-top: 10px 20px;
+    margin: 5px 20px;
+  }
+}
+
+@media(max-width:575px){
+  div.his4{
+    max-width: 100%; 
+  }
+
+  div.his4 h1{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  div.h4_1{
+    display: none;
+  }
+
+  div.h4_1_rwd{
+    display: block;
+  }
+
+  div.h4_1_rwd img:nth-child(2){
+    max-width: 100%;
+    margin:auto;
+  }  
+
+  div.h4_1_rwd p{
+    font-size: 16px;
+    padding-top: 10px 20px;
+    margin: 5px 20px;
+  }
+}
+
+/* ===音樂與藝術=== */
+div.h4_2{
+  width:1200px;
+  margin:0 auto;
 }
 
 div.h4_2>img{
@@ -382,7 +1008,8 @@ div.h4_2>img{
 
 div.h42p{
   width:600px;
-  transform: translateY(-75%);
+  transform: translateY(-35%);
+  font-size: 16px;
 
 }
 
@@ -390,6 +1017,80 @@ div.h4_2>img,div.h42p{
   display: inline-block;
 }
 
+@media (min-width:768px) and (max-width:992px){
+  div.h4_2{
+    max-width: 100%;
+  }
+  div.h4_2 img{
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  div.h4_2 img, div.h42p{
+    display: block;
+
+  } 
+
+  div.h42p {
+    margin:5px 20px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.h4_2{
+    max-width: 100%;
+  }
+  div.h4_2 img{
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  div.h4_2 img, div.h42p{
+    display: block;
+
+  } 
+
+  div.h42p {
+    margin:5px 20px;
+    max-width: 100%;
+  }
+
+  div.h42p p, div.h42p h2{
+    max-width: 100%;
+  }
+}
+
+
+@media(max-width:575px){
+  div.h4_2{
+    max-width: 100%;
+  }
+  div.h4_2 img{
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  div.h4_2 img, div.h42p{
+    display: block;
+
+  } 
+
+  div.h42p {
+    max-width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* ===文學與戲劇=== */
+
+div.h4_3{
+  font-size: 16px;
+  width:1200px;
+  margin:0 auto;
+}
 div.h4_3>img{
   width:600px;
   padding-left: 30px;
@@ -421,7 +1122,7 @@ div.h43a span{
   color:white;
 }
 
-div.h43a a,div h43a span{
+div.h43a a,div.h43a span{
   display: block;
 }
 
@@ -440,14 +1141,165 @@ div.his_end{
 }
 
 div.his_end button{
-  background-color: white;
+  background-color: #444444;
   border-radius: 10px;
   margin-top: 25px;
 }
 
 div.his_end button a{
   text-decoration: none;
-  color: black;
+  color:white;
   font-weight: bold;
-  padding: 30px 20px;
+  padding: 40px 30px;
+  outline: 0;
+  font-size: 18px;
+}
+
+div.h4_3rwd{
+  display: none;
+}
+
+@media (min-width:768px) and (max-width:992px){
+  div.h4_3{
+    display: none;
+  }
+
+  div.h4_3rwd{
+    display: block;
+    font-size: 16px;
+
+    padding: 5px 25px;
+
+  }
+
+  div.h43arwd{
+    font-size: 16px;
+  }
+
+  div.h43arwd a{
+    text-decoration: none;
+    color:white;
+  }
+  
+  div.h43arwd img{
+    width:30px;
+  }
+  
+  div.h43arwd span{
+    color:white;
+  }
+  
+  div.h43arwd a,div.h43arwd span{
+    display: block;
+  }
+  
+  div.h43arwd{
+    text-align: right;
+  }
+  
+  div.h43arwd a:hover{
+    color: #1a1a1a;
+    font-weight: bold;
+  }
+
+
+  
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.h4_3{
+    display: none;
+  }
+
+  div.h4_3rwd{
+    display: block;
+    font-size: 16px;
+    padding: 5px 25px;
+  }
+  div.h4_3rwd>img{
+    max-width: 100%;
+  }
+
+
+  div.h43arwd{
+    font-size: 16px;
+  }
+
+  div.h43arwd a{
+    text-decoration: none;
+    color:white;
+  }
+  
+  div.h43arwd img{
+    width:30px;
+  }
+  
+  div.h43arwd span{
+    color:white;
+  }
+  
+  div.h43arwd a,div.h43arwd span{
+    display: block;
+  }
+  
+  div.h43arwd{
+    text-align: right;
+  }
+  
+  div.h43arwd a:hover{
+    color: #1a1a1a;
+    font-weight: bold;
+  }
+ 
+  
+}
+
+@media(max-width:575px){
+  div.h4_3{
+    display: none;
+  }
+
+  div.h4_3rwd{
+    display: block;
+    font-size: 16px;
+
+    padding: 5px 25px;
+
+  }
+
+  div.h4_3rwd>img{
+    max-width: 100%;
+  }
+  div.h43arwd{
+    font-size: 16px;
+  }
+
+  div.h43arwd a{
+    text-decoration: none;
+    color:white;
+  }
+  
+  div.h43arwd img{
+    width:30px;
+  }
+  
+  div.h43arwd span{
+    color:white;
+  }
+  
+  div.h43arwd a,div.h43arwd span{
+    display: block;
+  }
+  
+  div.h43arwd{
+    text-align: right;
+  }
+  
+  div.h43arwd a:hover{
+    color: #1a1a1a;
+    font-weight: bold;
+  }
+  
+  
+
 }

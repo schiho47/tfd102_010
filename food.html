@@ -4,14 +4,50 @@
     <meta charset="utf-8">
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/food.css" rel="stylesheet">
+    <link href="./vendors/hamburger.css" rel="stylesheet">
     <title>美食大稻埕</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   </head>
   <body>
     <header>
+
+
       <div class="logo_nav">
 
         <a href="./index.html">  <img class="logo" src="./images/logo.png"></a>
+
+        <ul class="nav">
+          <li><a href="./history.html">歷史大稻埕<img class="cute cute1" src="./images/us3.png"></a></li>
+          <li class="food"><a href="./food.html">美食大稻埕<img class="cute cute2" src="./images/chopsticks.png"></a></li>
+          <li><div class="spot"><a href="./tour.html">景點大稻埕<img class="cute cute3" src="./images/h5_camera.png"></a>
+                <ul class="spot">
+                  <li><a href="#">博物館</a></li>
+                  <li><a href="#">名人縮影</a></li>
+                  <li><a href="#">廟宇</a></li>
+                  <li><a href="#">碼頭</a></li>
+                </ul>
+              </div>
+            </li>
+  
+          <li><div class="gift"><a href="./gift.html">禮品商家<img class="cute cute4" src="./images/h6_bag.png"></a>
+              <ul class="gift">
+                <li><a href="./online-shop.html">線上購物</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li><a href="./event.html">特色活動<img class="cute cute5" src="./images/event.png"></a></li>
+          <li><a href="./bloger-suggestion.html">部落客教你玩<img class="cute cute6" src="./images/like.png"></a></li>
+        </ul>
+
+       <!-- 漢堡按鈕 -->
+
+        <button class="hamburger hamburger--spring" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      <!-- 漢堡按鈕 -->
+
         <div class="small_things">
           <div class="lang">
             <img src="./images/lan.png">
@@ -27,31 +63,56 @@
       </div>
     </div>
 
+   
+  <!-- 漢堡導覽 -->
+    <div class="hamburger_nav">
+      <ul class="hamburger_nav">
+        <li><a href="./history.html">歷史大稻埕</a></li>
+        <li><a href="./food.html">美食大稻埕</a></li>
+        <li><div class="spot_ham"><a href="./tour.html">景點大稻埕</a>
+              <ul class="spot_ham">
+                <li><a href="#">博物館</a></li>
+                <li><a href="#">名人縮影</a></li>
+                <li><a href="#">廟宇</a></li>
+                <li><a href="#">碼頭</a></li>
+              </ul>
+            </div>
+          </li>
 
-    <ul class="nav">
-      <li><a href="./history.html">歷史大稻埕</a></li>
-      <li>美食大稻埕</li>
-      <li><div class="spot"><a href="./tour.html">景點大稻埕</a>
-            <ul class="spot">
-              <li><a href="#">博物館</a></li>
-              <li><a href="#">名人縮影</a></li>
-              <li><a href="#">廟宇</a></li>
-              <li><a href="#">碼頭</a></li>
+        <li><div class="gift_ham"><a href="./gift.html">禮品商家</a>
+            <ul class="gift_ham">
+              <li><a href="./online-shop.html">線上購物</a></li>
             </ul>
           </div>
         </li>
 
-      <li><div class="gift"><a href="./gift.html">禮品商家</a>
-          <ul class="gift">
-            <li><a href="./online-shop.html">線上購物</a></li>
-          </ul>
-        </div>
-      </li>
+        <li><a href="./event.html">特色活動</a></li>
+        <li><a href="./bloger-suggestion.html">部落客教你玩</a></li>
+        <li><div class="hamburger_small">
+          <div class="lang_ham">
+            <img src="./images/lan.png">
+            <ul class="lang_ham">
+              <li><a href="#">English</a></li>
+              <li><a href="#">日本語</a></li>
+              <li><a href="#">한국어</a></li>
+            </ul>
+          </div>
+          <a href="#"><img src="./images/shopping.png"></a>
+          <a href="#"><img src="./images/love.png" title="最愛店家"></a>
+          <span><a href="#">登入</a></span>
+      </div></li>
+      
+      </ul>
+      
 
-      <li><a href="./tour.html">特色活動</a></li>
-      <li><a href="./bloger-suggestion.html">部落客教你玩</a></li>
-    </ul>
-    </header>
+    </div>
+    
+
+    
+
+</header>
+
+
 
     <main>
         <div class="everyday_food">
@@ -100,6 +161,8 @@
 
                 </div> 
             </div> 
+
+           
            
             <div class="part3">
                 <img src="images/food/food_part3.jpg"> 
@@ -126,6 +189,82 @@
 
                 </div> 
             </div>
+
+             <!-- ===part1,part2,part3 rwd=== -->
+
+             <div class="part1_rwd">
+
+              <img src="./images/food/food_part1_rwd.png">
+              
+            
+          
+              <div class="part_prwd  part_1prwd">
+                  <h2>永樂市場周邊美食</h2>
+                  <span class="fav">
+                      <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
+                      title="加入最愛">
+                      <span class="favhover"><a href="#">
+                        <img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+                      title="加入最愛"></a></span>
+                  </span>
+                  <p>迪化街永樂市場周邊聚集多樣傳統美食，
+                     「永樂擔仔麵」、「民樂旗魚米粉湯」、「臺南𩵚魠魚羹」、「永樂臭豆腐」
+                     其中「永樂擔仔麵」更曾受日本〈孤獨美食家〉節目介紹，此區多樣平價庶民美食聚集
+                     ，是來迪化街不可錯過的美食區域。                        
+                  </p>
+
+
+              </div>
+          </div>
+
+          <div class="part2_rwd">
+              <img src="./images/food/food_part2_rwd.png">
+
+            
+              <div class="part_prwd  part_2prwd">
+                  <h2>慈聖宮廟口美食</h2>
+                  <span class="fav">
+                      <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
+                      title="加入最愛">
+                      <span class="favhover"><a href="#">
+                        <img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+                      title="加入最愛"></a></span>
+                  </span>
+                  <p> 美食聚集的大稻埕慈聖宮廟口，著名店家有「葉家肉粥」、「原汁排骨湯」、「阿蘭魩仔魚蛋炒飯」等，
+                      拜完拜在廟口享受傳統美食，體會大稻埕的日常風光，是最道地的旅行體驗。             
+                  </p>
+
+              </div> 
+          </div>  
+
+
+          <div class="part3_rwd">
+            <img src="images/food/food_part3.jpg"> 
+            <div class="part_3prwd">
+                <h2>永樂市場內部美食</h2>
+                <span class="fav">
+                    <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
+                    title="加入最愛">
+                    <span class="favhover"><a href="#">
+                      <img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+                    title="加入最愛"></a></span>
+                </span>
+                <p>永樂市場內部美食聚集，「林合發油飯」是彌月禮、伴手禮首選；
+                    「丸隆生魚行」魚貨新鮮，是臺北熱門的市場庶民日本料理；「三發包子」
+                    以千層饅頭為名，創造新式的臺式美食經典。
+                </p>
+
+            </div> 
+
+            <div class="part3_imgrwd">
+              <img src="./images/food/part3_3.jpg" alt="抱歉圖片不見了!" title="林合發油飯">
+              <img src="./images/food/part3_2.jpg" alt="抱歉圖片不見了!" title="丸隆生魚行">
+              <img src="./images/food/part3_1.jpg" alt="抱歉圖片不見了!" title="三發包子"> 
+
+          </div>
+        </div>
+
+        <!-- ===rwd=== -->
 
                 <div class="part4">
 
@@ -185,7 +324,67 @@
 
                 
 
-            </div>
+            <!-- ===part4,part5 rwd=== -->
+            <div class="part4_rwd">
+
+              <div class="part4_imgrwd">
+              
+                  <img src="./images/food/part4_1.jpg" alt="">
+                  <img src="./images/food/part4_2.jpg" alt="">
+              </div>
+                   
+              <div class="part_45prwd  part_4prwd">
+                <h2>古早餅弟免煎嗲</h2>
+                   <span class="fav">
+                        <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
+                            title="加入最愛">
+                       <span class="favhover"><a href="#">
+                           <img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+                               title="加入最愛"></a></span>
+                   </span>
+             
+                  
+                      
+                      <p>迪化街義美前，古早餅弟複製古法，送上熱騰騰的傳統臺式點心免煎嗲，
+                      一同體會臺式點心的美好。
+                      </p>
+                
+                   </div>
+                </div>
+          
+
+          <div class="part5_rwd">
+              
+
+              <div class="part5_img_rwd">
+
+                  <img src="./images/food/part4_3.jpg" alt="">
+                  <img src="./images/food/part4_4.jpg" alt="">
+              </div>
+
+                  <div class="part_45prwd part_5p_rwd">
+                   <h2>永樂車輪餅</h2>
+                      <span class="fav">
+                          <img class="favimg" src="./images/gift/favorite.png" alt="抱歉圖片不見了!"
+                          title="加入最愛">
+                          <span class="favhover"><a href="#">
+                              <img src="./images/gift/favhover.png" alt="抱歉圖片不見了!"
+                              title="加入最愛"></a></span>
+                          </spanz>
+                       
+                      <p>迪化街大排長龍的臺灣人氣美食，除了傳統的紅豆、奶油外，也推出紫心地瓜、蘿蔔絲等特色口味
+                          成為大稻埕最具人氣與特色的店之一。</p>
+                  
+                   </div>
+          </div> 
+
+          
+
+        </div>
+
+          
+
+            <!-- ===rwd=== -->
 
         <div class="fancy_food">
             <h1>精緻美食</h1>
@@ -268,47 +467,117 @@
 
 
 
-
-
-
+I 
     </main>
 
 
-    <footer>
-        <div class="roll1">
-          <span><a href="#">歷史大稻埕</a></span>
-          <span><a href="#">美食大稻埕</a></span>
-          <span><a href="#">景點大稻埕</a></span>
-          <span><a href="#">部落客教你玩</a></span>
-        </div>
-      
-        <div class="roll2">
-          <span><a href="#">最愛商家</a></span>
-          <span><a href="#">會員登入</a></span>
-          <span><a href="#">註冊會員</a></span>
-          <span><a href="#">規劃路線</a></span>
-      
-        </div>
-      
-        <div class="roll3">
-          <span><a href="#">特色活動</a></span>
-          <span><a href="#">禮品商家</a></span>
-          <span><a href="#">線上購物</a></span>
-          <span><a href="#">訂單查詢</a></span>
-        </div>
-      
+    <div class="black">
+      <footer>
+            <div class="roll roll1">
+              <span><a href="./history.html">歷史大稻埕</a></span>
+              <span><a href="./food.html">美食大稻埕</a></span>
+              <span><a href="./tour.html">景點大稻埕</a></span>
+              <span><a href="./bloger-suggestion.html">部落客教你玩</a></span>
+            </div>
+  
+            <div class="roll roll2">
+              <span><a href="./path.html">最愛商家</a></span>
+              <span><a href="./log_in.html">會員登入</a></span>
+              <span><a href="./sign_up.html">註冊會員</a></span>
+              <span><a href="./path.html">規劃路線</a></span>
+  
+            </div>
+  
+            <div class="roll roll3">
+              <span><a href="./event.html">特色活動</a></span>
+              <span><a href="./gift.html">禮品商家</a></span>
+              <span><a href="./online-shop.html">線上購物</a></span>
+              <span><a href="#">訂單查詢</a></span>
+            </div>
+  
+  <!-- rwd專用roll -->
+        <div class="roll_parents">
+          <div class="roll">
+            <span><a href="./history.html">歷史大稻埕</a></span>
+            <span><a href="./food.html">美食大稻埕</a></span>
+            <span><a href="./tour.html">景點大稻埕</a></span>
+            <span><a href="./bloger-suggestion.html">部落客教你玩</a></span>
+          </div>
+  
+          <div class="roll">
+            <span><a href="./path.html">最愛商家</a></span>
+            <span><a href="./log_in.html">會員登入</a></span>
+            <span><a href="./sign_up.html">註冊會員</a></span>
+            <span><a href="./path.html">規劃路線</a></span>
+  
+          </div>
+  
+          <div class="roll">
+            <span><a href="./event.html">特色活動</a></span>
+            <span><a href="./gift.html">禮品商家</a></span>
+            <span><a href="./online-shop.html">線上購物</a></span>
+            <span><a href="#">訂單查詢</a></span>
+          </div>
+      </div>
+  
         <div class="contact">
           <span>聯絡我們</span>
           <img class="facebook"src="./images/facebook.png">
           <img class="ig"src="./images/ig.png">
           <img class="twitter"src="./images/twitter.png">
         </div>
-      
+  
         <div class="p">
-          <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之
-        用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養
-        成班]，後續會由專人協助處理。</p>
+        <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之
+          用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養
+          成班]，後續會由專人協助處理。</p>
         </div>
         <img class="footer"src="./images/footer.png">
-      
+        
       </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+        
+          // hamburger icon 的切換
+          $("button.hamburger").on("click", function(){
+            $(this).toggleClass("is-active");
+          });
+        
+        });
+    </script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <script>
+    $("button.hamburger").on("click",function(){
+      $("div.hamburger_nav").toggleClass("-on");
+    });
+  
+  </script>
+
+  <script>
+    let show = document.getElementsByClassName("part_p")[0];
+    // console.log(show);
+
+    let button = document.getElementsByClassName("hamburger")[0];
+    // console.log(button);
+
+    button.addEventListener("click",function(e){
+      // console.log(this);
+      if (this.classList.contains("is-active")){
+        show.style.zIndex = 0;
+      }else{
+      show.style.zIndex = 3;
+      }
+      
+    })
+
+  </script>
+
+
+</body>
+</html>  
+  

@@ -1,0 +1,177 @@
+body{
+    margin:0;
+}
+
+main{
+    background-color: #f1d9c9;
+}
+
+span.tour{
+    color:#be3128;
+    font-weight: bold;
+}
+
+ul.spot li:nth-child(2){
+    color:#be3128;
+}
+
+div.bread span a{
+    text-decoration: none;
+    color:black;
+}
+
+div.bread span a:hover{
+    color:#be3128;
+    font-weight: bold;
+}
+
+div.bread span:last-child{
+    color:#be3128;
+    font-weight: bold;
+}
+
+div.bread{
+    padding:15px 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+img.people{
+    height:300px;
+    border-radius: 100px;
+}
+
+div.people{
+    width:1200px;
+    margin:0 auto;
+    padding: 15px 20px;
+    height:450px;
+}
+
+span.favhover{
+    width:20px;
+    display: none;
+  }
+span.fav img{
+    width:15px;
+}
+
+
+
+  span.fav:hover span.favhover{
+   display: inline;
+  }
+
+  span.fav:hover img.favimg{
+    display: none;
+  }
+
+  span.name img{
+      width:18px;
+  }
+
+  span.name{
+      width:200px;
+      text-align: center;
+      transform: translateX(20%);
+  }
+
+ 
+
+  span.name span:nth-child(2){
+      padding:0px 3px;
+  }
+
+  span.name>img{
+    width:15px;
+  }
+
+
+  div.people_p p{
+      width:600px;
+      background-color: white;
+      padding:20px 20px;
+      border-radius: 20px;
+  }
+
+
+
+  button{
+      background-color: #be3128;
+      border-radius: 20px;
+      outline-color: #be3128;
+  }
+
+
+  button a{
+      text-decoration: none;
+      color:white;
+      padding:20px 15px;
+      font-size: 18px;
+  }
+
+  button a:hover{
+      font-weight:bold;
+      color:#1a1a1a;
+  }
+
+  img.people,span.name{
+      display: block;
+  }
+
+  div.left{
+      width:400px;
+  }
+
+div.left1,div.first_p{
+    display: inline-block;
+}
+
+div.left2,div.second_p{
+    display: inline-block;
+}
+
+div.second_p{
+    transform: translate(10%,-20%);
+    padding:20px;
+}
+
+
+div.left3,div.third_p{
+    display: inline-block;
+}
+
+/*調整第1塊內部*/
+
+div.first_person span.name{
+    width:300px;
+    margin:0 auto;
+    transform: translateX(-5%);
+    padding-top: 5px;
+    
+}
+
+div.left1{
+    margin-right:50px;
+}
+
+/*調整第2塊內部*/
+
+div.second_person span.name{
+    width:250px;
+    margin:0 auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 5px;
+    transform: translateX(-6%);
+
+}
+
+/*調整第3塊內部*/
+
+div.third_person img.people{
+    margin-left: 25px;
+}

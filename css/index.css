@@ -4,6 +4,12 @@ body {
     height: 100%;
     margin: 0;
   }
+/* 
+  *{
+    outline: 1px solid red !important;
+  } */
+
+
   .swiper-container {
     width: 1200px;
     height: 800px;
@@ -35,6 +41,8 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+  
   
   main{
       background-color: #f1d9c9;
@@ -47,11 +55,19 @@ body {
   h1.h{
     margin-top: 20px;
     text-align: left;
-    padding: 5px 5px;
+    padding: 5px 5px ;
     margin-left: 32px;
     margin-bottom: 0;
   }
 
+  h1.h a{
+    text-decoration: none;
+    color: black;
+  }
+
+  h1.h a:hover{
+      color:#be3128;
+  }
 
 
 
@@ -71,11 +87,12 @@ display:inline-block;
 
 div.h1 p{
   border:1px  solid#be3128;
-  padding:15px 10px;
+  padding:15px 20px;
   margin-bottom: 5px;
   height:auto;
   width:450px;
   line-height: 1.5;
+  text-align: left;
 }
 
 div.h1 img.logo2{
@@ -87,6 +104,10 @@ div.h1 p,div.h1 img.logo2{
   display: inline-block;
 }
 
+div.h2{
+  height:350px;
+}
+
 div.h2 img{
     width:200px;
     height:auto;
@@ -95,11 +116,12 @@ div.h2 img{
   
   div.h2p{
     border:1px solid #be3128;
-    padding:15px 10px;
+    padding:15px 20px;
     margin: 5px 5px;
     height:auto;
     width:550px;
     line-height: 1.5;
+    text-align: left;
   }
   
   
@@ -114,20 +136,182 @@ div.h2 img{
       margin:0 auto;
   }
 
+  /* ＝＝＝輪播圖到logo設計的RWD開始＝＝＝ */
+  @media (min-width:768px) and (max-width:992px){
+    div.swiper-container{
+      display: none;
+    }
+
+    div.rwd{
+      background-image: url(../images/banner/slide1.jpg);
+      background-repeat: no-repeat;
+      max-width: 100%;
+      height: 500px;
+    }
+
+    div.h1,div.h2{
+      min-width:768px;
+      max-width: 992px;
+    }
+
+    img.logo2{
+      margin:0;
+      height:80px;
+      transform: translate(-30%,-25%);
+    }
+
+    div.h1 p{
+      width:400px;
+      font-size: 16px;
+
+    }
+
+    div.h2 img{
+      width:150px;
+    }
+
+    /* div.h2 img,div.h2p{
+      display: block;
+      max-width: 100%;
+      margin: 5px auto;
+    } */
+
+    div.h2{
+      left:0
+    }
+    div.h2p{
+      width:400px;
+    }
+
+  }
+
+
+  @media (min-width:576px) and (max-width:767px){
+
+    div.swiper-container{
+      display: none;
+    }
+
+    div.rwd{
+      background-image: url(../images/banner/slide1.jpg);
+      background-repeat: no-repeat;
+      max-width: 100%;
+      height: 500px;
+    }
+
+    img.logo2{
+      display: none !important;
+    }
+
+    div.h1 p.about{
+      width:400px;
+      transform: translateX(-30%);
+    }
+
+    img.red1,img.red2{
+      display: none !important;
+    }
+
+    h1.h{
+      max-width: 1000px;
+    }
+
+    div.h2 img,div.h2p{
+      display: block;
+    }
+
+    div.h2p{
+      margin-top:20px;
+      margin-left: 30px;
+    }
+
+    div.h2>img{
+      margin-left: 25px;
+    }
+
+  }
+
+  @media (max-width:575px){
+    div.swiper-container{
+      display: none;
+    }
+
+    div.rwd{
+      background-image: url(../images/banner/slide1.jpg);
+      background-repeat: no-repeat;
+      max-width: 100%;
+      height: 500px;
+    }
+
+    img.logo2{
+      display: none;
+    }
+
+    img.red1,img.red2{
+      display: none !important;
+    }
+
+    h1.h{
+      max-width: 100%;
+    }
+
+    div.h1 p.about{
+      max-width: 300px;
+      height:auto ;
+      padding:10px;
+      margin:0;
+      left: 0;
+      transform: translateX(-30%);
+
+    }
+
+    div.h2 img,div.h2p{
+      display: block;
+    }
+
+    div.h2 img{
+      width:150px;
+      margin-left:20px;
+    }
+
+    div.h2p{
+      margin-top:20px;
+      max-width:425px;
+      height:auto;
+      margin-bottom: 20px;
+    }
+
+    
+
+  }
+
+   /* ＝＝＝輪播圖到logo設計的RWD結束＝＝＝ */
+
+   /* ＝＝＝最新消息＝＝＝ */
+
+   
+div.h3{
+  height:250px;
+  width:1200px;
+  margin:0 auto;
+}
+
   img.news{
     height:30px;
     padding:3px;
   }
 
   h1.h3{
-      width:800px;
-      transform: translateX(18%);
-      margin-bottom: 10px;
+      width:1200px;
+      transform: translateX(9%);
+      padding: 20px,0;
+      margin:30px,0;
   }
   ul.news{
-      width:600px;
+      width:700px;
       margin: 0 auto;
       text-align: left;
+      padding-top: 20px;
   }
 
   ul.news li a{
@@ -135,7 +319,6 @@ div.h2 img{
       color:#be3128;
       text-align: left;
   }
-
   ul.news li a:hover{
       color:#1a1a1a;
       text-decoration: underline;
@@ -148,19 +331,738 @@ div.h2 img{
   }
 
 
-  h1.h a{
-      text-decoration: none;
-      color: black;
+  @media (min-width:768px) and (max-width:992px){
+    div.h3{
+      max-width:100%;
+    }  
+    
+    ul.news{
+        padding-top: 30px;
+        width:700px;
+      }
+      h1.h3{
+        max-width:100%;
+        margin:0 0;
+      }
   }
 
-  h1.h a:hover{
-      color:#be3128;
+  @media (min-width:576px) and (max-width:767px){
+    ul.news{
+      margin-left:50px;
+      padding-top: 30px;
+      width:495px;
+    }
+
+    ul.news li{
+      padding:10px 0;
+    }
+
+    h1.h3{
+      margin-left:0px;
+      padding-left: 0px;
+      width:500px;
+      margin-top: 30px;
+    }
+
+    div.h3{
+      height:350px;
+      max-width: 767px;
+    }
+}
+
+  @media (max-width:576px){
+    ul.news{
+      margin-left:50px;
+      padding-top: 30px;
+      width:400px;
+    }
+
+    ul.news li{
+      padding:10px 0;
+    }
+
+    h1.h3{
+      margin-left:0px;
+      padding-left: 0px;
+      width:500px;
+      margin-top: 30px;
+    }
+
+    div.h3{
+      height:350px;
+      max-width: 767px;
+    }
+  }
+
+  /* === 熱門美食＝＝＝ */
+
+  h1 img{
+    width:30px;
+    }
+  h1.h4 img{
+        width:35px;
+    }
+
+  div.f{
+    border:1px solid black;
+    width:330px;
+    height: 480px;
+    padding-top:10px;
+    margin-top: 30px;
   }
 
 
-  div.h8,div.h7{
-      width:1000px;
-      margin:0 auto;
+img.main{
+    height:200px;
+
+}
+
+div.f p{
+    width:290px;
+    margin:0 auto;
+    text-align: left;
+}
+
+
+div.f3{
+    width:400px;
+    transform: translateY(-4.5%);
+}
+div.fancy2{
+    transform: translateY(-4.5%);
+}
+
+div.f3>img{
+    height:200px;
+    width:190px;
+
+}
+
+div.f3 p{
+    width:350px;
+    margin: 0 auto;
+}
+
+img.f2,img.f3{
+    display: inline-block;
+}
+
+div.fancy2 p,div.fancy4 p{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+span.address img{
+    width:18px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+span.address{
+    margin-right: 5px;
+}
+div.f h2,span.address{
+    display: block;
+}
+
+span.address,span.fav{
+    display: inline-block;
+
+}
+
+h2,span.fav{
+    display: inline-block;
+}
+span.fav img{
+    width:20px;
+}
+
+span.favhover{
+    display:none;
+}
+
+span.fav:hover span.favhover{
+    display: inline;
+}
+
+span.fav:hover img.favimg{
+    display: none;
+}
+
+div.fancy2,div.fancy4,div.f3{
+    display: inline-block;
+}
+
+span.address,span.fav{
+ transform: translateY(-50%);
+}
+
+div.h4{
+    width:1200px;
+    margin:0 auto;
+    /* transform: translateY(30px); */
+    height:650px;
+
+}
+
+
+h1.h4{
+    width:1000px;
+    margin:0 auto;
+    transform: translateX(4%);
+    
+}
+
+
+div.f span.fav{
+    margin-right: 10px;
+}
+
+div.f span.fav img{
+    margin-right: 10px;
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+  div.h4{
+    max-width: 100%;
+    height:auto;
+    /* margin-left: 0; */
+    margin:0 auto; 
+    /* transform: translateX(-10%); */
+  }
+  h1.h4 { 
+    max-width: 100%;
+    margin: 0 auto;;
+    /* margin-left: 50px; */
+    transform: translateX(12%); 
+  }
+  div.fancy2,div.fancy4{
+    width:350px;
+  }
+
+  div.fancy2{
+    margin-left:-20px;
+    left: 0;
+  }
+
+  div.f3,div.fancy{
+    display: block;
+  }
+
+  div.f3{
+    /* transform: translateX(55%); */
+    width:600px;
+    height:auto;
+    margin:0 auto;
+    margin-top: 10px;
+    
+  }
+
+  div.f3 p{
+    padding-bottom: 20px;
+  }
+
+  div.f3>img{
+    height:250px;
+    width:auto;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.h4{
+    max-width:100%;
+    margin-left: 0px;
+    height:auto;
+  }
+
+}
+
+@media (max-width:575px){
+  div.h4{
+    max-width:100%;
+    margin-left: 0px;
+    margin-top: 30px;
+    height:auto;
+  }
+
+
+}
+
+
+/* ===熱門景點=== */
+div.tour{
+  font-size: 16px;
+  width:1200px;
+  height:700px;
+  margin:0 auto;
+}
+
+
+div.here{
+width:400px;
+transform: translateX(-5%);
+}
+
+
+div.h1p{
+  background-color:hsla(0, 0%, 0%, 0.4);;
+  width:400px;
+  text-align: left;
+  padding: 5px 15px;
+  /* position:absolute; */
+  transform: translate(0%,-30%); 
+  /* margin-top: 30px;
+  margin-right: 20px; */
+  color: white;
+  font-size: 16px;
+}
+
+
+
+img.here{
+    height:400px;
+    text-align: left;
+} 
+
+img.tour{
+  height:200px;
+}
+
+div.imgpart1{
+  transform: translate(-5%);  
+  width:350px;
+  margin-left: 10px;
+}
+
+div.imgpart2{
+  width:350px;
+  transform: translate(-5%); 
+  text-align: right;
+  font-size: 16px;
+
+} 
+
+div.here,div.imgpart1,div.imgpart2{
+  display: inline-block;
+}
+
+img.spot{
+    width:20px;
+    padding-right: 5px;
+
+}
+
+div.spots{
+    height: 50px;
+}
+
+div.spot1{
+    width:266.67px;
+    margin:0 auto;
+}
+
+span.tour1{
+  transform: translate(8%,10%);
+}
+
+
+div.spot2{
+  width:300px;
+  margin:0 auto;
+}
+
+span.tour2{
+  transform: translateY(10%);
+}
+
+
+
+div.spot3{
+  width:300px;
+  margin:0 auto;
+  transform: translateX(-10%);
+  vertical-align: center;
+  padding:2px;
+}
+
+div.spot3 span.tour3{
+  transform: translate(-35%,20%);
+  padding-left:10px;
+ 
+}
+
+div.spot4{
+  width:266.44px;
+  margin:0 auto;
+  transform: translateX(-15%);
+}
+
+span.tour4{
+  transform: translate(0,10%);
+
+}
+
+h1.tour{
+  width:1200px;
+  margin:0 auto;
+  margin-left: 140px;
+  padding-bottom: 60px;
+  
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+  div.tour{
+    max-width: 100%;
+    margin:20px;
+    height: auto;
+  }
+
+  div.tour h1{
+    max-width: 100%;
+    margin:0 auto;
+  }
+  div.here,div.importment{
+    display: block;
+    max-width:100%;
+  }
+
+  div.here{
+    max-width:100%;
+    margin: 0 auto;
+  }
+  
+}
+
+@media (min-width:576px) and (max-width:767px){
+  div.tour{
+    max-width: 100%;
+    margin:20px;
+    height: auto;
+  }
+
+  div.tour h1{
+    max-width: 100%;
+    margin:0 auto;
+  }
+  div.here,div.imgpart1{
+    display: block;
+    max-width:100%;
+  }
+
+  div.here{
+    max-width:100%;
+    margin: 0 auto;
+  }
+  
+}
+
+@media (max-width:575px){
+  div.tour{
+    max-width: 100%;
+    margin:20px;
+    height: auto;
+  }
+
+  div.tour h1{
+    max-width: 100%;
+    margin:0 auto;
+  }
+  div.here,div.imgpart{
+    display: block;
+    max-width:100%;
+  }
+
+  div.here{
+    max-width:100%;
+    margin: 0 auto;
+  }
+
+  div.imgpartt2{
+   transform: translateX(-10%);
+  }
+  
+}
+
+
+/* ===熱門商家=== */
+  
+div.h6{
+  height: 550px;
+}
+
+div.h6_imgs{
+  height:200px;
+}
+
+
+div.h6{
+    width:1200px;
+    font-size: 16px;
+    height:450px;
+    margin: 0 auto;
+}
+
+div.shop>img{
+    width:350px;
+}
+
+h1.shop{
+    padding-bottom: 70px;
+    transform: translateX(10%);
+    width:1000px;
+}
+
+div.shop_shop{
+
+  background-color: hsla(0,0%,100%,.7);
+  height:250px;
+  width: 300px;
+  text-align: left;
+  border:1px solid black;
+  margin-left: 25px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+
+}
+
+
+div.shop1{
+    height:200px;
+    padding:0 10px;
+    transform: translateY(-100%);
+}
+
+div.shop2{
+  transform: translateY(-100%);
+  padding:0 10px;
+  margin-bottom: 5px;
+  height:220px;
+}
+
+div.shop3{
+    height:220px;
+    transform: translate(10%,-100%);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.shop3 h2{
+  margin-bottom: 15px;
+
+}
+
+div.shop:hover div.shop_shop{
+    display: block;
+}
+
+div.shop>img:hover{
+    border:2px solid #be3128;
+}
+
+div.shop_shop span.fav{ 
+    transform: translateY(5%);
+}
+
+div.shop_third{
+    width:400px;
+}
+
+div.shop_first,div.shop_second{
+    display: inline-block;
+    transform: translate(60%);
+}
+
+div.shop_third{
+    transform: translate(20%,-100%);
+    width:400px;
+}
+
+div.shop_rwd{
+  display: none;
+}
+
+@media (min-width:767px) and (max-width:992px){
+  div.h6{
+    display: none;
+  }
+
+  h1.shop{
+    max-width:100%;
+    margin:0 auto;
+    margin-left:0;
+    padding-left:0;
+  }
+
+  div.shop_rwd{
+    display: block;
+    height:1500px;
+    max-width:100%;
+
+  }
+
+  img.rwd_shop_img{
+    width:550px;
+    height:auto;
+  }
+
+  div.rwd_shop_shop{
+    width:550px;
+    background-color:hsla(0,0%,100%,.7);
+    padding-bottom: 10px;
+    border:1px solid black;
+    height:auto;
+    margin: 0 auto;
+    transform: translateY(-100%);
+  }
+
+
+
+  div.rwd_shop_shop p{
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  div.rwd_shop{
+    height:450px;
+    max-width:100%;
+  }
+
+  div.rwd_shop2{
+    margin-top: -50px;
+  }
+
+  div.rwd_shop span.fav img{
+   margin-bottom: -10px;
+  }
+
+}
+
+
+@media (min-width:576px) and (max-width:767px) {
+  div.h6{
+    display: none;
+  }
+
+  h1.shop{
+    max-width:100%;
+    margin:0 auto;
+    margin-left:0;
+    padding-left:0;
+  }
+
+  div.shop_rwd{
+    display: block;
+    height:1500px;
+    max-width:100%;
+
+  }
+
+  img.rwd_shop_img{
+    width:550px;
+    height:auto;
+  }
+
+  div.rwd_shop_shop{
+    width:550px;
+    background-color:hsla(0,0%,100%,.7);
+    padding-bottom: 10px;
+    border:1px solid black;
+    height:auto;
+    margin: 0 auto;
+    transform: translateY(-100%);
+  }
+
+
+
+  div.rwd_shop_shop p{
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  div.rwd_shop{
+    height:450px;
+    max-width:100%;
+  }
+
+  div.rwd_shop2{
+    margin-top: -50px;
+  }
+
+  div.rwd_shop span.fav img{
+   margin-bottom: -10px;
+  }
+
+}
+
+@media (max-width:575px){
+  div.h6{
+    display: none;
+  }
+
+  h1.shop{
+    max-width:100%;
+    margin:0 auto;
+    margin-left:0;
+    padding-left:0;
+  }
+
+  div.shop_rwd{
+    display: block;
+    height:1500px;
+    max-width:100%;
+
+  }
+
+  img.rwd_shop_img{
+    width:100%;
+    height:auto;
+  }
+
+  div.rwd_shop_shop{
+    width:100%;
+    background-color:hsla(0,0%,100%,.7);
+    padding-bottom: 10px;
+    border:1px solid black;
+    height:auto;
+    margin: 0 auto;
+    transform: translateY(-100%);
+  }
+
+
+
+  div.rwd_shop_shop p{
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  div.rwd_shop{
+    height:450px;
+    max-width:100%;
+  }
+
+  div.rwd_shop2{
+    margin-top: -50px;
+  }
+
+  div.rwd_shop span.fav img{
+   margin-bottom: -10px;
+  }
+}
+
+
+
+
+ /* ===熱門商品=== */
+
+  div.h8{
+    width:1200px;
+    margin:0 auto;
+    transform: translateX(9%);
   }
 
   div.h6_imgs img{
@@ -360,104 +1262,158 @@ div.h2 img{
   div.h6_1,div.h6_imgs{
     margin-top: 50px;
   }
-  
-  div.h6{
-    height: 550px;
-  }
-  
-  div.h6_imgs{
-    height:200px;
-  }
 
-
-  div.h6{
-      width:1200px;
-      font-size: 16px;
-      height:450px;
-      margin: 0 auto;
-  }
-
-  div.shop>img{
-      width:350px;
-  }
-  
-  h1.shop{
-      padding-bottom: 70px;
-      transform: translateX(10%);
-      width:1000px;
-  }
-  
-  div.shop_shop{
-
-    background-color: hsla(0,0%,100%,.7);
-    height:250px;
-    width: 300px;
-    text-align: center;
-    border:1px solid black;
-    margin-left: 25px;
+  div.h8_rwd{
     display: none;
-    position: absolute;
-    z-index: 2;
-
   }
 
 
-  div.shop1{
-      height:200px;
-      padding:0 10px;
-      transform: translateY(-100%);
-  }
+  @media (min-width:768px) and (max-width:992px){
 
-  div.shop2{
-    transform: translateY(-100%);
-    padding:0 10px;
-    margin-bottom: 5px;
-    height:220px;
-  }
-
-  div.shop3{
-      height:220px;
-      transform: translate(10%,-100%);
-  }
-
-  div.shop:hover div.shop_shop{
+    div.h8_rwd{
       display: block;
-  }
+    }
+    
+    div.h8{
+      display: none;
+    }
 
-  div.shop>img:hover{
-      border:2px solid #be3128;
-  }
 
-  div.shop_shop span.fav{ 
-      transform: translateY(5%);
-  }
-
-  div.shop_third{
-      width:400px;
-  }
-
-  div.shop_first,div.shop_second{
-      display: inline-block;
-      transform: translate(60%);
-  }
-
-  div.shop_third{
-      transform: translate(20%,-100%);
-      width:400px;
-  }
+    img.item{
+      width:200px;
+      left:0;
+      text-align: left;
+      margin-right: 5px;
+      margin-top:10px;
+   
+    }
 
   
 
+    div.h6_1rwd,div.h6r_imgs{
+      display: block;
+    }
+    
+    div.item{
+      border:1px solid black;
+      background-color: rgba(360,360,360,.5);
+      width:200px;
+    }
+
+    div.h6r_imgs{
+      max-width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-grow: 0;
+      margin-top: 10px;
+    }
+    
+  }
+
+  @media (min-width:576px) and (max-width:767px){
+
+    div.h8_rwd{
+      display: block;
+    }
+    
+    div.h8{
+      display: none;
+    }
+
+
+    img.item{
+      width:200px;
+      left:0;
+      text-align: left;
+      margin-right: 5px;
+      margin-top:10px;
+   
+    }
 
   
 
+    div.h6_1rwd,div.h6r_imgs{
+      display: block;
+    }
+    
+    div.item{
+      border:1px solid black;
+      background-color: rgba(360,360,360,.5);
+      width:200px;
+    }
+
+    div.h6r_imgs{
+      max-width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-grow: 0;
+      margin-top: 10px;
+    }
+
+  }
+
+  @media (max-width:575px){
+    div.h8_rwd{
+      display: block;
+    }
+    
+    div.h8{
+      display: none;
+    }
+
+
+    img.item{
+      width:200px;
+      left:0;
+      text-align: left;
+      margin-right: 5px;
+      margin-top:10px;
+   
+    }
+
+  
+
+    div.h6_1rwd,div.h6r_imgs{
+      display: block;
+    }
+    
+    div.item{
+      border:1px solid black;
+      background-color: rgba(360,360,360,.5);
+      width:200px;
+    }
+
+    div.h6r_imgs{
+      max-width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-grow: 0;
+      margin-top: 10px;
+    }
+
+  }
+
+
+
+  /* ＝＝＝交通資訊＝＝＝ */
+  
   div.h7{
     background-color: #f1d9c9;
     height:700px;
+    width:1200px;
+    margin:0 auto;
+   
     }
 
     div.h7 h1{
         margin-bottom: 30px;
+        transform: translateX(10%);
     }
     
     img.trans{
@@ -467,13 +1423,20 @@ div.h2 img{
       background-color: white;
       height:400px;
       width:486px;
+      text-align: left;
       transform: translate(50%,-101%);
     }
     
-    img.mrt,img.bus,img.car{
+ 
+    img.t{
       height:30px;
+      text-align: left;
     }
-    
+
+    img.bus{
+      margin-left: 20px;
+    }
+
     
     img.trans,div.h7p{
       display: inline-block;
@@ -489,228 +1452,126 @@ div.h2 img{
     
     img.end{
       width:200px;
-    }
-    
-    h1 img{
-        width:30px;
-    }
-    h1.h4 img{
-        width:35px;
+      text-align: right;
+      margin-top: 32px;
+      animation-name: walk;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
     }
 
-    div.f{
-        border:1px solid black;
-        width:330px;
-        height: 480px;
-        padding-top:10px;
-        margin-top: 30px;
-    }
-    
-    
-    
-    img.main{
-        height:200px;
-    
-    }
-    
-    div.f p{
-        width:290px;
-        margin:0 auto;
-    }
-    
-
-    div.f3{
-        width:400px;
-        transform: translateY(-4.5%);
-    }
-    div.fancy2{
-        transform: translateY(-4.5%);
-    }
-
-    div.f3>img{
-        height:200px;
-        width:190px;
-
-    }
-
-    div.f3 p{
-        width:350px;
-        margin: 0 auto;
-    }
-
-    img.f2,img.f3{
-        display: inline-block;
-    }
-
-    div.fancy2 p,div.fancy4 p{
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    span.address img{
-        width:18px;
-        margin-right: 5px;
-        margin-left: 20px;
-    }
-    
-    span.address{
-        margin-right: 5px;
-    }
-    div.f h2,span.address{
-        display: block;
-    }
-    
-    span.address,span.fav{
-        display: inline-block;
-    
-    }
-
-    h2,span.fav{
-        display: inline-block;
-    }
-    span.fav img{
-        width:20px;
-    }
-    
-    span.favhover{
-        display:none;
-    }
-    
-    span.fav:hover span.favhover{
-        display: inline;
-    }
-    
-    span.fav:hover img.favimg{
-        display: none;
-    }
-
-    div.fancy2,div.fancy4,div.f3{
-        display: inline-block;
-    }
-
-    span.address,span.fav{
-     transform: translateY(-50%);
-    }
-    
-    div.h4{
-        width:1200px;
-        margin:0 auto;
-        /* transform: translateY(30px); */
-        height:650px;
-
-    }
-
-    div.h3{
-        height:250px;
-    }
-
-    h1.h4{
-        width:1000px;
-        margin:0 auto;
-        transform: translateX(4%);
-        
-    }
-
-
-    div.f span.fav{
-        margin-right: 10px;
-    }
-
-    div.f span.fav img{
-        margin-right: 10px;
-    }
-
-    
-    div.tour{
-        font-size: 16px;
-        width:1200px;
-        height:700px;
-        position: relative;
-    }
-    
-      img.tour{
-        height:200px;
-      }
-    
-      
-      div.tourh1{
-        position: relative;
-        z-index: 1;
-        width:1000px;
-      }
-      
-      div.h1p{
-        background-color:hsla(0, 0%, 0%, 0.4);;
-        width:400px;
-        text-align: center;
-        padding: 5px 15px;
-        /* position:absolute; */
-        transform: translate(-80%,-280%);
-        margin-top: 30px;
-        margin-right: 20px;
-        color: white;
-        font-size: 16px;
-      }
-      
-      
-      div.tourh1,div.h1p{
-        display: inline-block;
-      }
-      
-      img.here{
-          height:400px;
-          text-align: left;
-          transform: translate(-50%,-20%);
-        
-      }
-      div.tourh1>img,div.imgpart1{
-          display: inline-block;
+    div.h8,div.h7{
+      width:1200px;
+      margin:0 auto;
+  }
+    @keyframes walk{
+      0%{
+        transform: translateX(0%);
       }
 
-      div.imgpart1{
-      
+      33%{
+        transform: translateX(-20%);
+      }
+
+      44%{
+        transform: translateX(-35%);
+      }
+
+      50%{
         transform: translateX(-50%);
-          
       }
-
-      div.imgpart2{
-        width:850px;
-        transform: translate(30%,-100%);
-        text-align: right;
-    
+      66%{
+        transform: translateX(-70%);
       }
-
-      img.spot{
-          width:25px;
-          padding-right: 10px;
-
+      80%{
+        transform: translateX(-90%);
       }
-
-      div.spots{
-          height: 50px;
-          width:170px
-
+      100%{
+        transform: translateX(-120%);
       }
+    }
 
-      div.spot1,div.spot2{
-          margin-left: 50px;
-      }
+@media (min-width:768px) and (max-width:992px){
+  div.h7{
+    max-width: 100%;
+  }
 
-      div.spot3,div.spot4{
-        transform: translateX(350%);
-      }
+  div.h7p{
+    background-color: hsla(0,0%,100%,.7);
+    transform: translate(38%,-101%);
+    width:450px;
+  }
 
-      h1.tour{
-          width:1000px;
-          margin:0 auto;
-         margin-left: 140px;
-        padding-bottom: 60px;
-        
-      }
+  div.h7 img{
+    max-width: 100%;
+  }
 
-    
+  div.h7p p ,ul.bus li:nth-last-child(3){
+    padding-right: 3px;
+    max-width: 100%;
+  }
 
-      
+}
 
-      
+@media (min-width:576px) and (max-width:767px){
 
-      
+  div.h7{
+    max-width: 100%;
+  }
+
+  div.h7p{
+    background-color: hsla(0,0%,100%,.7);
+    transform: translate(20%,-101%);
+    max-width:100%;
+  }
+
+  div.h7 img{
+    max-width: 100%;
+  }
+  div.h7p p ,ul.bus li:nth-last-child(3){
+    padding-right: 3px;
+    max-width: 100%;
+}
+
+
+
+}
+@media (max-width:575px){
+  div.h7{
+    max-width: 100%;
+  }
+
+  div.h7 h1{
+    max-width: 575px;
+    margin-left: 0px;
+  }
+
+  div.h7p{
+    background-color: hsla(0,0%,100%,.7);
+    transform: translate(0%,-101%);
+    width:100%;
+  }
+
+  div.h7 img{
+    max-width: 100%;
+  }
+  
+  div.h7p p ,ul.bus li:nth-last-child(3){
+    padding-right: 3px;
+    max-width: 100%;
+  }
+
+  img.end{
+    width:200px;
+    text-align: right;
+    margin-top: 32px;
+    animation: initial;
+  }
+  /* 全部h1小於576px的部分再設定一次 */
+  h1.h{
+    max-width: 100%;
+    padding-right:0px;
+  }
+
+
+  
+}

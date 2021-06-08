@@ -1,0 +1,51 @@
+main{
+    background-color: #f1d9c9;
+}
+
+div.start{
+    height:100px;
+    max-width: 100%;
+}
+
+h1{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+table td:first-child img{
+    width:100px;
+}
+
+table td:last-child img{
+    width:20px;
+}
+
+table td:last-child img:hover{
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse; 
+    margin: auto;
+    max-width: 100%;
+    padding-top: 30px;
+    
+}
+
+table th{
+    border:1px solid black;
+    background-color: #be3128;
+    color:white;
+    padding:3px 5px;
+}
+tbody tr td{
+    border:1px solid black;
+    border-collapse: collapse; 
+    padding:10px 30px;
+    text-align: center;
+}
+
+
+div.space{
+    height:200px;
+    max-width: 100%;
+}

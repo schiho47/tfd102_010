@@ -4,13 +4,51 @@
     <meta charset="utf-8">
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/tour.css" rel="stylesheet">
+    <link href="./vendors/hamburger.css" rel="stylesheet">
     <title>景點大稻埕</title>
   </head>
   <body>
+
     <header>
+
+
       <div class="logo_nav">
 
         <a href="./index.html">  <img class="logo" src="./images/logo.png"></a>
+
+        <ul class="nav">
+          <li><a href="./history.html">歷史大稻埕<img class="cute cute1" src="./images/us3.png"></a></li>
+          <li><a href="./food.html">美食大稻埕<img class="cute cute2" src="./images/chopsticks.png"></a></li>
+          <li><div class="spot"><a href="./tour.html">景點大稻埕<img class="cute cute3" src="./images/h5_camera.png"></a>
+                <ul class="spot">
+                  <li><a href="./tour_musum.html">博物館</a></li>
+                  <li><a href="./tour_celebrity.html">名人縮影</a></li>
+                  <li><a href="./tour_temple.html">廟宇</a></li>
+                  <li><a href="./tour_pier.html">碼頭</a></li>
+                </ul>
+              </div>
+            </li>
+  
+          <li><div class="gift"><a href="./gift.html">禮品商家<img class="cute cute4" src="./images/h6_bag.png"></a>
+              <ul class="gift">
+                <li><a href="./online-shop.html">線上購物</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li><a href="./event.html">特色活動<img class="cute cute5" src="./images/event.png"></a></li>
+          <li><a href="./bloger-suggestion.html">部落客教你玩<img class="cute cute6" src="./images/like.png"></a></li>
+        </ul>
+
+       <!-- 漢堡按鈕 -->
+
+        <button class="hamburger hamburger--spring" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      <!-- 漢堡按鈕 -->
+
         <div class="small_things">
           <div class="lang">
             <img src="./images/lan.png">
@@ -26,48 +64,63 @@
       </div>
     </div>
 
+   
+  <!-- 漢堡導覽 -->
+    <div class="hamburger_nav">
+      <ul class="hamburger_nav">
+        <li><a href="./history.html">歷史大稻埕</a></li>
+        <li><a href="./food.html">美食大稻埕</a></li>
+        <li><div class="spot_ham"><a href="./tour.html">景點大稻埕</a>
+              <ul class="spot_ham">
+                <li><a href="#">博物館</a></li>
+                <li><a href="#">名人縮影</a></li>
+                <li><a href="#">廟宇</a></li>
+                <li><a href="#">碼頭</a></li>
+              </ul>
+            </div>
+          </li>
 
-    <ul class="nav">
-      <li><a href="./history.html">歷史大稻埕</a></li>
-      <li><a href="./food.html">美食大稻埕</a></li>
-      <li><div class="spot"><span class="tour">景點大稻埕</span>
-            <ul class="spot">
-              <li><a href="#">博物館</a></li>
-              <li><a href="#">名人縮影</a></li>
-              <li><a href="#">廟宇</a></li>
-              <li><a href="#">碼頭</a></li>
+        <li><div class="gift_ham"><a href="./gift.html">禮品商家</a>
+            <ul class="gift_ham">
+              <li><a href="./online-shop.html">線上購物</a></li>
             </ul>
           </div>
         </li>
 
-      <li><div class="gift"><a href="./gift.html">禮品商家</a>
-          <ul class="gift">
-            <li><a href="./online-shop.html">線上購物</a></li>
-          </ul>
-        </div>
-      </li>
+        <li><a href="./event.html">特色活動</a></li>
+        <li><a href="./bloger-suggestion.html">部落客教你玩</a></li>
+        <li><div class="hamburger_small">
+          <div class="lang_ham">
+            <img src="./images/lan.png">
+            <ul class="lang_ham">
+              <li><a href="#">English</a></li>
+              <li><a href="#">日本語</a></li>
+              <li><a href="#">한국어</a></li>
+            </ul>
+          </div>
+          <a href="#"><img src="./images/shopping.png"></a>
+          <a href="#"><img src="./images/love.png" title="最愛店家"></a>
+          <span><a href="#">登入</a></span>
+      </div></li>
+      
+      </ul>
+      
 
-      <li><a href="./event.html">特色活動</a></li>
-      <li><a href="./bloger-suggestion.html">部落客教你玩</a></li>
-    </ul>
-  <div class="banner"></div>
+    </div>
+    
+
+    
 
 </header>
-
+    
 <main class="main">
-  <div class="tourh1">
-      <div class="imgpart1">
-        <img class="one" src="./images/tour/h1_1.jpg">
-        <img class="two"src="./images/tour/h1_2.jpg">
-      </div>
-      <div class="imgpart2">
-        <img class="three" src="./images/tour/h1_4.jpg">
-        <img class="four" src="./images/tour/h1_5.jpg">
-      </div>
+  <div class="main_tour">
+    <div class="tourh tourh1">
+      <img class="museum" src="./images/tour/museum.png" alt="">
 
 
 
-    <div class="h1p">
+    <div class=" tour h1p">
         <h1>博物館</h1>
         <p>大稻埕豐沛的人文歷史，使其本身即是一座大型露天博物館，可想而知，博物館中的博物
         館，勢必帶有大稻埕文史精隨，充滿值得探訪的故事。
@@ -75,11 +128,16 @@
         本站介紹的大稻埕博物館有將日治時期新文化運動呈現在我們眼前的「新文化運動紀念館」
         、老屋再造，凝聚地方藝術的「207博物館」、以及重現大稻埕經典行業「製茶業」的「
         新芳春茶莊」，探訪這些地方，走入時光隧道，一同體會大稻埕的過去與現在。</p>
+
+        <button type="button"><a href="./tour_musum.html">更多<span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
     </div>
   </div>
 
-  <div class="tourh2">
-    <div class="h2p">
+
+  <div class="tourh tourh2">
+
+    <img class="celebrity" src="./images/tour/celebrity.png" alt="">
+    <div class="tour h2p">
       <h1>名人縮影 </h1>
       <p>大稻埕過去人文薈萃，商業發達，現在的大稻埕仍可見到，過去名人的身影。
 
@@ -90,33 +148,18 @@
 
         李臨秋故居位於西寧北路，在一棟閩南式家屋的二樓，展示李臨秋生前手稿等物品，
         此外，還可以見到名曲〈望春風〉的商標登錄證，十分珍貴。</p>
+
+        <button type="button"><a href="./tour_celebrity.html">更多<span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
     </div>
 
-    <div class=h2imgs>
-      <img class="two_one" src="./images/tour/h2_1.jpg">
-      <div class="twotwo">
-        <img class="two_two"src="./images/tour/h2_2.jpg">
-        <img class="two_three"src="./images/tour/h2_3.jpg">
-      </div>
-      <img class="two_four"src="./images/tour/h2_4.jpg">
-    </div>
   </div>
+  
 
-  <div class="tourh3">
-    <div class="h3imgs">
-      <div class="three1">
-        <img src="./images/tour/h3_1.jpg">
-        <img src="./images/tour/h3_2.jpg">
-      </div>
-      <img class="three_three" src="./images/tour/h3_3.jpg">
-      <div class="three2">
-        <img src="./images/tour/h3_4.jpg">
-        <img src="./images/tour/h3_5.jpg">
-      </div>
-        <img class="three_six"src="./images/tour/h3_6.jpg">
-    </div>
+  <div class="tourh tourh3">
+    <img class="temple" src="./images/tour/temple.png" alt="">
+    
 
-    <div class="h3p">
+    <div class="tour h3p">
       <h1>廟宇</h1>
       <p>霞海城隍廟、法主公廟與慈聖宮，被稱為大稻埕三大廟宇，其中城隍廟與慈聖宮，分別
         供奉城隍爺與媽祖，兩者皆為19世紀中「頂下郊拚」過後泉州同安人所建。城隍廟以月老
@@ -124,23 +167,15 @@
 
         法主公廟為泉州安溪人於19世紀中所建，供奉法主真君，歷史上經歷過兩次市區道路拓
         寬，成為目前5層樓廟宇的特殊形式。</p>
+        <button type="button"><a href="./tour_temple.html">更多<span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
     </div>
   </div>
 
-  <div class="tourh4">
-    <div class="h4imgs">
-      <img class="four_one" src="./images/tour/h4_1.jpg">
-      <div class="four1">
-        <img class="four_two"src="./images/tour/h4_2.jpg">
-        <img class="four_five"src="./images/tour/h4_5.jfif">
-      </div>
-      <div class="four2">
-        <img class="four_four"src="./images/tour/h4_4.jpg">
-        <img class="four_three"src="./images/tour/h4_3.jpeg">
-      </div>
-    </div>
+  <div class="tourh tourh4">
+   
+    <img class="pier" src="./images/tour/pier.png" alt="">
 
-    <div class="h4p">
+    <div class="tour h4p">
       <h1>大稻埕碼頭</h1>
       <p>大稻埕碼頭過去為臺北城最繁華的物資集散中心，當中以茶葉、布料為主要貿易交易，
         當時的延平北路及貴德街一帶便是商業活動的重心，也讓大稻埕早年的歷史多采多姿、
@@ -148,6 +183,8 @@
 
         目前有我貨櫃市集，可一邊聽音樂一邊喝酒看風景，另外也有河堤腳踏車，可以悠閒運動，
         每年夏天，會舉行煙火節，是大稻埕碼頭最熱鬧的時候。</p>
+
+        <button type="button"><a href="./tour_pier.html">更多<span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
     </div>
 
   </div>
@@ -156,53 +193,216 @@
 
     <button type="button"><a href="https://walkin.tw/tour/88?gclid=CjwKCAjwhMmE
     BhBwEiwAXwFoEZR8ac5f8H73rBSZ7oSxLOuUiILY2RNQCdVsbIA1mXGXHS1nuul6zxoCsfEQAv
-    D_BwE" target="_blank">導覽預約</a></button>
+    D_BwE" target="_blank">導覽預約     <span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
+
+  </div>
+</div>
+
+  <!-- ===rwd=== -->
+  
+  <div class="tour_rwd_main">
+
+    <div class="tourh_rwd rwd1">
+      <img class="museum" src="./images/tour/museum.png" alt="">
+
+
+
+    <div class=" tour_rwdp h1p_rwd ">
+        <h1>博物館</h1>
+        <p>大稻埕豐沛的人文歷史，使其本身即是一座大型露天博物館，可想而知，博物館中的博物
+        館，勢必帶有大稻埕文史精隨，充滿值得探訪的故事。
+
+        本站介紹的大稻埕博物館有將日治時期新文化運動呈現在我們眼前的「新文化運動紀念館」
+        、老屋再造，凝聚地方藝術的「207博物館」、以及重現大稻埕經典行業「製茶業」的「
+        新芳春茶莊」，探訪這些地方，走入時光隧道，一同體會大稻埕的過去與現在。</p>
+
+        <button type="button"><a href="./tour_musum.html">更多<span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
+    </div>
+  </div>
+
+
+  <div class="tourh_rwd tourh2_rwd">
+
+    <img class="celebrity" src="./images/tour/celebrity.png" alt="">
+    <div class="tour_rwdp h2p_rwd">
+      <h1>名人縮影 </h1>
+      <p>大稻埕過去人文薈萃，商業發達，現在的大稻埕仍可見到，過去名人的身影。
+
+        陳天來故居位於貴德街，前身為錦記茶行，建於1920年，過去為大稻埕名聞遐邇的聚會
+        地，見證了20世紀初大稻埕的風華。
+
+        李春生紀念教堂位於貴德街，紀念因做洋行買辦起家而致富的「臺灣茶葉之父」。
+
+        李臨秋故居位於西寧北路，在一棟閩南式家屋的二樓，展示李臨秋生前手稿等物品，
+        此外，還可以見到名曲〈望春風〉的商標登錄證，十分珍貴。</p>
+
+        <button type="button"><a href="./tour_celebrity.html">更多<span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
+    </div>
+
+  </div>
+  
+
+  <div class="tourh_rwd tourh3_rwd">
+    <img class="temple" src="./images/tour/temple.png" alt="">
+    
+
+    <div class="tour_rwdp h3p_rwd">
+      <h1>廟宇</h1>
+      <p>霞海城隍廟、法主公廟與慈聖宮，被稱為大稻埕三大廟宇，其中城隍廟與慈聖宮，分別
+        供奉城隍爺與媽祖，兩者皆為19世紀中「頂下郊拚」過後泉州同安人所建。城隍廟以月老
+        聞名，慈聖宮門口則有一排傳統庶民小吃，兩者皆發展出各自的特色。
+
+        法主公廟為泉州安溪人於19世紀中所建，供奉法主真君，歷史上經歷過兩次市區道路拓
+        寬，成為目前5層樓廟宇的特殊形式。</p>
+        <button type="button"><a href="./tour_temple.html">更多<span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
+    </div>
+  </div>
+
+  <div class="tourh_rwd tourh4_rwd">
+   
+    <img class="pier" src="./images/tour/pier.png" alt="">
+
+    <div class="tour_rwdp h4p_rwd">
+      <h1>大稻埕碼頭</h1>
+      <p>大稻埕碼頭過去為臺北城最繁華的物資集散中心，當中以茶葉、布料為主要貿易交易，
+        當時的延平北路及貴德街一帶便是商業活動的重心，也讓大稻埕早年的歷史多采多姿、
+        令人回味。
+
+        目前有我貨櫃市集，可一邊聽音樂一邊喝酒看風景，另外也有河堤腳踏車，可以悠閒運動，
+        每年夏天，會舉行煙火節，是大稻埕碼頭最熱鬧的時候。</p>
+
+        <button type="button"><a href="./tour_pier.html">更多<span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
+    </div>
 
   </div>
 
+  <div class="button">
+
+    <button type="button"><a href="https://walkin.tw/tour/88?gclid=CjwKCAjwhMmE
+    BhBwEiwAXwFoEZR8ac5f8H73rBSZ7oSxLOuUiILY2RNQCdVsbIA1mXGXHS1nuul6zxoCsfEQAv
+    D_BwE" target="_blank">導覽預約     <span><img src="./images/tour/arrow_white.png" alt=""></span></a></button>
+
+  </div>
+
+
+
+
+
+  </div>
 
 
 </main>
 
 
-<footer>
-  <div class="roll1">
-    <span><a href="#">歷史大稻埕</a></span>
-    <span><a href="#">美食大稻埕</a></span>
-    <span><a href="#">景點大稻埕</a></span>
-    <span><a href="#">部落客教你玩</a></span>
+<div class="black">
+  <footer>
+        <div class="roll roll1">
+          <span><a href="./history.html">歷史大稻埕</a></span>
+          <span><a href="./food.html">美食大稻埕</a></span>
+          <span><a href="./tour.html">景點大稻埕</a></span>
+          <span><a href="./bloger-suggestion.html">部落客教你玩</a></span>
+        </div>
+
+        <div class="roll roll2">
+          <span><a href="./path.html">最愛商家</a></span>
+          <span><a href="./log_in.html">會員登入</a></span>
+          <span><a href="./sign_up.html">註冊會員</a></span>
+          <span><a href="./path.html">規劃路線</a></span>
+
+        </div>
+
+        <div class="roll roll3">
+          <span><a href="./event.html">特色活動</a></span>
+          <span><a href="./gift.html">禮品商家</a></span>
+          <span><a href="./online-shop.html">線上購物</a></span>
+          <span><a href="#">訂單查詢</a></span>
+        </div>
+
+<!-- rwd專用roll -->
+    <div class="roll_parents">
+      <div class="roll">
+        <span><a href="./history.html">歷史大稻埕</a></span>
+        <span><a href="./food.html">美食大稻埕</a></span>
+        <span><a href="./tour.html">景點大稻埕</a></span>
+        <span><a href="./bloger-suggestion.html">部落客教你玩</a></span>
+      </div>
+
+      <div class="roll">
+        <span><a href="./path.html">最愛商家</a></span>
+        <span><a href="./log_in.html">會員登入</a></span>
+        <span><a href="./sign_up.html">註冊會員</a></span>
+        <span><a href="./path.html">規劃路線</a></span>
+
+      </div>
+
+      <div class="roll">
+        <span><a href="./event.html">特色活動</a></span>
+        <span><a href="./gift.html">禮品商家</a></span>
+        <span><a href="./online-shop.html">線上購物</a></span>
+        <span><a href="#">訂單查詢</a></span>
+      </div>
   </div>
 
-  <div class="roll2">
-    <span><a href="#">最愛商家</a></span>
-    <span><a href="#">會員登入</a></span>
-    <span><a href="#">註冊會員</a></span>
-    <span><a href="#">規劃路線</a></span>
+    <div class="contact">
+      <span>聯絡我們</span>
+      <img class="facebook"src="./images/facebook.png">
+      <img class="ig"src="./images/ig.png">
+      <img class="twitter"src="./images/twitter.png">
+    </div>
 
-  </div>
-
-  <div class="roll3">
-    <span><a href="#">特色活動</a></span>
-    <span><a href="#">禮品商家</a></span>
-    <span><a href="#">線上購物</a></span>
-    <span><a href="#">訂單查詢</a></span>
-  </div>
-
-  <div class="contact">
-    <span>聯絡我們</span>
-    <img class="facebook"src="./images/facebook.png">
-    <img class="ig"src="./images/ig.png">
-    <img class="twitter"src="./images/twitter.png">
-  </div>
-
-  <div class="p">
+    <div class="p">
     <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之
-  用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養
-  成班]，後續會由專人協助處理。</p>
-  </div>
-  <img class="footer"src="./images/footer.png">
+      用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養
+      成班]，後續會由專人協助處理。</p>
+    </div>
+    <img class="footer"src="./images/footer.png">
+    
+  </footer>
+</div>
 
-</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function(){
+    
+      // hamburger icon 的切換
+      $("button.hamburger").on("click", function(){
+        $(this).toggleClass("is-active");
+      });
+    
+    });
+</script>
 
-  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$("button.hamburger").on("click",function(){
+  $("div.hamburger_nav").toggleClass("-on");
+});
+
+
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
 </html>
