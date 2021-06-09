@@ -44,8 +44,15 @@ tbody tr td{
     text-align: center;
 }
 
+div.maps{
+    margin-left: 50px;
+    margin-top:50px;
+    }
+
+
 
 div.space{
     height:200px;
     max-width: 100%;
 }
+

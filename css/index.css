@@ -52,6 +52,8 @@ body {
       overflow: hidden;
   }
 
+ 
+
   h1.h{
     margin-top: 20px;
     text-align: left;
@@ -103,6 +105,76 @@ div.h1 img.logo2{
 div.h1 p,div.h1 img.logo2{
   display: inline-block;
 }
+
+ /* ===final add=== */
+
+ div.first_back{
+  background-image: url(../images/first_part.png);
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-attachment: fixed;
+  margin: auto;
+  max-width: 100%;
+  height:200px;
+  margin-bottom: 10px;
+}
+
+
+div.first_back img{
+  height:200px;
+  transform: translateX(300%);
+  animation-name: oldman;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes oldman{
+  0%{
+    transform: translateX(300%);
+  }
+  15%{
+    transform: translateX(250%);
+  }
+
+  25%{
+    transform: translateX(200%);
+  }
+
+  35%{
+    transform:translateX(150%);
+  }
+
+  45%{
+    transform:translateX(100%);
+  }
+  55%{
+    transform:translateX(50%);
+  }
+
+  65%{
+    transform:translateX(0%);
+  }
+
+  75%{
+    transform:translateX(-50%);
+  }
+  
+  85%{
+    transform:translateX(-100%);
+
+  }
+
+  95%{
+    transform:translateX(-150%);
+  }
+
+  100%{
+    transform:translateX(-200%);
+  }
+}
+
+/* =================== */
 
 div.h2{
   height:350px;
@@ -229,6 +301,13 @@ div.h2 img{
       margin-left: 25px;
     }
 
+    div.first_back img{
+      height:200px;
+      transform: translateX(0%);
+      animation-timing-function: initial;
+    
+    }
+
   }
 
   @media (max-width:575px){
@@ -279,6 +358,13 @@ div.h2 img{
       max-width:425px;
       height:auto;
       margin-bottom: 20px;
+    }
+
+    div.first_back img{
+      height:200px;
+      transform: translateX(0%);
+      animation-timing-function: initial;
+    
     }
 
     
@@ -372,9 +458,8 @@ div.h3{
 
   @media (max-width:576px){
     ul.news{
-      margin-left:50px;
       padding-top: 30px;
-      width:400px;
+      max-width:100%;
     }
 
     ul.news li{
@@ -389,10 +474,12 @@ div.h3{
     }
 
     div.h3{
-      height:350px;
-      max-width: 767px;
+      height:auto;
+      max-width: 100%;
     }
   }
+
+  
 
   /* === 熱門美食＝＝＝ */
 
@@ -512,7 +599,6 @@ h1.h4{
     
 }
 
-
 div.f span.fav{
     margin-right: 10px;
 }
@@ -520,6 +606,28 @@ div.f span.fav{
 div.f span.fav img{
     margin-right: 10px;
 }
+
+/* ===food_test=== */
+
+div.h4 img.main:hover{
+  opacity: 0.5;
+  transition: 1s;
+  
+}
+
+img.f:hover{
+  opacity: 0.5;
+  transition: 1s;
+}
+
+div.f:hover{
+  background-color:hsla(0,100%,100%,.3);
+  transform: scale(1.2);
+  transition: transform 1s;
+
+}
+
+/* ======= */
 
 @media (min-width:768px) and (max-width:992px){
 
@@ -575,6 +683,22 @@ div.f span.fav img{
     height:auto;
   }
 
+  div.h4 img.main:hover{
+    opacity: 0.5;
+    transition: initial;
+    
+  }
+  
+  img.f:hover{
+    opacity: 0.5;
+    transition: initial;
+  }
+  
+  div.f:hover{
+    background-color:hsla(0,100%,100%,.3);
+    
+  }
+
 }
 
 @media (max-width:575px){
@@ -583,6 +707,22 @@ div.f span.fav img{
     margin-left: 0px;
     margin-top: 30px;
     height:auto;
+  }
+
+  div.h4 img.main:hover{
+    opacity: 0.5;
+    transition: initial;
+    
+  }
+  
+  img.f:hover{
+    opacity: 0.5;
+    transition: initial;
+  }
+  
+  div.f:hover{
+    background-color:hsla(0,100%,100%,.3);
+    
   }
 
 
@@ -624,9 +764,7 @@ img.here{
     text-align: left;
 } 
 
-img.tour{
-  height:200px;
-}
+
 
 div.imgpart1{
   transform: translate(-5%);  
@@ -654,26 +792,33 @@ img.spot{
 
 div.spots{
     height: 50px;
+    position: relative;
+    z-index: 0;
 }
 
 div.spot1{
     width:266.67px;
     margin:0 auto;
+    
 }
 
 span.tour1{
   transform: translate(8%,10%);
+  z-index: 0;
 }
 
 
 div.spot2{
   width:300px;
   margin:0 auto;
+  z-index: 0;
 }
 
 span.tour2{
   transform: translateY(10%);
+ 
 }
+
 
 
 
@@ -683,7 +828,9 @@ div.spot3{
   transform: translateX(-10%);
   vertical-align: center;
   padding:2px;
+  z-index: 0;
 }
+
 
 div.spot3 span.tour3{
   transform: translate(-35%,20%);
@@ -695,10 +842,12 @@ div.spot4{
   width:266.44px;
   margin:0 auto;
   transform: translateX(-15%);
+  z-index: 0;
 }
 
 span.tour4{
   transform: translate(0,10%);
+  z-index: 0;
 
 }
 
@@ -707,6 +856,29 @@ h1.tour{
   margin:0 auto;
   margin-left: 140px;
   padding-bottom: 60px;
+  
+}
+
+img.tour:hover{
+  cursor: pointer;
+}
+
+img.tour{
+  height:200px;
+  border-radius:50% ;
+  /* max-w$dth: 100%; */
+  transition: border-radius 2s;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===tour test=== */
+
+img.square{
+  border-radius: 0%;
+  height:200px;
+  transform: scale(1.5);
+  z-index: 2;
   
 }
 
@@ -755,6 +927,7 @@ h1.tour{
     margin: 0 auto;
   }
   
+
 }
 
 @media (max-width:575px){
@@ -781,6 +954,23 @@ h1.tour{
   div.imgpartt2{
    transform: translateX(-10%);
   }
+
+  img.tour{
+    height:auto;
+    max-width: 100%; 
+  }
+
+  div.spot3{
+    text-align: center;
+    transform: translate(10px, 0px);
+    
+  }
+
+  div.spot4{
+    text-align: center;
+    margin-left: 55px;
+
+  }  
   
 }
 
@@ -1572,6 +1762,7 @@ div.shop_rwd{
     padding-right:0px;
   }
 
+  
 
   
 }

@@ -4,13 +4,13 @@ body{
 }
 
 
-div.logo_nav{
+/* div.logo_nav{
   width:1100px;
 }
 
 div.small_things{
   width:200px;
-}
+} */
 
 
 main.gift{
@@ -408,7 +408,7 @@ div.gift>a{
         margin:0 auto;
       }
 
-      button{
+      main.gift button{
         background-color:#f1d9c9;
         width:200px;
         height:30px;
@@ -559,22 +559,22 @@ div.gift>a{
       }
       
       @media (min-width:576px) and (max-width:767px){
-        button.hamburger{
+        /* button.hamburger{
           transform: translateX(70%); 
        
-        }
+        } */
 
         
-        div.logo_nav{
+        /* div.logo_nav{
           max-width: 100%;
           margin: 0 auto;
          
-        }
-
+        } */
+/* 
         img.logo{
           max-width: 100%;
           margin: auto;
-        }
+        } */
 
 
         div.shop{
@@ -695,7 +695,7 @@ div.gift>a{
       }
       
       @media(max-width:575px){
-        button.hamburger{
+        /* button.hamburger{
           transform: translateX(70%); 
         }
 
@@ -711,7 +711,7 @@ div.gift>a{
           margin: auto;
           transform: translateX(45%);
 
-        }
+        } */
 
         div.shop{
           display: none;
@@ -741,15 +741,16 @@ div.gift>a{
 
         div.shop_rwd{
           background-color: hsla(0,0%,100%,.7);
-          height:300px;
-          width: 400px;
+          height:auto;
+          max-width:300px ;
           text-align: left;
           border:1px solid black;
           margin-left: 25px;
-          transform: translate(8%,0%); 
+          transform: translate(30%,0%); 
           position: absolute; 
           z-index: 2;
           padding:5px 20px;
+
         }
 
         span.fav img{
@@ -769,15 +770,19 @@ div.gift>a{
           margin: 0 !important;
         }
         div.shop_forrwd > div > img {
-          width:100%  !important;
+          max-width:100%  !important;
           object-fit: cover;
           object-position: center;
           margin-bottom: 30px;
+         
         }
 
         div.rwd>img{
           border:1px solid black;
-          margin-left: 30px;
+          /* margin-left: 30px; */
+          max-width:100%;
+          object-fit: cover;
+          object-position: center;
         }
 
         div.pagination_block{
@@ -804,7 +809,7 @@ div.gift>a{
           margin: 0 auto;
         }
         
-        button{
+        main.gift button{
           background-color: #be3128;
           width:190px;
           text-align: center;

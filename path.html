@@ -120,7 +120,7 @@
     </div>
     
 
-    <table>
+    <table class="sortable">
       <thead>
         <tr>
           <th></th>
@@ -132,7 +132,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="tr" id="1">
           <td><img src="./images/path/temple.jpg" alt=""></td>
           <td>霞海城隍廟</td>
           <td>景點</td>
@@ -141,7 +141,7 @@
           <td><img src="./images/path/delete.png" alt=""></td>
         </tr>
 
-        <tr>
+        <tr class="tr" id="2">
           <td><img src="./images/path/sweet.jpg" alt="" class=""></td>
           <td>古早味餅弟免煎嗲 </td>
           <td>美食</td>
@@ -150,7 +150,7 @@
           <td><img src="./images/path/delete.png" alt=""></td>
         </tr>
 
-        <tr>
+        <tr class="tr" id="3">
           <td><img src="./images/path/207museum.jpg" alt=""></td>
           <td>迪化207博物館</td>
           <td>景點</td>
@@ -160,7 +160,7 @@
 
         </tr>
 
-        <tr>
+        <tr class="tr" id="4">
           <td><img src="./images/path/gift.jpg" alt=""></td>
           <td>李亭香餅舖</td>
           <td>禮品商家</td>
@@ -170,11 +170,11 @@
 
         </tr>
 
-        <tr>
+        <tr class="tr" id="5">
           <td><img src="./images/path/lunch.jpg" alt=""></td>
           <td>鯉魚 The Carp</td>
           <td>精緻美食</td>
-          <td>11:30-20:45</td>
+          <td>11:30-20:45 <br> 預約專線：02-25577600</td>
           <td>2小時</td>
           <td><img src="./images/path/delete.png" alt=""></td>
 
@@ -187,8 +187,15 @@
     
     </table>
 
-    <div class="space">
-    </div>
+  
+
+   <div class="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d6047.468015407022!2d121.50816685393141!3d25.058220008424197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e2!4m5!1s0x3442a9147253c4e7%3A0x696d3ec54fe173d2!2z5Y-w5YyX6Zye5rW35Z-O6ZqN5bufIDEwM-WPsOWMl-W4guWkp-WQjOWNgOi_quWMluihl-S4gOautTYx6Jmf!3m2!1d25.0556493!2d121.51014409999999!4m5!1s0x3442a914751a37a3%3A0x26751ae551730476!2z6JCK54i-5a-M5L6_5Yip5ZWG5bqXIOWMl-W4gui_quWMluW6lyAxMDPlj7DljJfluILlpKflkIzljYDov6rljJbooZfkuIDmrrU1MOiZnw!3m2!1d25.055114999999997!2d121.5099571!4m5!1s0x3442a915eeb2605d%3A0x28da3247cc1121c4!2z5Y-w5YyX5biC5aSn5ZCM5Y2A6L-q5YyW6KGX5LiA5q616L-q5YyWMjA35Y2a54mp6aSoLeengeS6uuWNmueJqemkqA!3m2!1d25.0595093!2d121.5095032!4m5!1s0x3442a93e6dcef069%3A0x4a3e7d404327cb90!2z5p2O5Lqt6aaZIExpIFRpbmcgWGlhbmcgMTAz5Y-w5YyX5biC5aSn5ZCM5Y2A6L-q5YyW6KGX5LiA5q61MzA56Jmf!3m2!1d25.0621455!2d121.5092742!4m5!1s0x3442a915c6faabff%3A0xabf0253b4f10c9ab!2z6a-J6a2aIFRoZSBDYXJwIDEwMzQ35Y-w5YyX5biC5aSn5ZCM5Y2A6L-q5YyW6KGX5LiA5q61MTY56Jmf!3m2!1d25.0586715!2d121.509626!5e0!3m2!1szh-TW!2stw!4v1623140026568!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+   </div>
+
+   <div class="space">
+  </div>
     
   </main>
 
@@ -278,7 +285,20 @@
         $("div.hamburger_nav").toggleClass("-on");
       });
 
-
     </script>
+
+    <!-- 拖曳測試 -->
+
+    <script>
+      //  let move_tr = document.getElementsByClassName("tr");
+      //  console.log(move_tr);
+      //  for (i=0; i<move_tr.length; i++){
+      //    move_tr[i].addEventListener("mousedown",function(){
+      //      move_tr.style.opacity=0.5;
+      //    });
+      //  }
+    </script>
+
+    
   </body>
 </html>

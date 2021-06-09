@@ -1,0 +1,169 @@
+body{
+    margin:0;
+}
+
+main{
+    background-color: #f1d9c9;
+}
+
+span.tour{
+    color:#be3128;
+    font-weight: bold;
+}
+
+ul.spot li:nth-child(3){
+    color:#be3128;
+}
+
+
+div.bread span a{
+    text-decoration: none;
+    color:black;
+}
+
+div.bread span a:hover{
+    color:#be3128;
+    font-weight: bold;
+}
+
+div.bread span:last-child{
+    color:#be3128;
+    font-weight: bold;
+}
+
+div.bread{
+    padding:15px 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+img.temple{
+    height:300px;
+    border-radius: 100px;
+}
+
+div.temple{
+    width:1200px;
+    margin:0 auto;
+    padding: 15px 20px;
+    height:500px;
+}
+
+span.favhover{
+    width:20px;
+    display: none;
+  }
+span.fav img{
+    width:15px;
+}
+
+
+
+  span.fav:hover span.favhover{
+   display: inline;
+  }
+
+  span.fav:hover img.favimg{
+    display: none;
+  }
+
+  span.name img{
+      width:18px;
+  }
+
+  span.name{
+      width:200px;
+      text-align: center;
+      transform: translateX(20%);
+  }
+
+  span.name span:nth-child(2){
+      padding:0px 3px;
+  }
+
+  span.name>img{
+    width:15px;
+  }
+
+
+  div.temple_p p{
+      width:600px;
+      background-color: white;
+      padding:20px 20px;
+      border-radius: 20px;
+      height:250px;
+  }
+
+
+
+  button{
+      background-color: #be3128;
+      border-radius: 20px;
+      outline-color: #be3128;
+      margin-top: 20px;
+  }
+
+
+  button a{
+      text-decoration: none;
+      color:white;
+      padding:20px 15px;
+      font-size: 18px;
+  }
+
+  button a:hover{
+      font-weight:bold;
+      color:#1a1a1a;
+  }
+
+  /* img.temple_1,span.name{
+      display: block;
+  } */
+
+  div.left{
+      width:400px;
+  }
+
+  /* div.temple_1{
+      transform: translateX(20%);
+  } */
+
+/* div.left1,div.temple_1{
+    display: inline-block;
+}
+
+div.left2,div.temple_2{
+    display: inline-block;
+}
+
+div.temple_2{
+    transform: translate(10%,-20%);
+    padding:20px;
+} */
+
+
+/* div.left3,div.temple_3{
+    display: inline-block;
+} */
+
+
+div.second_temple span.name{
+    width:200px;
+    margin:0 auto;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+div.third_temple span.name{
+    width:150px;
+    margin:0 auto;
+    padding-top: 5px;
+    transform: translateX(-10%);
+}
+
+div.temple,div.temple_p{
+    display: flex;
+}
