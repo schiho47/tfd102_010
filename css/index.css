@@ -340,7 +340,7 @@ div.h2 img{
       padding:10px;
       margin:0;
       left: 0;
-      transform: translateX(-30%);
+      transform: translateX(-40%);
 
     }
 
@@ -355,7 +355,7 @@ div.h2 img{
 
     div.h2p{
       margin-top:20px;
-      max-width:425px;
+      max-width:400px;
       height:auto;
       margin-bottom: 20px;
     }
@@ -968,7 +968,7 @@ img.square{
 
   div.spot4{
     text-align: center;
-    margin-left: 55px;
+    margin-left: 70px;
 
   }  
   
@@ -1166,7 +1166,6 @@ div.shop_rwd{
   }
 
 
-
   div.rwd_shop_shop p{
     text-align: left;
     padding-right: 10px;
@@ -1202,7 +1201,7 @@ div.shop_rwd{
 
   div.shop_rwd{
     display: block;
-    height:1500px;
+    height:1200px;
     max-width:100%;
 
   }
@@ -1231,17 +1230,20 @@ div.shop_rwd{
   }
 
   div.rwd_shop{
-    height:450px;
+    height:380px;
     max-width:100%;
   }
 
   div.rwd_shop2{
     margin-top: -50px;
+  
   }
 
   div.rwd_shop span.fav img{
    margin-bottom: -10px;
   }
+
+
 }
 
 
@@ -1762,7 +1764,7 @@ div.shop_rwd{
     padding-right:0px;
   }
 
-  
+
 
   
 }

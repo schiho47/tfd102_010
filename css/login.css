@@ -80,3 +80,23 @@ div.main span a:hover{
     cursor: pointer;
     font-weight: bold;
 }
+
+@media (max-width:575px){
+
+    div.main{
+        max-width: 100%;
+        padding-top: 100px;
+    }
+    div.form{
+        transform: translateX(-100%);
+        background-color: hsla(0,0%,100%,.8);
+        max-width: 100%;
+        transform:translate(0%,-80%);
+      
+    }
+
+    div.main>img{
+        max-width: 100%;
+       padding-left: 0;
+    }
+}

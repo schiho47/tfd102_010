@@ -2,10 +2,11 @@
 <html lang="zh-Hant" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/event.css" rel="stylesheet">
     <link href="./vendors/hamburger.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>特色活動</title>
   </head>
   <body>
@@ -21,10 +22,10 @@
           <li><a href="./food.html">美食大稻埕<img class="cute cute2" src="./images/chopsticks.png"></a></li>
           <li><div class="spot"><a href="./tour.html">景點大稻埕<img class="cute cute3" src="./images/h5_camera.png"></a>
                 <ul class="spot">
-                  <li><a href="#">博物館</a></li>
-                  <li><a href="#">名人縮影</a></li>
-                  <li><a href="#">廟宇</a></li>
-                  <li><a href="#">碼頭</a></li>
+                  <li><a href="./tour_musum.html">博物館</a></li>
+                  <li><a href="./tour_celebrity.html">名人縮影</a></li>
+                  <li><a href="./tour_temple.html">廟宇</a></li>
+                  <li><a href="./tour_pier.html">碼頭</a></li>
                 </ul>
               </div>
             </li>
@@ -58,9 +59,9 @@
               <li><a href="#">한국어</a></li>
             </ul>
           </div>
-          <a href="#"><img src="./images/shopping.png"></a>
-          <a href="#"><img src="./images/love.png" title="最愛店家"></a>
-          <span><a href="#">登入</a></span>
+          <a href="./shopping_cart.html"><img src="./images/shopping.png"></a>
+          <a href="./path.html"><img src="./images/love.png" title="最愛店家"></a>
+          <span><a href="./log_in.html">登入</a></span>
       </div>
     </div>
 
@@ -72,10 +73,10 @@
         <li><a href="./food.html">美食大稻埕</a></li>
         <li><div class="spot_ham"><a href="./tour.html">景點大稻埕</a>
               <ul class="spot_ham">
-                <li><a href="#">博物館</a></li>
-                <li><a href="#">名人縮影</a></li>
-                <li><a href="#">廟宇</a></li>
-                <li><a href="#">碼頭</a></li>
+                <li><a href="./tour_musum.html">博物館</a></li>
+                <li><a href="./tour_celebrity.html">名人縮影</a></li>
+                <li><a href="./tour_temple.html">廟宇</a></li>
+                <li><a href="./tour_pier.html">碼頭</a></li>
               </ul>
             </div>
           </li>
@@ -98,9 +99,9 @@
               <li><a href="#">한국어</a></li>
             </ul>
           </div>
-          <a href="#"><img src="./images/shopping.png"></a>
-          <a href="#"><img src="./images/love.png" title="最愛店家"></a>
-          <span><a href="#">登入</a></span>
+          <a href="./shopping_cart.html"><img src="./images/shopping.png"></a>
+          <a href="./path.html"><img src="./images/love.png" title="最愛店家"></a>
+          <span><a href="./log_in.html">登入</a></span>
       </div></li>
       
       </ul>
@@ -117,7 +118,9 @@
         <h1>特色活動</h1>
         <div class="span">______________</div>
     </div>
-    <div class="event event1">
+    <div class="event event1" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <img src="./images/event/event1.jpg">
         <div class="first_p">
             <h2>年貨大街</h2>
@@ -132,7 +135,9 @@
          </div>
     </div>
 
-    <div class="event event2">
+    <div class="event event2" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <img src="./images/event/event2.jpg">
         <div class="second_p">
             <h2>霞海城隍文化節</h2>
@@ -144,7 +149,9 @@
          </div>
     </div>
 
-    <div class="event event3">
+    <div class="event event3" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <img src="./images/event/event3.jpeg">
         <div class="third_p">
             <h2>大稻埕情人節</h2>
@@ -161,7 +168,9 @@
         </div>
     </div>
 
-    <div class="event event4">
+    <div class="event event4" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <img src="./images/event/event4.jpg">
         <div class="forth_p">
             <h2>大稻埕國際藝術節</h2>
@@ -358,6 +367,10 @@
 
 </script>
 
-     
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>     
   </body>
 </html>

@@ -126,7 +126,7 @@ div.button{
 }
 
 div.tour button{
-  width:120px;
+  max-width:120px;
   background-color: #be3128;
   font-size: 18px;
   border-radius: 30px;

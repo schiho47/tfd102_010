@@ -2,10 +2,11 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/history.css" rel="stylesheet">
     <link href="./vendors/hamburger.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>歷史大稻埕</title>
   </head>
 
@@ -57,9 +58,9 @@
                 <li><a href="#">한국어</a></li>
               </ul>
             </div>
-            <a href="#"><img src="./images/shopping.png"></a>
-            <a href="#"><img src="./images/love.png" title="最愛店家"></a>
-            <span><a href="#">登入</a></span>
+            <a href="./shopping_cart.html"><img src="./images/shopping.png"></a>
+            <a href="./path.html"><img src="./images/love.png" title="最愛店家"></a>
+            <span><a href="./log_in.html">登入</a></span>
         </div>
       </div>
 
@@ -97,9 +98,9 @@
                 <li><a href="#">한국어</a></li>
               </ul>
             </div>
-            <a href="#"><img src="./images/shopping.png"></a>
-            <a href="#"><img src="./images/love.png" title="最愛店家"></a>
-            <span><a href="#">登入</a></span>
+            <a href="./shopping_cart.html"><img src="./images/shopping.png"></a>
+            <a href="./path.html"><img src="./images/love.png" title="最愛店家"></a>
+            <span><a href="./log_in.html">登入</a></span>
         </div></li>
         
         </ul>
@@ -147,7 +148,7 @@
 
   
 
-  <div class="h2_1">
+  <div class="h2_1"data-aos="fade-right">
     <img class="teatrade" src="./images/history/his2_1.jpg">
     <img class="teatrade2" src="images/history/teatrade_2.jfif">
    <p>大稻埕的商業歷史，以販售茶業、布匹以及南北貨為主，其中19世紀末期，茶業的貿易，
@@ -165,7 +166,7 @@
 
 
 
-  <div class="h2_2">
+  <div class="h2_2" data-aos="fade-left">
   <img class="tea_ad1" src="./images/history/his2_2.jpg">
     <h2 class="2-2">杜德與李春生</h2>
     <p>1860年代淡水開港後，西方商人開始來台，英國的商人杜德（John Dodd）創設了寶順洋行
@@ -191,7 +192,7 @@
 
 
 <div class="h2_3">
-  <img class="tea_ad2" src="./images/history/his2_3.jpg">
+  <img class="tea_ad2" data-aos="zoom-in" src="./images/history/his2_3.jpg">
 
   <p>清領時期臺灣設省後，大稻埕的精緻茶廠已多達六十餘家，還創立類似同業公會的「茶郊永
     和興」。當時臺灣超過半數的出口值都由茶葉包下，巨大的茶葉商機就這樣帶動了大稻埕的繁榮。</p>
@@ -208,7 +209,8 @@
   <div class="h3_1">
     <h1 class="three">政治歷史<img src="./images/history/his3.png"></h1>
     
-    <div class="h3p">
+    <div class="h3p" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
       <img src="./images/history/his3_1.jpg">
      
       <p>19世紀中後期蓬勃的商業發展，為大稻埕帶來繁華，也帶來人潮，人聲鼎沸的大稻埕，在日治時期，不僅持續發揮其商業影響力，同時也成為了臺灣人民在殖民體制下發展政治活動，
@@ -219,7 +221,8 @@
   </div>
 
  
- <div class="h3_2">
+ <div class="h3_2" data-aos="fade-up"
+ data-aos-anchor-placement="center-bottom">
       <img src="./images/history/his3_2.jpg">
        <h2>臺灣文化協會</h2>
       <p>1916年蔣渭水先生在大稻埕成立大安醫院（現延平北路義美食品），1921年與林獻堂等人
@@ -230,7 +233,8 @@
   </div>
   
 
-  <div class="h3_3">
+  <div class="h3_3"data-aos="fade-up"
+  data-aos-anchor-placement="top-center">
 
       <img src="./images/history/his3_3.jpg">
       <h2>國際書局與臺灣共產黨</h2>
@@ -291,7 +295,8 @@
 
       <h1 class="four">文藝大稻埕<img src="./images/us1.png"></h1>
     
-      <div class="h4_1">
+      <div class="h4_1"data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
         <img src="./images/history/his4_1.jpg">
         <img src="./images/history/his4_1_2.jpeg">
         <p>大稻埕的人文薈萃，在日治時期達到顛峰，日治時期大稻埕四大名樓：「蓬萊閣」、
@@ -311,7 +316,8 @@
 
     
 
-    <div class="h4_2">
+    <div class="h4_2"data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
       <img src="./images/history/his4_2.jpg">
       <div class="h42p">
         <h2>音樂與藝術</h2>
@@ -324,7 +330,8 @@
       </div>
     </div>
 
-    <div class="h4_3">
+    <div class="h4_3"data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
 
       <img src="./images/history/his4_3.jpg">
 
@@ -462,6 +469,11 @@
   });
 
 
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 </body>

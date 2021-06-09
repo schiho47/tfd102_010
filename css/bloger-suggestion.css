@@ -80,7 +80,7 @@ div.rwd{
 
 
 
-main img{
+div.s img{
     width:100px;
     border-radius: 100px;
 }
@@ -203,6 +203,20 @@ div.blog6p h2{
     width:400px;
 }
 
+div.test_1{
+    max-width: 100%;
+    margin: auto;
+    background-image: url(../images/bloger/background＿suki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-attachment: fixed;
+    height:400px;
+}
+
+div.test_1 img{
+   max-width: 100%;
+}
+
 @media (min-width:768px) and (max-width:992px){
     div.first_v{
         display: none;
@@ -314,6 +328,12 @@ div.blog6p h2{
   
     div.first_v{
         display: none;
+    }
+
+    div.screen{
+        max-width: 100%;
+        margin-left:0;
+        padding:5px 10px;
     }
   
     div.rwd{

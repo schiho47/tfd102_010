@@ -59,6 +59,11 @@ div.part1,div.part2{
     display: inline-block;
 }
 
+img.food_show{
+    position:relative;
+    z-index: 0;
+}
+
 
 
 
@@ -90,7 +95,7 @@ div.back2{
 
 
 div.part_p{
-    background-color: hsla(0,0%,100%,.7);
+    background-color: hsla(0,0%,100%,.6);
     border:1px solid black;
     height:250px;
     width: 400px;
@@ -98,6 +103,13 @@ div.part_p{
     text-align: center;
     margin: 0 auto;
     font-size: 16px;
+}
+
+div.part_p:hover {
+    background-color: hsla(0,0%,100%,.9);
+    /* transform: scale(1.2); */
+    transition: 1s;
+  
 }
 
 
@@ -336,7 +348,7 @@ div.part1_rwd,div.part2_rwd,div.part3_rwd{
     div.everyday_food{
         max-width: 100%;
         margin: 0 auto;
-        height:3650px;
+        height:3100px;
     }
 
     div.part1,div.part2,div.part3,div.part4,div.part5 {
@@ -359,12 +371,15 @@ div.part1_rwd,div.part2_rwd,div.part3_rwd{
         background-color: hsla(0,100%,100%,.7);
         border:1px solid black;
         padding:5px 20px;
-        width:450px;
+        max-width:100%;
         position: absolute;
-        transform: translateY(-125%);
+        transform: translateY(-100%);
+    }
+
+    div.part_prwd span.fav,div.part_prwd h2{
+        display: inline-block;
     }
     div.part_prwd h2{
-        width:450px;
         text-align: left;
     }
 
@@ -405,6 +420,8 @@ div.part1_rwd,div.part2_rwd,div.part3_rwd{
         margin-right: 10px;
     }
 
+ 
+
 
 }
 
@@ -432,6 +449,8 @@ div.part_4p{
     position: absolute;
    
 }
+
+
 
 div.part4_img{
     width:600px;
@@ -469,6 +488,9 @@ div.part4>img,div.back4{
     display: inline-block;
 } 
 
+div.part_45p:hover{
+    background-color: hsla(0,0%,100%,.9);
+}
 
 
 /* ===永樂車輪餅=== */
@@ -688,6 +710,20 @@ div.fancy3,div.fancy4{
 div.fancy4{
    transform: translateY(-3%);
 }
+
+img.f:hover{
+    opacity: 0.5;
+    transition: 1s;
+  }
+  
+  div.f:hover{
+    background-color:hsla(0,100%,100%,.3);
+    transform: scale(1.05);
+    transition: transform 1s;
+  
+  }
+
+
 
 @media (min-width:768px) and (max-width:992px){
     
