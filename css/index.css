@@ -722,7 +722,7 @@ div.f:hover{
   
   div.f:hover{
     background-color:hsla(0,100%,100%,.3);
-    
+    transform: scale(1);
   }
 
 

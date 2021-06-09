@@ -269,10 +269,10 @@ div.tour_rwd_main{
   }
 
   div.tour_rwdp button{
-    width:120px;
+    max-width:120px;
     background-color: #be3128;
     font-size: 18px;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-bottom: 20px;
   }
   
