@@ -389,8 +389,8 @@ div.hamburger_nav{
     text-align: center;
   }
 
-  img.log{
-    width:300px;
+  img.logo{
+    width:200px;
   }
   button.hamburger{
     display: inline-block;
@@ -439,8 +439,11 @@ div.hamburger_nav{
   }
 
 
-  img.log{
-    width:300px;
+  img.logo{
+    width:150px;
+    margin-left: 15px;
+
+  
   }
   button.hamburger{
     display: inline-block;
