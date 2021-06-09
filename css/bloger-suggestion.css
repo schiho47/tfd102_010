@@ -205,16 +205,20 @@ div.blog6p h2{
 
 div.test_1{
     max-width: 100%;
-    margin: auto;
+    margin:0 auto;
     background-image: url(../images/bloger/background＿suki.jpg);
     background-repeat: no-repeat;
     background-size: cover;  
     background-attachment: fixed;
     height:400px;
+    
 }
 
 div.test_1 img{
    max-width: 100%;
+   height:400px;
+   margin:0 auto;
+   transform: translateX(100%);
 }
 
 @media (min-width:768px) and (max-width:992px){
@@ -266,6 +270,16 @@ div.test_1 img{
         width:100%;
         height:100%;
     }
+
+    div.ytp_rwd img{
+        max-width:100px;
+        border-radius:20%;
+    }
+  
+  div.blogers_rwd img{
+      max-width:100px;
+      border-radius: 20%;
+  }
   
   
   }
@@ -319,7 +333,15 @@ div.test_1 img{
         width:100%;
         height:100%;
     }
+    div.ytp_rwd img{
+        max-width:100px;
+        border-radius:20%;
+    }
   
+  div.blogers_rwd img{
+      max-width:100px;
+      border-radius: 20%;
+  }
   
   }
   
@@ -383,8 +405,16 @@ div.test_1 img{
         width:100%;
         height:100%;
     }
+
+    div.ytp_rwd img{
+        max-width:100px;
+        border-radius:20%;
+    }
   
-  
+  div.blogers_rwd img{
+      max-width:100px;
+      border-radius: 20%;
+  }
   
   }
   
