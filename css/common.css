@@ -448,7 +448,7 @@ div.hamburger_nav{
   button.hamburger{
     display: inline-block;
     right: 0;
-    transform: translateX(110%);
+    transform: translateX(115%);
     
   }
   /* 漢堡按鈕的位置 */
