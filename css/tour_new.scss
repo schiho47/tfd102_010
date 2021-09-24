@@ -399,10 +399,10 @@ div.end{
 @media(max-width:576px){
 
     #begin{
-        img.map{
-            max-width: 90%;
-            animation: none;
-        }
+        display: none;
+    }
+    div#back{
+        display: block;
     }
     div.decoration{
         img.decoration1{

@@ -365,9 +365,11 @@ div.end a:hover {
 }
 
 @media (max-width: 576px) {
-  #begin img.map {
-    max-width: 90%;
-    animation: none;
+  #begin {
+    display: none;
+  }
+  div#back {
+    display: block;
   }
   div.decoration img.decoration1 {
     width: 100px;
