@@ -3,8 +3,11 @@ body{
 }
 
 main{
-    background-color: #f1d9c9;
+    background-color: #d4ac86;
     font-size: 0;
+}
+div.rwd_header{
+    display: none;
 }
 
 header{
@@ -19,6 +22,18 @@ li.food a{
 
 img.cute2{
     visibility: visible;
+}
+
+h1 {
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+h1 img {
+  height: 30px;
 }
 
 /* ===庶民美食=== */

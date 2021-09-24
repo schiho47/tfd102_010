@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  background-color: #d4ac86;
+}
+
+ul.nav li:first-child {
+  color: #be3128;
+  font-weight: bold;
+}
+
+img.cute1 {
+  visibility: visible;
+}
+
+div.begin {
+  width: 1200px;
+  margin: 100px auto;
+  display: flex;
+}
+
+div.begin h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+div.begin img {
+  height: 500px;
+  position: absolute;
+  right: 35%;
+}
+
+div.begin div.begininstr {
+  width: 500px;
+  height: 490px;
+  background-color: #ffffff;
+  border: 1px solid #181818;
+  padding: 20px 40px;
+  position: relative;
+  right: -50%;
+  bottom: -20px;
+}
+
+div.begin div.begininstr a {
+  text-decoration: none;
+  color: #1a1a1a;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  margin: 10px 10px 0 0;
+}
+
+div.begin div.begininstr a:hover {
+  color: #be3128;
+  font-weight: bold;
+}
+
+div.begin div.begininstr a:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 115%;
+  width: 100%;
+  height: 2px;
+  background-color: #d4ac86;
+}
+
+div.rwd_header {
+  display: none;
+}
+
+div.beginRWD {
+  display: none;
+}
+
+div.timeline {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+div.timeline .v-timeline:before {
+  left: 50%;
+}
+
+div.mainRWD {
+  display: none;
+}
+
+div.end {
+  height: 50px;
+  text-align: center;
+  width: 1200px;
+  margin: 30px auto;
+}
+
+div.end a {
+  text-decoration: none;
+  background-color: #10345b;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+div.end a:hover {
+  font-weight: bold;
+  border: 1px solid #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    margin: 0 auto;
+  }
+  div.begin {
+    max-width: 100%;
+    margin: 30px;
+  }
+  div.begin div.begininstr {
+    right: -30%;
+  }
+  div#app {
+    display: none;
+  }
+  div.mainRWD {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+  }
+  div.mainRWD div.block {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  div.mainRWD div.block img {
+    max-width: 600px;
+    height: 430px;
+    object-fit: fill;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #1a1a1a;
+    transform: translateX(89px);
+  }
+  div.mainRWD div.block div.eachblock {
+    background-color: #ffffff;
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 3px;
+  }
+  div.end {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  div.begin {
+    display: none;
+  }
+  div.beginRWD {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  div.beginRWD img {
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  div.beginRWD div.begininstr {
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #1a1a1a;
+    padding: 10px 15px 50px 15px;
+    position: relative;
+  }
+  div.beginRWD div.begininstr h1 {
+    text-align: center;
+  }
+  div.beginRWD div.begininstr a {
+    text-decoration: none;
+    color: #1a1a1a;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    margin: 10px 10px 0 0;
+  }
+  div.beginRWD div.begininstr a:hover {
+    color: #be3128;
+    font-weight: bold;
+  }
+  div.beginRWD div.begininstr a:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 115%;
+    width: 100%;
+    height: 2px;
+    background-color: #d4ac86;
+  }
+  div#app {
+    display: none;
+  }
+  div.mainRWD {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  div.mainRWD div.block {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  div.mainRWD div.block img {
+    width: 500px;
+    height: 330px;
+    object-fit: fill;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #1a1a1a;
+  }
+  div.mainRWD div.block div.eachblock {
+    background-color: #ffffff;
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 3px;
+  }
+  div.end {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  div.begin {
+    display: none;
+  }
+  div.beginRWD {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  div.beginRWD img {
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  div.beginRWD div.begininstr {
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #1a1a1a;
+    padding: 10px 15px 50px 15px;
+    position: relative;
+  }
+  div.beginRWD div.begininstr h1 {
+    text-align: center;
+  }
+  div.beginRWD div.begininstr a {
+    text-decoration: none;
+    color: #1a1a1a;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    margin: 10px 10px 0 0;
+  }
+  div.beginRWD div.begininstr a:hover {
+    color: #be3128;
+    font-weight: bold;
+  }
+  div.beginRWD div.begininstr a:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 115%;
+    width: 100%;
+    height: 2px;
+    background-color: #d4ac86;
+  }
+  div#app {
+    display: none;
+  }
+  div.mainRWD {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  div.mainRWD div.block {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  div.mainRWD div.block img {
+    max-width: 100%;
+    object-fit: fill;
+    background-color: #ffffff;
+    border: 1px solid #1a1a1a;
+  }
+  div.mainRWD div.block div.eachblock {
+    background-color: #ffffff;
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 3px;
+  }
+  div.end {
+    max-width: 100%;
+  }
+}

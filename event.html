@@ -3,117 +3,105 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/common_new.css" rel="stylesheet">
     <link href="./css/event.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="./vendors/hamburger.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./js/online-shop_new.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+    <script src="./js/common.js"></script>
     <title>特色活動</title>
   </head>
   <body>
     <header>
+        <div class="logo_nav">
+
+          <a href="./index_new.html">  <img class="logo" src="./images/logo.png"></a>
+
+          <ul class="nav">
+            <li><a href="./history_new.html">歷史大稻埕</a><img class="cute cute1" src="./images/us3.png"></a></li>
+            <li><a href="./food_new.html">美食大稻埕<img class="cute cute2" src="./images/chopsticks.png"></a></li>
+            <li><a href="./tour_new.html">景點大稻埕</a><img class="cute cute3" src="./images/h5_camera.png">
+              </li>
+    
+            <li><a href="./gift.html">禮品商家<img class="cute cute4" src="./images/h6_bag.png"></a></li>
+            <li> <a href="./online-shop_new.html">線上購物</a><img class="cute cute6" src="./images/cuteonline.png"></li>
+    
+            <li style="color: #be3128; font-weight: bold;">特色活動<img class="cute cute5" src="./images/event.png" style="visibility: visible;"></li>
+          </ul>
+          <div class="icons">
+            <!-- <img src="./version2/index/love.png" alt="圖片出去玩了"> -->
+            <img src="./version2/index/shopping.png" alt="圖片出去玩了" class="iconshop">
+            <span class="incart">0</span>
+            <img src="./version2/index/user-alt-solid.svg" alt="圖片出去玩了">
+            <img src="./images/lan.png" alt="圖片出去玩了">
+        </div>
+        </div>
 
 
-      <div class="logo_nav">
+    <div class="rwd_header">
+    <a href="./index_new.html">  <img class="logo" src="./images/logo.png"></a>
 
-        <a href="./index.html">  <img class="logo" src="./images/logo.png"></a>
+      <button class="hamburger  hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
-        <ul class="nav">
-          <li><a href="./history.html">歷史大稻埕<img class="cute cute1" src="./images/us3.png"></a></li>
-          <li><a href="./food.html">美食大稻埕<img class="cute cute2" src="./images/chopsticks.png"></a></li>
-          <li><div class="spot"><a href="./tour.html">景點大稻埕<img class="cute cute3" src="./images/h5_camera.png"></a>
-                <ul class="spot">
-                  <li><a href="./tour_musum.html">博物館</a></li>
-                  <li><a href="./tour_celebrity.html">名人縮影</a></li>
-                  <li><a href="./tour_temple.html">廟宇</a></li>
-                  <li><a href="./tour_pier.html">碼頭</a></li>
-                </ul>
-              </div>
-            </li>
-  
-          <li><div class="gift"><a href="./gift.html">禮品商家<img class="cute cute4" src="./images/h6_bag.png"></a>
-              <ul class="gift">
-                <li><a href="./online-shop.html">線上購物</a></li>
-              </ul>
-            </div>
-          </li>
-  
-          <li><a href="./event.html">特色活動<img class="cute cute5" src="./images/event.png"></a></li>
-          <li><a href="./bloger-suggestion.html">部落客教你玩<img class="cute cute6" src="./images/like.png"></a></li>
+      <div class="hamInside hidden">
+        <img class="closeBtn"src="./version2/index/times-solid.svg" alt="圖片出去玩了">
+        <div class="icons">
+          <img src="./version2/index/shopping.png" alt="圖片出去玩了" class="iconshopham">
+          <span class="incartham">0</span>
+          <img src="./version2/index/user-alt-solid.svg" alt="圖片出去玩了">
+        </div>
+    
+        <ul class="langs">
+          <li><a href="#">English</a></li>
+          <li><a href="#">日本語</a></li>
+          <li><a href="#">한국어 </a></li>
         </ul>
-
-       <!-- 漢堡按鈕 -->
-
-        <button class="hamburger hamburger--spring" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      <!-- 漢堡按鈕 -->
-
-        <div class="small_things">
-          <div class="lang">
-            <img src="./images/lan.png">
-            <ul class="lang">
-              <li><a href="#">English</a></li>
-              <li><a href="#">日本語</a></li>
-              <li><a href="#">한국어</a></li>
-            </ul>
-          </div>
-          <a href="./shopping_cart.html"><img src="./images/shopping.png"></a>
-          <a href="./path.html"><img src="./images/love.png" title="最愛店家"></a>
-          <span><a href="./log_in.html">登入</a></span>
+      
+        
+      <div class="pages">
+          <a href="./history_new.html">歷史大稻埕</a>
+          <br>
+          <a href="./food.html">美食大稻埕</a>
+          <br>
+          <a href="./tour_new.html">景點大稻埕</a>
+          <br>
+          <a href="./gift.html">禮品商家</a>
+          <br>
+          <a href="./online-shop_new.html">線上購物</a>
+          <br>
+          <a href="./event.html">特色活動</a>
+        </div>
       </div>
     </div>
+    </header>
 
-   
-  <!-- 漢堡導覽 -->
-    <div class="hamburger_nav">
-      <ul class="hamburger_nav">
-        <li><a href="./history.html">歷史大稻埕</a></li>
-        <li><a href="./food.html">美食大稻埕</a></li>
-        <li><div class="spot_ham"><a href="./tour.html">景點大稻埕</a>
-              <ul class="spot_ham">
-                <li><a href="./tour_musum.html">博物館</a></li>
-                <li><a href="./tour_celebrity.html">名人縮影</a></li>
-                <li><a href="./tour_temple.html">廟宇</a></li>
-                <li><a href="./tour_pier.html">碼頭</a></li>
-              </ul>
-            </div>
-          </li>
-
-        <li><div class="gift_ham"><a href="./gift.html">禮品商家</a>
-            <ul class="gift_ham">
-              <li><a href="./online-shop.html">線上購物</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li><a href="./event.html">特色活動</a></li>
-        <li><a href="./bloger-suggestion.html">部落客教你玩</a></li>
-        <li><div class="hamburger_small">
-          <div class="lang_ham">
-            <img src="./images/lan.png">
-            <ul class="lang_ham">
-              <li><a href="#">English</a></li>
-              <li><a href="#">日本語</a></li>
-              <li><a href="#">한국어</a></li>
-            </ul>
-          </div>
-          <a href="./shopping_cart.html"><img src="./images/shopping.png"></a>
-          <a href="./path.html"><img src="./images/love.png" title="最愛店家"></a>
-          <span><a href="./log_in.html">登入</a></span>
-      </div></li>
-      
-      </ul>
-      
-
-    </div>
-    
-
-    
-
-</header>
   <main>
+    <div class="cart">
+            <span class="spantitle">購物車</span>
+            <img src="./version2/index/times-solid.svg" alt="" class="closeall">
+            <br>
+            <br>
+            <table class="carttable">
+                <tr>
+                    <th>商品</th>
+                    <th>品名</th>
+                    <th>數量</th>
+                    <th>單價</th>
+                    <th>刪除</th>
+                </tr>
+            </table>
+            <br>
+            <div class="fortotal">合計：<span class="total">$0</span>
+                <a href="#"> 前往結賬$</a>
+            </div>
+        </div>
       <div class="h1">
         <h1>特色活動</h1>
         <div class="span">______________</div>
@@ -205,7 +193,9 @@
           
           每當年節來臨，這裡總是摩肩擦踵、人潮絡繹不絕。2008年政府預計將迪化商圈擴大，納入民生西路和南京西路沿線至市民大道、
           以及寧夏夜市與後火車站附近，讓商家及商品更加多元化，今後要辦年貨，將能有更多的選擇。</p>
-          <button type="button"><a href="https://www.travel.taipei/zh-tw/attraction/details/1541" target="_blank">更多資訊</a></button>
+          <div class="end">
+            <button type="button"><a href="https://www.travel.taipei/zh-tw/attraction/details/1541" target="_blank">更多資訊</a></button>
+          </div>
        </div>
   </div>
 
@@ -217,7 +207,9 @@
           重現每年一次的盛大祭典及儀式，除了農曆5月14日霞海城隍生日的祭典法會，還舉辦一系列的文化節活動，透過展覽、市集、
           演出、講座讓大家用輕鬆的方式了解迎城隍文化，看熱鬧也可以看門道，更可以體會信仰傳承的力量以及大稻埕特色產業！
           </p>
-          <button type="button"><a href="https://www.religiouscarnival.com/edcontent.php?lang=tw&tb=5" target="_blank">更多資訊</a></button>
+           <div class="end"> 
+             <button type="button"><a href="https://www.religiouscarnival.com/edcontent.php?lang=tw&tb=5" target="_blank">更多資訊</a></button>
+            </div>
        </div>
   </div>
 
@@ -234,7 +226,9 @@
           本活動並結合在地商圈及產業推出前期活動，及與旅行社合作打造專屬遊程，邀請民眾走進街區，漫步臺北舊城區巷弄間，細細體會
           大稻埕經典小鎮魅力。
           </p>
-          <button type="button"><a href="https://www.travel.taipei/zh-tw/event-calendar/details/25310" target="_blank">更多資訊</a></button>
+           <div class="end">
+             <button type="button"><a href="https://www.travel.taipei/zh-tw/event-calendar/details/25310" target="_blank">更多資訊</a></button>
+            </div>
       </div>
   </div>
 
@@ -253,7 +247,9 @@
                每年10月17日當週週末的「1920變裝遊行」為「大稻埕國際藝術節」的重頭戲之一，邀請大家一起打扮成喜愛的1920年代人物，回到1920年，世界的大稻埕！
           ​
           </p>
-          <button type="button"><a href="https://www.tttifa.com/" target="_blank">更多資訊</a></button>
+           <div class="end">
+             <button type="button"><a href="https://www.tttifa.com/" target="_blank">更多資訊</a></button>
+            </div>
       </div>
   </div>
 </div>
@@ -280,70 +276,70 @@
   </main>
 
   <div class="black">
-    <footer>
-          <div class="roll roll1">
-            <span><a href="./history.html">歷史大稻埕</a></span>
-            <span><a href="./food.html">美食大稻埕</a></span>
-            <span><a href="./tour.html">景點大稻埕</a></span>
-            <span><a href="./bloger-suggestion.html">部落客教你玩</a></span>
-          </div>
+            <footer>
+                <div class="roll roll1">
+                <span><a href="./history_new.html">歷史大稻埕</a></span>
+                <span><a href="./food_new.html">美食大稻埕</a></span>
+                <span><a href="./tour_new.html">景點大稻埕</a></span>
+                <span><a href="#">部落客教你玩</a></span>
+                </div>
 
-          <div class="roll roll2">
-            <span><a href="./path.html">最愛商家</a></span>
-            <span><a href="./log_in.html">會員登入</a></span>
-            <span><a href="./sign_up.html">註冊會員</a></span>
-            <span><a href="./path.html">規劃路線</a></span>
+                <div class="roll roll2">
+                <span><a href="#">最愛商家</a></span>
+                <span><a href="#">會員登入</a></span>
+                <span><a href="#">註冊會員</a></span>
+                <span><a href="#">規劃路線</a></span>
 
-          </div>
+                </div>
 
-          <div class="roll roll3">
-            <span><a href="./event.html">特色活動</a></span>
-            <span><a href="./gift.html">禮品商家</a></span>
-            <span><a href="./online-shop.html">線上購物</a></span>
-            <span><a href="#">訂單查詢</a></span>
-          </div>
+                <div class="roll roll3">
+                <span><a href="./event.html">特色活動</a></span>
+                <span><a href="./gift.html">禮品商家</a></span>
+                <span><a href="./online-shop_new.html">線上購物</a></span>
+                <span><a href="#">訂單查詢</a></span>
+                </div>
 
-<!-- rwd專用roll -->
-      <div class="roll_parents">
-        <div class="roll">
-          <span><a href="./history.html">歷史大稻埕</a></span>
-          <span><a href="./food.html">美食大稻埕</a></span>
-          <span><a href="./tour.html">景點大稻埕</a></span>
-          <span><a href="./bloger-suggestion.html">部落客教你玩</a></span>
-        </div>
+            <!-- rwd專用roll -->
+                <div class="roll_parents">
+                <div class="roll">
+                    <span><a href="./history_new.html">歷史大稻埕</a></span>
+                    <span><a href="./food_new.html">美食大稻埕</a></span>
+                    <span><a href="./tour_new.html">景點大稻埕</a></span>
+                    <span><a href="#">部落客教你玩</a></span>
+                </div>
 
-        <div class="roll">
-          <span><a href="./path.html">最愛商家</a></span>
-          <span><a href="./log_in.html">會員登入</a></span>
-          <span><a href="./sign_up.html">註冊會員</a></span>
-          <span><a href="./path.html">規劃路線</a></span>
+                <div class="roll">
+                    <span><a href="#">最愛商家</a></span>
+                    <span><a href="#">會員登入</a></span>
+                    <span><a href="#">註冊會員</a></span>
+                    <span><a href="#">規劃路線</a></span>
 
-        </div>
+                </div>
 
-        <div class="roll">
-          <span><a href="./event.html">特色活動</a></span>
-          <span><a href="./gift.html">禮品商家</a></span>
-          <span><a href="./online-shop.html">線上購物</a></span>
-          <span><a href="#">訂單查詢</a></span>
-        </div>
-    </div>
+                <div class="roll">
+                    <span><a href="./event.html">特色活動</a></span>
+                    <span><a href="./gift.html">禮品商家</a></span>
+                    <span><a href="./online-shop_new.html">線上購物</a></span>
+                    <span><a href="#">訂單查詢</a></span>
+                </div>
+            </div>
 
-      <div class="contact">
-        <span>聯絡我們</span>
-        <img class="facebook"src="./images/facebook.png">
-        <img class="ig"src="./images/ig.png">
-        <img class="twitter"src="./images/twitter.png">
-      </div>
+                <div class="contact">
+                <span>聯絡我們</span>
+                <img class="facebook"src="./images/facebook.png">
+                <img class="ig"src="./images/ig.png">
+                <img class="twitter"src="./images/twitter.png">
+                </div>
 
-      <div class="p">
-      <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之
-        用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養
-        成班]，後續會由專人協助處理。</p>
-      </div>
-      <img class="footer"src="./images/footer.png">
-      
-    </footer>
-  </div>
+                <div class="p">
+                <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之
+                用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養
+                成班]，後續會由專人協助處理。</p>
+                </div>
+                <img class="footer"src="./images/footer.png">
+                
+            </footer>
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>

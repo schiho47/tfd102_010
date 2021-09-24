@@ -14,12 +14,14 @@ div.small_things{
 
 
 main.gift{
-  background-color: #f1d9c9; 
+  background-color:#d4ac86; 
 }
 
 .swiper-container {
   width: 800px;
   height: auto;
+  overflow: hidden ;
+  margin: 0 auto;
 }
 
 .swiper-slide {
@@ -409,13 +411,14 @@ div.gift>a{
       }
 
       main.gift button{
-        background-color:#f1d9c9;
+        background-color:#ffffff;
         width:200px;
         height:30px;
         text-align: center;
         border-radius: 10px;
         outline: none;
-        border:#f1d9c9;
+        border:1px solid#ffffff;
+        box-shadow: 5px 10px 5px #1a1a1a;
         /* transform: translateX(200%); */
         
       }
@@ -439,9 +442,17 @@ div.gift>a{
       div.black,footer{
         max-width: 100%;
       }
-     
+     div.rwd_header{
+       display: none;
+     }
 
       @media (min-width:768px) and (max-width:992px){
+        div.logo_nav{
+          display: none;
+        }
+        div.rwd_header{
+          display: block;
+        }
           div.shop{
             display: none;
           }
@@ -559,6 +570,12 @@ div.gift>a{
       }
       
       @media (min-width:576px) and (max-width:767px){
+        div.logo_nav{
+          display: none;
+        }
+        div.rwd_header{
+          display: block;
+        }
         /* button.hamburger{
           transform: translateX(70%); 
        
@@ -606,14 +623,21 @@ div.gift>a{
         div.shop_rwd{
           background-color: hsla(0,0%,100%,.7);
           height:300px;
-          width: 400px;
+          width: 48%;
           text-align: left;
           border:1px solid black;
-          margin-left: 25px;
-          transform: translate(8%,0%);  
+          /* margin-left: 25px; */
+          /* transform: translate(8%,0%);   */
           position: absolute; 
+          right:0;
           z-index: 2;
-          padding:5px 20px;
+          padding:5px 10px;
+        }
+        div.rwd>img{
+          border:1px solid black;
+          margin-left: 30px;
+          max-width: 95%;
+          object-fit: contain;
         }
 
         span.fav img{
@@ -638,12 +662,9 @@ div.gift>a{
           object-fit: cover;
           object-position: center;
           margin-bottom: 30px;
+          margin-top:10px;
         }
 
-        div.rwd>img{
-          border:1px solid black;
-          margin-left: 30px;
-        }
 
         div.pagination_block{
           padding:20px 0 ;
@@ -670,14 +691,12 @@ div.gift>a{
           display: block;
         }
         
-        button{
+        /* button{
           background-color: #be3128;
-          width:190px;
           text-align: center;
-          margin-top:10px;
+          margin-top:-10px;
           transform: translateX(0%);
-          
-        }
+        } */
 
         button a{
           color:white;
@@ -689,12 +708,16 @@ div.gift>a{
           vertical-align: bottom;
         }
 
-        
-
     
       }
       
       @media(max-width:575px){
+        div.logo_nav{
+          display: none;
+        }
+        div.rwd_header{
+          display: block;
+        }
         /* button.hamburger{
           transform: translateX(70%); 
         }
@@ -739,19 +762,7 @@ div.gift>a{
           margin:0 auto;
         }
 
-        div.shop_rwd{
-          background-color: hsla(0,0%,100%,.7);
-          height:300px;
-          max-width:100% ;
-          text-align: left;
-          border:1px solid black;
-          margin-left: 25px;
-          transform: translate(-4%,0%); 
-          position: absolute; 
-          z-index: 2;
-          padding:5px 20px;
-
-        }
+    
 
         span.fav img{
           width:20px;
@@ -776,13 +787,27 @@ div.gift>a{
           margin-bottom: 30px;
          
         }
-
+        h2{
+          margin-top: 20px;
+        }
+      div.shop_rwd{
+          background-color: hsla(0,0%,100%,.7);
+          height:300px;
+          width: 46.5%;
+          text-align: left;
+          border:1px solid black;
+          /* margin-left: 25px; */
+          /* transform: translate(8%,0%);   */
+          position: absolute; 
+          right:0;
+          z-index: 2;
+          padding:5px 10px;
+        }
         div.rwd>img{
           border:1px solid black;
-          /* margin-left: 30px; */
-          max-width:100%;
-          object-fit: cover;
-          object-position: center;
+          margin-left: 30px;
+          max-width: 95%;
+          object-fit: contain;
         }
 
         div.pagination_block{

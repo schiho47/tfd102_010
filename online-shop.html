@@ -3,114 +3,79 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/common_new.css" rel="stylesheet">
     <link href="./css/online-shop.css" rel="stylesheet">
     <link href="./vendors/hamburger.css" rel="stylesheet">
+    <script src="./js/online-shop.js"></script>
     <title>線上購物</title>
   </head>
   <body>
+        <header>
+        <div class="logo_nav">
 
-    <header>
-      <div class="logo_nav">
+          <a href="./index_new.html">  <img class="logo" src="./images/logo.png"></a>
 
-        <a href="./index.html">  <img class="logo" src="./images/logo.png"></a>
+          <ul class="nav">
+            <li><a href="./history_new.html">歷史大稻埕</a><img class="cute cute1" src="./images/us3.png"></a></li>
+            <li><a href="./food.html">美食大稻埕<img class="cute cute2" src="./images/chopsticks.png"></a></li>
+            <li style="color: #be3128; font-weight: bold;">景點大稻埕<img class="cute cute3" src="./images/h5_camera.png" style="visibility: visible;">
+              </li>
+    
+            <li><a href="./gift.html">禮品商家<img class="cute cute4" src="./images/h6_bag.png"></a></li>
+            <li><a href="./online-shop_new.html">線上購物<img class="cute cute6" src="./images/cuteonline.png"></a></li>
+    
+            <li><a href="./event.html">特色活動<img class="cute cute5" src="./images/event.png"></a></li>
+          </ul>
+          <div class="icons">
+            <!-- <img src="./version2/index/love.png" alt="圖片出去玩了"> -->
+            <img src="./version2/index/shopping.png" alt="圖片出去玩了" class="iconshop">
+            <span class="incart">0</span>
+            <img src="./version2/index/user-alt-solid.svg" alt="圖片出去玩了">
+            <img src="./images/lan.png" alt="圖片出去玩了">
+        </div>
+        </div>
 
-        <ul class="nav">
-          <li><a href="./history.html">歷史大稻埕<img class="cute cute1" src="./images/us3.png"></a></li>
-          <li><a href="./food.html">美食大稻埕<img class="cute cute2" src="./images/chopsticks.png"></a></li>
-          <li><div class="spot"><a href="./tour.html">景點大稻埕<img class="cute cute3" src="./images/h5_camera.png"></a>
-                <ul class="spot">
-                  <li><a href="#">博物館</a></li>
-                  <li><a href="#">名人縮影</a></li>
-                  <li><a href="#">廟宇</a></li>
-                  <li><a href="#">碼頭</a></li>
-                </ul>
-              </div>
-            </li>
-  
-          <li><div class="gift"><a href="./gift.html">禮品商家<img class="cute cute4" src="./images/h6_bag.png"></a>
-              <ul class="gift">
-                <li><a href="./online-shop.html">線上購物</a></li>
-              </ul>
-            </div>
-          </li>
-  
-          <li><a href="./event.html">特色活動<img class="cute cute5" src="./images/event.png"></a></li>
-          <li><a href="./bloger-suggestion.html">部落客教你玩<img class="cute cute6" src="./images/like.png"></a></li>
+
+    <div class="rwd_header">
+    <a href="./index_new.html">  <img class="logo" src="./images/logo.png"></a>
+
+      <button class="hamburger  hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <div class="hamInside hidden">
+        <img class="closeBtn"src="./version2/index/times-solid.svg" alt="圖片出去玩了">
+        <div class="icons">
+          <img src="./version2/index/shopping.png" alt="圖片出去玩了" class="iconshopham">
+          <span class="incartham">0</span>
+          <img src="./version2/index/user-alt-solid.svg" alt="圖片出去玩了">
+        </div>
+    
+        <ul class="langs">
+          <li><a href="#">English</a></li>
+          <li><a href="#">日本語</a></li>
+          <li><a href="#">한국어 </a></li>
         </ul>
-
-       <!-- 漢堡按鈕 -->
-
-        <button class="hamburger hamburger--spring" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      <!-- 漢堡按鈕 -->
-
-        <div class="small_things">
-          <div class="lang">
-            <img src="./images/lan.png">
-            <ul class="lang">
-              <li><a href="#">English</a></li>
-              <li><a href="#">日本語</a></li>
-              <li><a href="#">한국어</a></li>
-            </ul>
-          </div>
-          <a href="#"><img src="./images/shopping.png"></a>
-          <a href="#"><img src="./images/love.png" title="最愛店家"></a>
-          <span><a href="#">登入</a></span>
+      
+        
+      <div class="pages">
+          <a href="./history_new.html">歷史大稻埕</a>
+          <br>
+          <a href="./food.html">美食大稻埕</a>
+          <br>
+          <a href="./tour_new.html">景點大稻埕</a>
+          <br>
+          <a href="./gift.html">禮品商家</a>
+          <br>
+          <a href="./online-shop_new.html">線上購物</a>
+          <br>
+          <a href="./event.html">特色活動</a>
+        </div>
       </div>
     </div>
-
-   
-  <!-- 漢堡導覽 -->
-    <div class="hamburger_nav">
-      <ul class="hamburger_nav">
-        <li><a href="./history.html">歷史大稻埕</a></li>
-        <li><a href="./food.html">美食大稻埕</a></li>
-        <li><div class="spot_ham"><a href="./tour.html">景點大稻埕</a>
-              <ul class="spot_ham">
-                <li><a href="#">博物館</a></li>
-                <li><a href="#">名人縮影</a></li>
-                <li><a href="#">廟宇</a></li>
-                <li><a href="#">碼頭</a></li>
-              </ul>
-            </div>
-          </li>
-
-        <li><div class="gift_ham"><a href="./gift.html">禮品商家</a>
-            <ul class="gift_ham">
-              <li><a href="./online-shop.html">線上購物</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li><a href="./event.html">特色活動</a></li>
-        <li><a href="./bloger-suggestion.html">部落客教你玩</a></li>
-        <li><div class="hamburger_small">
-          <div class="lang_ham">
-            <img src="./images/lan.png">
-            <ul class="lang_ham">
-              <li><a href="#">English</a></li>
-              <li><a href="#">日本語</a></li>
-              <li><a href="#">한국어</a></li>
-            </ul>
-          </div>
-          <a href="#"><img src="./images/shopping.png"></a>
-          <a href="#"><img src="./images/love.png" title="最愛店家"></a>
-          <span><a href="#">登入</a></span>
-      </div></li>
-      
-      </ul>
-      
-
-    </div>
-    
-
-    
-</header>
-
+    </header>
 <main>
 
 
@@ -122,7 +87,7 @@
 
       <div class="form">
         <img src="./images/items/search.png">
-        <input type="text" placeholder="找商品">
+        <input type="text" placeholder="找商品" class="search">
         <button type="button">搜尋</button>
       </div>
 
@@ -376,6 +341,7 @@
 
 
 </script>
+
 
 
   </body>

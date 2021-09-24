@@ -1,0 +1,147 @@
+@use '../base/variables' as *;
+
+.slider-section {
+  padding: 60px 0;
+  overflow: hidden;
+
+  &__right {
+    position: relative;
+    z-index: 1;
+  }
+
+  .slider-wrapper {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -10000px;
+      width: 10000px;
+      height: 100%;
+      background-color: $bg-color-2;
+    }
+  }
+
+  .slider {
+    margin-right: -10px;
+    
+    &__top-row,
+    &__bottom-row {
+      display: flex;
+      justify-content: flex-end;
+      transition-property: transform;
+      transition-timing-function: ease;
+      transition-duration: .3s;
+
+      img {
+        max-height: 200px;
+        display: block;
+        margin: 0 10px 10px 0;
+        border-radius: 5px;
+
+        &:last-child {
+          position: absolute;
+          top: 0;
+          left: 100%;
+        }
+      }
+    }
+
+    &__bottom-row {
+      margin-right: 159px;
+      position: relative;
+    }
+  }
+
+  .slider-actions {
+    position: absolute;
+    top: 210px;
+    right: 0;
+    width: 60px;
+    height: 200px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: -1px;
+      background-color: $bg-color-2;
+      content: '';
+      width: 160px;
+      height: 100%;
+    }
+
+    button {
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+      border: 1px solid $heading-color-1;
+      color: $heading-color-1;
+      background-color: transparent;
+      margin-bottom: 10px;
+      padding: 0;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      transition: border-color .3s ease, transform .3s ease;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: left .3s ease;
+
+        img {
+          display: block;
+        }
+
+        &:nth-child(2) {
+          position: absolute;
+          top: 0;
+          left: 100%;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        span {
+
+          &:nth-child(2) {
+            left: -100%;
+          }
+        }
+      }
+
+      &:hover {
+        border-color: $bg-color-1;
+        
+        span {
+
+          &:nth-child(1) {
+            left: -100%;
+          }
+          &:nth-child(2) {
+            left: 0;
+          }
+        }
+
+        &:last-child {
+
+          span {
+            &:nth-child(1) {
+              left: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

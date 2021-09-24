@@ -1,0 +1,650 @@
+$parnerColor:#be3128;
+$mainColor:#d4ac86;
+$h1imgH:30px;
+$parnetBlue:#10345b;
+$fontColor:#1a1a1a;
+
+div.rwd_header{
+    display: none;
+}
+h1 {
+
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+
+    img {
+        height: $h1imgH;
+    }
+}
+// div.cheaper{
+//     div.banner_back{
+//        background-color: $parnetBlue;
+//         div.banner{
+//             display: flex;
+//             width: 1200px;
+//             margin: 0 auto;
+//         }
+//     }
+// }
+
+div.food {
+    display: flex;
+    justify-content: center;
+
+    .foodImg {
+        // background-color: $parnetBlue;
+        text-align: center;
+        padding: 30px 20px;
+        margin-right: 20px;
+        // background-color: hsla(100, 100%, 100%, .6);
+        border: 3px double#1a1a1a;
+        width:1000px;
+
+        img {
+            width: 280px;
+            height: 200px;
+            border: 3px double $parnetBlue;
+            cursor: pointer;
+        }
+    }
+
+    .foodIntr {
+        width: 550px;
+        // background-color: hsla(100, 100%, 100%, .6);
+        color: #1a1a1a;
+        border: 3px double #1a1a1a;
+        padding: 10px;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        >img {
+            width: 300px;
+            height: 210px;
+            margin-bottom: 10px;
+            border: 3px double $parnetBlue;
+            object-fit: fill;
+        }
+
+        span.location {
+            vertical-align: middle;
+
+            img {
+                height: 20px;
+                width: 15px;
+                margin-right: 10px;
+                margin-top: 3px;
+            }
+        }
+
+        span.collect {
+            img {
+                height: 20px;
+                margin-top: 3px;
+            }
+
+            vertical-align: middle;
+
+        }
+
+        p {
+            text-align: left;
+            padding: 5px 15px;
+        }
+
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+div.temple_back{
+    background-color: hsla(0,100%, 100%, .8);
+    div.temple_area{
+        max-width:1200px;
+        margin: 20px auto;
+        padding: 20px 0;
+        display: flex;
+        div.temple_areaintr{
+            border:3px double #1a1a1a;
+            padding: 5px 10px;
+            // border-radius: 20px;
+            width:50%;
+            margin-right: 10px;
+            h2{
+                margin: 50px 20px;
+            }
+            p{
+                margin: 50px 20px;
+            }
+           img{
+               width:180px;
+               height:150px;
+               object-fit: fill;
+               border-radius: 10px;
+               border:3px double $parnetBlue;
+           }
+        }
+        >img{
+            // border-radius: 20px;
+            border:3px double $parnetBlue;
+            width: 50%;
+            object-fit: contain;
+            padding: 0 10px;
+        }
+    }
+}
+div.temple_back_rwd{
+    display: none;
+}
+
+div.sweet{
+    max-width: 1200px;
+    margin: 0 auto;
+    .sweet_intr_first{
+        display: flex;
+        vertical-align: middle;
+        .sweet_first_intr{
+            border:3px double #1a1a1a;
+            width:50%;
+            h2{
+                padding: 10px 20px;
+            }
+            p{
+                padding: 10px 20px;
+            }
+            &:hover{
+                background-color: hsla(0,100%, 100%, .8);
+            }
+        }
+        .sweet_first_image{
+            display: flex;
+            img{
+                height: 300px;
+                object-fit: contain;
+                border:3px double $parnetBlue;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .sweet_intr_second{
+        margin-top: 20px;
+        display: flex;
+        vertical-align: middle;
+        .sweet_second_intr{
+            border:3px double #1a1a1a;
+            width:50%;
+            h2{
+                padding: 10px 20px;
+            }
+            p{
+                padding: 10px 20px;
+            }
+            &:hover{
+                background-color: hsla(0,100%, 100%, .8);
+            }
+        }
+        .sweet_second_image{
+            display: flex;
+            img{
+                height: 300px;
+                width: 300px;
+                object-fit: cover;
+                border:3px double $parnetBlue;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    }
+    .sweet_intr_second_rwd{
+        display: none;
+    }
+}
+
+div.fancy_food{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    div.fancy1,.fancy3{
+        margin-right: 10px;
+    }
+    div.f{
+        width: 49%;
+        border:3px double #1a1a1a;
+        margin-bottom: 10px;
+        &:hover{
+             background-color: hsla(0,100%, 100%, .8);
+        }
+        h2{
+            padding: 0 30px;
+        }
+        span.address{
+            padding: 0 35px;
+            vertical-align: middle;
+            img{
+                height:30px;
+                margin-right: 5px;
+            }
+        }
+        p{
+            padding: 10px 30px;
+        }
+        img.main{
+            max-width:100%;
+            padding: 10px 15px;
+        }
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:992px){
+  
+    div.logo_nav{
+        display: none;
+    }
+    div.rwd_header{
+    display: block;
+    }
+    div.food{
+        display: block;
+        div.foodImg{
+            max-width: 100%;
+            img{
+                width: 200px;
+                height:150px;
+                margin-right: 20px;
+                object-fit: cover;
+            }
+        }
+        div.foodIntr{
+            max-width: 100%;
+            margin: 10px auto;
+        }
+    }
+    div.temple_back{
+        display: none;
+    }
+    div.temple_back_rwd{
+        display: block;
+        background-color: hsla(0,100%, 100%, .8);
+        div.temple_area_rwd{
+             max-width:1200px;
+             margin: 20px auto;
+             padding: 20px 0;
+             display: block;
+             div.temple_areaintr_rwd{
+                 border:3px double #1a1a1a;
+                 padding: 5px 10px;
+                 // border-radius: 20px;
+                 max-width:100%;
+                 margin-right: 10px;
+                 h2{
+                     margin: 50px 20px;
+                 }
+                 p{
+                     margin: 50px 20px;
+                 }
+                 div.templesmallfood{
+                     max-width: 100%;
+                     text-align: center;
+                     img{
+                         width:180px;
+                         height:150px;
+                         object-fit: fill;
+                         border-radius: 10px;
+                         border:3px double $parnetBlue;
+                     }
+                 }
+             }
+             div.img{
+                max-width: 100%;
+                text-align: center;
+                border:3px double #1a1a1a;
+                 img{
+                     // border-radius: 20px;
+                     border:3px double $parnetBlue;
+                     max-width: 1200px;
+                     margin: 0 auto;
+                     object-fit: fill;
+                    padding: 10px 0;
+                 }
+             }
+         }
+    }
+};
+@media(min-width:576px) and (max-width:767px){
+ 
+    div.logo_nav{
+        display: none;
+    }
+    div.rwd_header{
+    display: block;
+    }
+     div.food{
+        display: block;
+        div.foodImg{
+            max-width: 100%;
+            img{
+                width: 150px;
+                height:120px;
+                margin-right: 20px;
+                object-fit: cover;
+            }
+        }
+        div.foodIntr{
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    div.temple_back{
+        display: none;
+    }
+    div.temple_back_rwd{
+        display: block;
+        background-color: hsla(0,100%, 100%, .8);
+        div.temple_area_rwd{
+             max-width:1200px;
+             margin: 20px auto;
+             padding: 20px 0;
+             display: block;
+             div.temple_areaintr_rwd{
+                 border:3px double #1a1a1a;
+                 padding: 5px 10px;
+                 // border-radius: 20px;
+                 max-width:100%;
+                 margin-right: 10px;
+                 h2{
+                     margin: 50px 20px;
+                 }
+                 p{
+                     margin: 50px 20px;
+                 }
+                 div.templesmallfood{
+                     max-width: 100%;
+                     text-align: center;
+                     img{
+                         width:150px;
+                         height:130px;
+                         object-fit: fill;
+                         border-radius: 10px;
+                         border:3px double $parnetBlue;
+                     }
+                 }
+             }
+             div.img{
+                max-width: 100%;
+                text-align: center;
+                border:3px double #1a1a1a;
+                 img{
+                     // border-radius: 20px;
+                     border:3px double $parnetBlue;
+                     max-width: 1200px;
+                     margin: 0 auto;
+                     object-fit: fill;
+                    padding: 10px 0;
+                 }
+             }
+         }
+    }
+
+    div.sweet{
+    max-width: 1200px;
+    margin: 0 auto;
+    .sweet_intr_first{
+        display: flex;
+        .sweet_first_intr{
+            border:3px double #1a1a1a;
+            width:50%;
+            h2{
+                padding: 5px 20px;
+            }
+            p{
+                padding: 5px 20px;
+            }
+            &:hover{
+                background-color: hsla(0,100%, 100%, .8);
+            }
+        }
+        .sweet_first_image{
+            display: flex;
+            img{
+                height: 200px;
+                object-fit: contain;
+                border:3px double $parnetBlue;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .sweet_intr_second{
+        margin-top: 20px;
+        display: flex;
+        vertical-align: middle;
+        .sweet_second_intr{
+            border:3px double #1a1a1a;
+            width:50%;
+            h2{
+                padding: 5px 20px;
+            }
+            p{
+                padding: 5px 20px;
+            }
+            &:hover{
+                background-color: hsla(0,100%, 100%, .8);
+            }
+        }
+        .sweet_second_image{
+            display: flex;
+            img{
+                height: 200px;
+                width: 200px;
+                object-fit: cover;
+                border:3px double $parnetBlue;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+div.fancy_food{
+    div.f{
+        span.address{
+            padding: 0 20px;
+            vertical-align: middle;
+            font-size: 14px;
+            img{
+                height:20px;
+                margin-right: 5px;
+            }
+        }
+    }
+ }
+
+};
+
+@media(max-width:575px){
+
+    div.logo_nav{
+        display: none;
+    }
+    div.rwd_header{
+    display: block;
+    }
+     div.food{
+        display: block;
+        div.foodImg{
+            max-width: 100%;
+            img{
+                width: 130px;
+                height:100px;
+                margin-right: 5px;
+                object-fit: cover;
+            }
+        }
+        div.foodIntr{
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    div.temple_back{
+        display: none;
+    }
+    div.temple_back_rwd{
+        display: block;
+        background-color: hsla(0,100%, 100%, .8);
+        div.temple_area_rwd{
+             max-width:1200px;
+             margin: 20px auto;
+             padding: 20px 0;
+             display: block;
+             div.temple_areaintr_rwd{
+                 border:3px double #1a1a1a;
+                 padding: 5px 10px;
+                 // border-radius: 20px;
+                 max-width:100%;
+                 margin-right: 10px;
+                 h2{
+                     margin: 50px 20px;
+                 }
+                 p{
+                     margin: 50px 20px;
+                 }
+                 div.templesmallfood{
+                     max-width: 100%;
+                     text-align: center;
+                     img{
+                         width:100px;
+                         height:90px;
+                         object-fit: fill;
+                         border-radius: 10px;
+                         border:3px double $parnetBlue;
+                     }
+                 }
+             }
+             div.img{
+                max-width: 100%;
+                text-align: center;
+                border:3px double #1a1a1a;
+                 img{
+                     // border-radius: 20px;
+                     border:3px double $parnetBlue;
+                     max-width: 100%;
+                     margin: 0 auto;
+                     object-fit: fill;
+                    padding: 10px 0;
+                 }
+             }
+         }
+    }
+
+    div.sweet{
+    max-width: 1200px;
+    margin: 0 auto;
+    .sweet_intr_first{
+        display: block;
+        .sweet_first_intr{
+            border:3px double #1a1a1a;
+            width:100%;
+            background-color: hsla(0,100%, 100%, .8);
+            h2{
+                padding: 5px 20px;
+            }
+            p{
+                padding: 5px 20px;
+            }
+        }
+        .sweet_first_image{
+            display: flex;
+            img{
+                width: 50%;
+                object-fit: cover;
+                border:3px double $parnetBlue;
+            }
+        }
+    }
+
+    .sweet_intr_second{
+        display: none;
+    }
+    .sweet_intr_second_rwd{
+        display: block;
+        margin-top: 20px;
+        display: block;
+        .sweet_second_intr_rwd{
+            border:3px double #1a1a1a;
+            width:100%;
+            background-color: hsla(0,100%, 100%, .8);
+            h2{
+                padding: 5px 20px;
+            }
+            p{
+                padding: 5px 20px;
+            }
+        }
+        .sweet_second_image_rwd{
+            display: flex;
+            img{
+                height: 200px;
+                width: 50%;
+                object-fit: cover;
+                border:3px double $parnetBlue;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+div.fancy_food{
+    max-width: 1200px;
+    margin: 0 auto;
+    display:block;
+    div.f{
+        width: 95%;
+        margin: 0 2.5%;
+        border:3px double #1a1a1a;
+        margin-bottom: 10px;
+        &:hover{
+             background-color: hsla(0,100%, 100%, .8);
+        }
+        h2{
+            padding: 0 30px;
+        }
+        span.address{
+            padding: 0 35px;
+            vertical-align: middle;
+            img{
+                height:30px;
+                margin-right: 5px;
+            }
+        }
+        p{
+            padding: 10px 30px;
+        }
+        img.main{
+            max-width:100%;
+            padding: 10px 15px;
+        }
+    }
+}
+
+
+   
+};

@@ -1,0 +1,141 @@
+/* main part */
+
+.swiper-container {
+    width: auto;
+    height: 600px;
+    margin-left:0;
+    margin-right:0;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  
+  main{
+      background-color: #f1d9c9;
+      background-size: cover;
+      margin:0 auto;
+      overflow: hidden;
+  }
+
+  h1 img{
+    width:30px;
+    margin-left: 10px;
+  
+}
+
+h1{
+    padding-left: 50px;
+}
+
+/* 最新消息 */
+
+div.news{
+    width:1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+  div.new_news>a>img{
+    width:350px;
+    height:240px;
+    object-fit: fill;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  div.new_news>a>img:hover{
+      animation-name: red_border;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+  }
+
+  span.label{
+      background-color:#be3128;
+      color:white;
+      padding:5px 10px;
+      width:50px;
+      border-radius: 5px;
+      vertical-align: middle;
+  }
+
+  div.new_news p a{
+      text-decoration: none;
+      color:black;
+  }
+
+  div.new_news p a:hover{
+      text-decoration:underline ;
+      font-weight: bold;
+  }
+
+  div.new_news p{
+      width:350px;
+      height:48px;
+      line-height: 1.5;
+  }
+
+  div.new_news span img{
+      width:30px;
+  }
+
+  div.new_news{
+      width:400px;
+  }
+
+  @keyframes red_border{
+      0%{
+          border-left: 2px solid #be3128;
+         
+      }
+
+      20%{
+          border-top: 2px solid #be3128;
+          
+      }
+
+      40%{
+          border-right:2px solid #be3128;
+      
+      }
+
+      60%{
+          border-bottom:2px solid #be3128;
+          
+      }
+
+      80%{
+          border:2px solid #be3128;
+       
+      }
+
+      100%{
+            border:2px solid #be3128;
+      }
+  }
+

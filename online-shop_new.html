@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common_new.css">
+    <link rel="stylesheet" href="./css/online-shop_new.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./vendors/hamburger.css">
+    <script src="./js/online-shop_new.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+      <script src="./js/common.js"></script>
+    <title>線上購物</title>
+</head>
+<body>
+     <header>
+        <div class="logo_nav">
+
+          <a href="./index_new.html">  <img class="logo" src="./images/logo.png"></a>
+
+          <ul class="nav">
+            <li><a href="./history_new.html">歷史大稻埕</a><img class="cute cute1" src="./images/us3.png"></a></li>
+            <li><a href="./food_new.html">美食大稻埕<img class="cute cute2" src="./images/chopsticks.png"></a></li>
+            <li><a href="./tour_new.html">景點大稻埕</a><img class="cute cute3" src="./images/h5_camera.png">
+              </li>
+    
+            <li><a href="./gift.html">禮品商家<img class="cute cute4" src="./images/h6_bag.png"></a></li>
+            <li style="color: #be3128; font-weight: bold;">線上購物<img class="cute cute6" src="./images/cuteonline.png" style="visibility: visible;"></li>
+    
+            <li > <a href="./event.html">特色活動</a><img class="cute cute5" src="./images/event.png" ></li>
+          </ul>
+          <div class="icons">
+            <!-- <img src="./version2/index/love.png" alt="圖片出去玩了"> -->
+            <img src="./version2/index/shopping.png" alt="圖片出去玩了" class="iconshop">
+            <span class="incart">0</span>
+            <img src="./version2/index/user-alt-solid.svg" alt="圖片出去玩了">
+            <img src="./images/lan.png" alt="圖片出去玩了">
+        </div>
+        </div>
+
+
+    <div class="rwd_header">
+    <a href="./index_new.html">  <img class="logo" src="./images/logo.png"></a>
+
+      <button class="hamburger  hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <div class="hamInside hidden">
+        <img class="closeBtn"src="./version2/index/times-solid.svg" alt="圖片出去玩了">
+        <div class="icons">
+          <img src="./version2/index/shopping.png" alt="圖片出去玩了" class="iconshopham">
+          <span class="incartham">0</span>
+          <img src="./version2/index/user-alt-solid.svg" alt="圖片出去玩了">
+        </div>
+    
+        <ul class="langs">
+          <li><a href="#">English</a></li>
+          <li><a href="#">日本語</a></li>
+          <li><a href="#">한국어 </a></li>
+        </ul>
+      
+        
+      <div class="pages">
+          <a href="./history_new.html">歷史大稻埕</a>
+          <br>
+          <a href="./food.html">美食大稻埕</a>
+          <br>
+          <a href="./tour_new.html">景點大稻埕</a>
+          <br>
+          <a href="./gift.html">禮品商家</a>
+          <br>
+          <a href="./online-shop_new.html">線上購物</a>
+          <br>
+          <a href="./event.html">特色活動</a>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <main>
+        <div class="bread">
+            <span><a href="./gift.html">禮品商家</a></span>
+            <span>／</span>
+            <span class="shop">線上購物</span>
+        </div>
+
+        <!-- <div class="form">
+            <img src="./images/items/search.png">
+            <input type="text" placeholder="找商品">
+        </div> -->
+
+        <div class="cart">
+            <span class="spantitle">購物車</span>
+            <img src="./version2/index/times-solid.svg" alt="" class="closeall">
+            <br>
+            <br>
+            <table class="carttable">
+                <tr>
+                    <th>商品</th>
+                    <th>品名</th>
+                    <th>數量</th>
+                    <th>單價</th>
+                    <th>刪除</th>
+                </tr>
+                <!-- <tr>
+                    <td><img src="./images/items/item1.jpg" class="product"></td>
+                    <td class="title">大華行茄芷袋後背包</td>
+                    <td><input type="number" value="1" class="number"></td>
+                    <td class="price">$390</td>
+                    <td><img src="./version2/index/times-solid.svg" alt="" class="clbtn"></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/items/item2.jpg" class="product"></td>
+                    <td class="title">李亭香翠玉綠豆糕(15入)</td>
+                    <td><input type="number" value="1" class="number"></td>
+                    <td class="price">$220</td>
+                    <td><img src="./version2/index/times-solid.svg" alt="" class="clbtn"></td>
+                </tr> -->
+            </table>
+            <br>
+            <div class="fortotal">合計：<span class="total">$0</span>
+                <a href="#"> 前往結賬$</a>
+            </div>
+            <!-- <button><a href="#">前往結賬</a</button> -->
+            <!-- <div><a href="#">前往結賬</a></div> -->
+            
+        </div>
+        
+        <div id="main">
+            <div class="products">
+                <a href="#"><img src="./images/items/item1.jpg" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">大華行茄芷袋後背包</span>
+                    <span id="itemprice">$350</span>
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+
+            <div class="products">
+                <a href="#"><img src="./images/items/item2.jpg" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">李亭香翠玉綠豆糕(15入)</span>
+                    <span id="itemprice">$220</span>
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+
+            <div class="products">
+                <a href="#"><img src="./images/items/item3.jpeg" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">火星猴子 花生鬆餅</span>
+                    (8入/盒)<span id="itemprice"> $399</span>
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+
+
+            <div class="products">
+                <a href="#"><img src="./images/items/item5.jpg" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">有記名茶 鐵觀音300公克</span>
+                    <span id="itemprice">$2500</span>
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+
+            <div class="products">
+                <a href="#"><img src="./images/items/item6.jpg" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">花生騷森林動物系列繡片別針</span>
+                    <span id="itemprice">$120</span>／個
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+
+            <div class="products">
+                <a href="#"><img src="./images/items/item10.jpeg" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">江記華隆  杏仁豬肉紙 180g</span>
+                    <span id="itemprice">$310</span>
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+
+            <div class="products">
+                <a href="#"><img src="./images/items/item7.jpeg" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">義美鳳梨酥禮盒(10入)</span>
+                    <span id="itemprice">$400</span>
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+
+            <div class="products">
+                <a href="#"><img src="./images/items/item8.jpg" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">大稻埕小日禮盒(3入)</span>
+                    6包／盒 <span id="itemprice">＄350</span>
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+
+             <div class="products">
+                <a href="#"><img src="./images/items/item9.PNG" class="product"></a>
+                <div class="item_p">
+                    <span class="itemname">生元草本_慈禧玉容淨白面膜 120ml</span>
+                    <span id="itemprice">＄1920</span>
+                    <br>
+                        <img class="favimg" src="./images/items/shopcart.png" alt="抱歉圖片不見了!" title="加入購物車" style="cursor: pointer;">
+                        <!-- <span class="favhover"><img src="./images/items/shopcart2.png" alt="抱歉圖片不見了!"
+                                title="加入最愛"></span> -->
+                </div>  
+            </div>
+        </div>  
+    
+        <div class="pagination_block">
+            <ul class="pagination">
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#" class="-on">1</a></li>
+                <li><a href="#" >2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            <li><a href="#">&gt;</a></li>
+            </ul>
+        </div>
+
+            <!-- footer -->
+    
+       <div class="black">
+            <footer>
+                <div class="roll roll1">
+                <span><a href="./history_new.html">歷史大稻埕</a></span>
+                <span><a href="./food_new.html">美食大稻埕</a></span>
+                <span><a href="./tour_new.html">景點大稻埕</a></span>
+                <span><a href="#">部落客教你玩</a></span>
+                </div>
+
+                <div class="roll roll2">
+                <span><a href="#">最愛商家</a></span>
+                <span><a href="#">會員登入</a></span>
+                <span><a href="#">註冊會員</a></span>
+                <span><a href="#">規劃路線</a></span>
+
+                </div>
+
+                <div class="roll roll3">
+                <span><a href="./event.html">特色活動</a></span>
+                <span><a href="./gift.html">禮品商家</a></span>
+                <span><a href="./online-shop_new.html">線上購物</a></span>
+                <span><a href="#">訂單查詢</a></span>
+                </div>
+
+            <!-- rwd專用roll -->
+                <div class="roll_parents">
+                <div class="roll">
+                    <span><a href="./history_new.html">歷史大稻埕</a></span>
+                    <span><a href="./food_new.html">美食大稻埕</a></span>
+                    <span><a href="./tour_new.html">景點大稻埕</a></span>
+                    <span><a href="#">部落客教你玩</a></span>
+                </div>
+
+                <div class="roll">
+                    <span><a href="#">最愛商家</a></span>
+                    <span><a href="#">會員登入</a></span>
+                    <span><a href="#">註冊會員</a></span>
+                    <span><a href="#">規劃路線</a></span>
+
+                </div>
+
+                <div class="roll">
+                    <span><a href="./event.html">特色活動</a></span>
+                    <span><a href="./gift.html">禮品商家</a></span>
+                    <span><a href="./online-shop_new.html">線上購物</a></span>
+                    <span><a href="#">訂單查詢</a></span>
+                </div>
+            </div>
+
+                <div class="contact">
+                <span>聯絡我們</span>
+                <img class="facebook"src="./images/facebook.png">
+                <img class="ig"src="./images/ig.png">
+                <img class="twitter"src="./images/twitter.png">
+                </div>
+
+                <div class="p">
+                <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之
+                用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養
+                成班]，後續會由專人協助處理。</p>
+                </div>
+                <img class="footer"src="./images/footer.png">
+                
+            </footer>
+</div>
+    </main>
+    </body>
+</html>

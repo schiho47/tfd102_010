@@ -1,0 +1,404 @@
+$littleIconH:35px;
+$mainColor:#d4ac86;
+$parnetBlue:#10345b;
+$fontColor:#1a1a1a;
+
+body {
+    margin: 0;
+    background-color: $mainColor;
+}
+
+
+main {
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+    color:$fontColor;
+}
+
+header {
+    .hamburger {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        background-color: white;
+        border-radius: 20px;
+    }
+}
+
+div.hamInside {
+    background-color: $mainColor;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    >img {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .icons {
+        margin-top: 20px;
+
+        img {
+            height: $littleIconH;
+            cursor: pointer;
+        }
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .langs {
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+
+        li {
+            width: 65px;
+            border: 1px solid white;
+            padding: 5px;
+            list-style: none;
+            display: inline-flex;
+            justify-content: center;
+
+            &:hover {
+                border: 1px solid $parnetBlue;
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: $parnetBlue;
+            }
+
+        }
+    }
+
+    .pages {
+        line-height: 100px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 180px;
+                height: 2px;
+                background-color: $parnetBlue;
+                left: 0;
+                top: 100%;
+                margin-top: 5px;
+                display: none;
+            }
+
+            &:hover {
+                color: $parnetBlue;
+                font-style: bold;
+            }
+
+            &:hover:after {
+                display: inline-block;
+            }
+        }
+
+    }
+}
+
+div.hidden {
+    display: none;
+}
+
+/* footer */
+
+
+div.black {
+    background-color: #1a1a1a;
+}
+
+
+footer {
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+
+}
+
+footer span {
+    display: block;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+div.roll1,
+div.roll2,
+div.roll3,
+div.contact,
+div.p {
+    display: inline-block;
+    padding: 10px 10px;
+    vertical-align: top;
+    transform: translateX(60%);
+}
+
+div.roll1,
+div.roll2,
+div.roll3 {
+    margin-top: 10px;
+}
+
+div.p {
+    width: 200px;
+}
+
+div.contact span {
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 400;
+
+}
+
+div.contact img {
+    width: 40px;
+    padding: 5px;
+}
+
+img.footer {
+    width: 300px;
+    text-align: right;
+    margin-right: 0;
+    transform: translateX(50%);
+}
+
+div.roll_parents {
+    display: none;
+}
+
+@media(min-width:768px)and (max-width:992px){
+  div.logo_nav{
+        display: none;
+    }
+    div.rwd_header{
+        display: block;
+    }
+    div.hamInside{
+      width: 100%;
+      height: auto;
+      font-size: 16px;
+      z-index: 20;
+  }
+  div.rwd_header{
+    img.logo{
+      background-color: #ffffff;
+      padding: 5px;
+      border-radius: 10px;
+    }
+     button.hamburger{
+          top:20px;
+        }
+  }
+
+//   footer
+
+  div.black{
+    max-width: 100%;
+  }
+
+  footer{
+    max-width:100%;
+  }
+
+  img.footer{
+    display: none;
+  }
+  div.p{
+    max-width: 170px;
+  }
+}
+
+@media(min-width:576px) and (max-width:767px){
+  div.logo_nav{
+        display: none;
+    }
+    div.rwd_header{
+        display: block;
+        img.logo{
+        background-color: #ffffff;
+        padding: 3px;
+        border-radius: 10px;
+      button.hamburger{
+          top:20px;
+        }
+    }
+    }
+   div.hamInside{
+      width: 100%;
+      height: auto;
+      font-size: 16px;
+  }
+//footer
+  div.black{
+    max-width: 100%;
+  }
+
+  footer{
+    max-width: 100%;
+  }
+
+  div.roll_parents{
+    max-width: 100%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    column-gap: auto;
+    justify-content:center;
+    padding-top: 20px;
+    padding-left: 50px; 
+    font-size: 18px;
+  } 
+
+
+  div.roll1,div.roll2,div.roll3{
+    display: none;
+  }
+  div.contact,div.p{
+    display: block;
+    margin-left: 0;
+  }
+
+  div.contact{
+    max-width: 200px;
+    margin-top: 10px;
+  }
+
+  div.contact img{
+    max-width:50px;
+    height:auto;
+    padding:10px;
+  }
+  div.p,img.footer{
+    display: inline-flex;
+    justify-content: left;
+
+  }
+  
+  img.footer{
+    overflow: hidden;
+    right: 0;
+    width:240px;
+  }
+
+}
+
+@media(max-width:575px){
+  div.logo_nav{
+        display: none;
+    }
+    div.rwd_header{
+        display: block;
+        button.hamburger{
+          top:20px;
+        }
+        img.logo{
+          background-color: #ffffff;
+          padding: 3px;
+          border-radius: 10px;
+    }
+    }
+
+   div.hamInside{
+      width: 100%;
+      height: auto;
+      font-size: 16px;
+  }
+
+
+  //footer
+  div.black{
+    max-width: 100%;
+    position: relative;
+  }
+
+  footer{
+    max-width: 100%;
+  }
+
+  div.roll_parents{
+    max-width: 100%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    column-gap: auto;
+    justify-content:center;
+    padding-top: 20px;
+    padding-left: 50px; 
+    font-size: 18px;
+  } 
+
+
+  div.roll1,div.roll2,div.roll3{
+    display: none;
+  }
+  div.contact,div.p{
+    display: block; 
+   
+  }
+
+  div.contact{
+    max-width: 200px;
+    margin-top: 10px;
+    margin: 0,auto;
+    position: relative;
+    left: -25%;
+  }
+
+  div.contact img{
+    max-width:50px;
+    height:auto;
+    padding:10px;
+  }
+  img.footer{
+    max-width:200px;
+    margin-top: 10px;
+  //  transform: translateY(50%);
+  position: absolute;
+  left: 70px;
+  bottom: 50px;
+  }
+  div.p,img.footer{
+    display: inline-block;
+  
+  }
+
+  div.p{
+    margin-right: 5px; 
+    transform: translateX(-0.25%); 
+    padding-left: 5px;
+    margin-left: 15px ;
+    max-width:150px;
+  }
+ 
+  
+}

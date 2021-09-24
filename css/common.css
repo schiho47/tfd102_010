@@ -164,9 +164,6 @@ ul.nav>li>a:hover{
   font-weight: bold;
 }
 
-img.logo,ul.nav,div.small_things{
-  display: inline-block;
-}
 
 img.cute{
   width:20px;

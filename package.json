@@ -1,0 +1,22 @@
+{
+  "name": "tfd102_010",
+  "version": "1.0.0",
+  "description": "Tuā-tiū-tiânn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schiho47/wd01010.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schiho47/wd01010/issues"
+  },
+  "homepage": "https://github.com/schiho47/wd01010#readme",
+  "dependencies": {
+    "swiper": "^7.0.3"
+  }
+}
