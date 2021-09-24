@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
   nextRight.addEventListener("click", function () {
     range -= 200;
     imgIndex += 1;
-    console.log(range);
-    console.log(imgIndex);
+    // console.log(range);
+    // console.log(imgIndex);
     $(".shop").css("transform", `translateX(${range}px)`);
     if (range <= -800) {
       range = 200;
@@ -69,27 +69,32 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // //hover 效果
-  $(".prev").mouseenter(function () {
-    $(".leftarrow").animate({ "margin-left": "-60px" }, 300);
-    $(".leftgray").css("display", "inline");
-    $(".prev").addClass("after");
-  });
-  $(".prev").mouseleave(function () {
-    $(".leftarrow").css("margin-left", "0px");
-    $(".leftgray").css("display", "none");
-    $(".prev").removeClass("after");
-  });
+  const windowWidth= window.innerWidth;
+  // console.log(windowWidth);
 
-  $(".nextbtn").mouseenter(function () {
-    $(".rightarrow").animate({ "margin-right": "-60px" }, 300);
-    $(".rightgray").css("display", "inline");
-    $(".nextbtn").addClass("after");
-  });
-  $(".nextbtn").mouseleave(function () {
-    $(".rightarrow").css("margin-right", "0px");
-    $(".rightgray").css("display", "none");
-    $(".nextbtn").removeClass("after");
-  });
+  if(windowWidth>768){
+    $(".prev").mouseenter(function () {
+      $(".leftarrow").animate({ "margin-left": "-60px" }, 300);
+      $(".leftgray").css("display", "inline");
+      $(".prev").addClass("after");
+    });
+    $(".prev").mouseleave(function () {
+      $(".leftarrow").css("margin-left", "0px");
+      $(".leftgray").css("display", "none");
+      $(".prev").removeClass("after");
+    });
+  
+    $(".nextbtn").mouseenter(function () {
+      $(".rightarrow").animate({ "margin-right": "-60px" }, 300);
+      $(".rightgray").css("display", "inline");
+      $(".nextbtn").addClass("after");
+    });
+    $(".nextbtn").mouseleave(function () {
+      $(".rightarrow").css("margin-right", "0px");
+      $(".rightgray").css("display", "none");
+      $(".nextbtn").removeClass("after");
+    });
+  }
 
   const weather = async function () {
     const res = await fetch(
@@ -97,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
     );
     const data = await res.json();
     console.log(data);
-    const html = ` <h1>天氣資訊  <img src="../images/weather.png" alt="圖片出去玩了"></h1>
+    const html = ` <h1>天氣資訊  <img src="./images/weather.png" alt="圖片出去玩了"></h1>
     <div class="view">
         <iframe width="625" height="400" src="https://embed.windy.com/embed2.html?lat=24.284&lon=120.280&detailLat=25.050&detailLon=121.532&width=650&height=450&zoom=6&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
     </div>
@@ -134,9 +139,9 @@ document.addEventListener("DOMContentLoaded", function() {
         .elementValue[1].value
     }</span>
     <br>
-    <img src="../images/daton.png" class="daton1">
-    <img src="../images/daton.png" class="daton2">
-    <img src="../images/daton.png" class="daton3">
+    <img src="./images/daton.png" class="daton1">
+    <img src="./images/daton.png" class="daton2">
+    <img src="./images/daton.png" class="daton3">
     </div>`;
     const weather = document.querySelector(".weather");
     // console.log(data.records.locations[0].location[3].weatherElement[9].time[0].elementValue);
