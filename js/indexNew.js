@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
     );
     const data = await res.json();
     console.log(data);
-    const html = ` <h1>天氣資訊  <img src="/images/weather.png" alt="圖片出去玩了"></h1>
+    const html = ` <h1>天氣資訊  <img src="../images/weather.png" alt="圖片出去玩了"></h1>
     <div class="view">
         <iframe width="625" height="400" src="https://embed.windy.com/embed2.html?lat=24.284&lon=120.280&detailLat=25.050&detailLon=121.532&width=650&height=450&zoom=6&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
     </div>
@@ -134,9 +134,9 @@ document.addEventListener("DOMContentLoaded", function() {
         .elementValue[1].value
     }</span>
     <br>
-    <img src="/images/daton.png" class="daton1">
-    <img src="/images/daton.png" class="daton2">
-    <img src="/images/daton.png" class="daton3">
+    <img src="../images/daton.png" class="daton1">
+    <img src="../images/daton.png" class="daton2">
+    <img src="../images/daton.png" class="daton3">
     </div>`;
     const weather = document.querySelector(".weather");
     // console.log(data.records.locations[0].location[3].weatherElement[9].time[0].elementValue);
