@@ -957,7 +957,7 @@ img.end {
   }
   .news .new_news {
     max-width: 95%;
-    margin: 0 2.5%;
+    margin: 0 5%;
   }
   div.food {
     display: block;
@@ -990,11 +990,12 @@ img.end {
   }
   div.tourRWD div.model {
     border: 1px solid #1a1a1a;
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.6);
     margin-bottom: 30px;
+    margin-left: 5%;
   }
   div.tourRWD div.model div.model_header {
     position: relative;
@@ -1055,7 +1056,7 @@ img.end {
     color: #1a1a1a;
     font-weight: bold;
     position: absolute;
-    right: 20px;
+    right: 30px;
     position: absolute;
   }
   div.tourRWD div.model div.model_body p a:hover {
@@ -1068,9 +1069,11 @@ img.end {
   }
   div.tourRWD div.model {
     height: auto;
+    width: 90%;
   }
   div.tourRWD div.model div.model_body {
     display: block;
+    height: auto;
   }
   div.slider-section div.container div.row {
     display: block;

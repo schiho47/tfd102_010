@@ -214,8 +214,14 @@ div.model_body {
   position: relative;
 }
 
-div.model_body p.demo {
-  margin-bottom: 30px;
+div.model_body p#demo {
+  margin: 25px 0;
+}
+
+div.model_body p#demo::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 div.model_body img {
@@ -258,12 +264,6 @@ div.model_body a:hover {
 #model_v img {
   float: left;
   margin-right: 10px;
-}
-
-#model_v div.model_body::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 div.pier {
@@ -392,6 +392,40 @@ div.end a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 20px 20px;
+  }
+  div.model {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    max-width: 90%;
+  }
+  div.model div.model_body a {
+    text-decoration: none;
+    color: white;
+    background-color: #be3128;
+    padding: 5px 15px;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    font-size: 14px;
+  }
+  div.model div.model_body a:hover {
+    font-weight: bold;
+  }
+  div.model #model_v img {
+    float: left;
+  }
+  div.model #model_v div.model_body p.demo::after {
+    content: "";
+    display: block;
+    clear: both;
   }
   div.pier {
     position: relative;

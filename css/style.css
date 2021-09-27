@@ -26,6 +26,7 @@ div.hamInside {
   text-align: center;
   width: 250px;
   font-size: 20px;
+  z-index: 30;
 }
 
 div.hamInside:hover {

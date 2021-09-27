@@ -718,23 +718,6 @@ div.gift>a{
         div.rwd_header{
           display: block;
         }
-        /* button.hamburger{
-          transform: translateX(70%); 
-        }
-
-        
-        div.logo_nav{
-          max-width: 100%;
-          margin: 0 auto;
-         
-        }
-
-        img.logo{
-          max-width: 100%;
-          margin: auto;
-          transform: translateX(45%);
-
-        } */
 
         div.shop{
           display: none;
@@ -751,63 +734,6 @@ div.gift>a{
 
         div.swiper-container{
           display: none;
-        }
-
-        div.banner img{
-          max-width: 100%;
-        }
-
-        div.rwd_main{
-          max-width: 100%;
-          margin:0 auto;
-        }
-
-    
-
-        span.fav img{
-          width:20px;
-        }
-
-        div.rwd_main>div{
-          display: grid;
-          grid-template-rows: auto;
-          grid-template-columns: 1fr 1fr;
-          gap:0px 0px;
-        }
-
-        div.shop_forrwd > div {
-          
-          display: block !important;
-          margin: 0 !important;
-        }
-        div.shop_forrwd > div > img {
-          max-width:100%  !important;
-          object-fit: cover;
-          object-position: center;
-          margin-bottom: 30px;
-         
-        }
-        h2{
-          margin-top: 20px;
-        }
-      div.shop_rwd{
-          background-color: hsla(0,0%,100%,.7);
-          height:300px;
-          width: 46.5%;
-          text-align: left;
-          border:1px solid black;
-          /* margin-left: 25px; */
-          /* transform: translate(8%,0%);   */
-          position: absolute; 
-          right:0;
-          z-index: 2;
-          padding:5px 10px;
-        }
-        div.rwd>img{
-          border:1px solid black;
-          margin-left: 30px;
-          max-width: 95%;
-          object-fit: contain;
         }
 
         div.pagination_block{
@@ -843,10 +769,54 @@ div.gift>a{
           
         }
 
-        button a{
+        .button a{
           color:white;
           padding:10px 20px;
+          text-decoration: none;
+          background-color: #be3128;
+          border-radius: 20px;
         }
+
+        div.shop_forrwd{
+          max-width: 100%;
+        }
+
+        div.banner img{
+          max-width: 100%;
+          margin-top: 30px;
+        }
+
+        /* div.rwd{
+          border:1px solid #1a1a1a;
+          margin-bottom: 30px;
+          border-radius: 10px;
+        } */
+      
+
+        div.rwd>img{
+          max-width:98%;
+          object-fit: cover;
+          margin: 30px 1% 0 1%;
+          border:1px solid #1a1a1a;
+        }
+
+        div.shop_rwd{
+          border:1px solid #1a1a1a;
+          background-color: hsla(0,100%,100%,.7);
+          margin: 0px 1% 0 1%;
+          border-radius: 10px;
+          max-width: 98%;
+        }
+
+        div.shop_rwd h2{
+          margin-top: 20px;
+          margin-left: 10px;
+        }
+        div.shop_rwd p{
+          margin-left: 10px;
+        }
+
+
 
 
         
