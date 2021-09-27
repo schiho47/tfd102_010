@@ -231,7 +231,7 @@ div.food .foodImg {
 }
 
 div.food .foodImg img {
-  width: 280px;
+  width: 250px;
   height: 200px;
   border: 3px double #1a1a1a;
   cursor: pointer;
