@@ -145,6 +145,7 @@ div.news {
     width: 1200px;
     display: flex;
     margin: 0 auto;
+    justify-content: space-around;
 }
 
 div.new_news>a>img {
@@ -192,7 +193,8 @@ div.new_news span img {
 }
 
 div.new_news {
-    width: 400px;
+    width: 350px;
+    margin: 0 auto;
 }
 
 @keyframes red_border {
