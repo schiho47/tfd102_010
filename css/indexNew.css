@@ -292,11 +292,13 @@ div.tour {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 300px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 div.tour div.model {
   border: 1px solid #1a1a1a;
-  width: 600px;
+  width: 550px;
   height: 350px;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.6);
@@ -489,6 +491,7 @@ div.productList div.products div.item_p img {
 div.weather {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 div.weather h1 {
@@ -498,10 +501,9 @@ div.weather h1 {
 }
 
 div.view {
-  width: 650px;
+  width: 600px;
   height: 300px;
   display: inline-block;
-  transform: translateX(15%);
 }
 
 div.view iframe {
@@ -514,12 +516,12 @@ div.weatherBlock {
   height: 300px;
   border: 1px solid #10345b;
   background-color: rgba(255, 255, 255, 0.8);
-  width: 385px;
+  width: 43%;
   text-align: left;
   font-size: 18px;
   padding: 50px 30px;
   position: absolute;
-  right: 10%;
+  right: 0%;
 }
 
 div.weatherBlock h2 {
@@ -1163,13 +1165,12 @@ img.end {
     padding-top: calc(100% * 400 / 625);
     position: relative;
     margin: 0 auto;
-    right: 10%;
   }
   div.weather div.view iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
   }
@@ -1177,7 +1178,7 @@ img.end {
     width: 80%;
     display: block;
     position: relative;
-    left: 10px;
+    margin: 0 auto;
   }
   div.trans img.transimg {
     max-width: 100%;

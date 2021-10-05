@@ -308,10 +308,12 @@ div.tour {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 300px;
+    width: 1200px;
+    margin: 0 auto;
 
     div.model {
         border: 1px solid #1a1a1a;
-        width: 600px;
+        width: 550px;
         height:350px;
         border-radius: 50px;
         background-color: hsla(100, 100%, 100%, .6);
@@ -532,6 +534,7 @@ div.productList{
 div.weather{
     width:1200px;
     margin: 0 auto;
+    position: relative;
     h1{
         max-width: 1200px;
         margin: 50px auto;
@@ -539,10 +542,10 @@ div.weather{
     }
     }
     div.view{
-        width:650px;
+        width:600px;
         height: 300px;
         display: inline-block;
-        transform: translateX(15%);
+        // transform: translateX(15%);
         iframe{
             height:400px;
             width: 625px;
@@ -553,12 +556,12 @@ div.weather{
        height: 300px;
        border:1px solid $parnetBlue;
        background-color: hsla(100, 100%, 100%, .8);
-       width:385px;
+       width:43%;
        text-align: left;
        font-size: 18px;
        padding: 50px 30px;
        position: absolute;
-       right: 10%;
+       right: 0%;
        h2{
            text-align: center;
        }
@@ -1311,12 +1314,11 @@ div.weather{
        padding-top: calc(100% * 400 / 625);
        position: relative;
        margin: 0 auto;
-       right:10%;
        iframe{
            position: absolute;
            top: 0;
            left: 0;
-           width: 90%;
+           width: 100%;
            height: 100%;
            margin: 0 auto;
        }
@@ -1325,7 +1327,7 @@ div.weather{
        width: 80%;
        display: block;
        position: relative;
-       left: 10px;
+       margin: 0 auto;
    }
 }
 div.trans{
