@@ -13,14 +13,17 @@ main{
     overflow: hidden;
 }
 
-
+header{
+  position: sticky;
+  top:0;
+  z-index: 50;
+}
 
 div.logo_nav{
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    position: sticky;
     height:80px;
     vertical-align: middle;
     align-items: center;
