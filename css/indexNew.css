@@ -556,8 +556,10 @@ div.trans {
 }
 
 div.trans img.transimg {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
+  height: 443px;
+  object-fit: cover;
 }
 
 div.trans div.detailtrans {
@@ -565,7 +567,7 @@ div.trans div.detailtrans {
   border: 1px solid #181818;
   padding: 30px 20px;
   width: 502px;
-  height: auto;
+  height: 383px;
   position: absolute;
   right: 10%;
   z-index: 10;
@@ -1181,7 +1183,7 @@ img.end {
     margin: 0 auto;
   }
   div.trans img.transimg {
-    max-width: 100%;
+    max-width: 90%;
     position: relative;
     left: -150px;
   }
@@ -1190,9 +1192,13 @@ img.end {
     background-color: rgba(255, 255, 255, 0.8);
     max-width: 90%;
     padding-bottom: 0;
+    height: 410px;
   }
-  div.trans img.t {
-    height: 50px;
+  div.trans div.detailtrans div {
+    margin-bottom: 30px;
+  }
+  div.trans div.detailtrans img.t {
+    height: 30px;
   }
   img.end {
     animation: none;

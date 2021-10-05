@@ -590,8 +590,10 @@ div.trans{
     margin:0 auto;
     display: flex;
     img.transimg{
-       width:1000px;
+       width:1200px;
        margin:0 auto;
+       height:443px;
+       object-fit: cover;
     }
     
     div.detailtrans{
@@ -599,7 +601,7 @@ div.trans{
         border:1px solid #181818;
         padding:30px 20px;
         width:502px;
-        height: auto;
+        height: 383px;
         position: absolute;
         right: 10%;
         z-index: 10;
@@ -1332,7 +1334,7 @@ div.weather{
 }
 div.trans{
     img.transimg{
-        max-width: 100%;
+        max-width: 90%;
         position: relative;
         left: -150px;
     }
@@ -1341,9 +1343,13 @@ div.trans{
         background-color: hsla(100, 100%, 100%, .8);
         max-width: 90%;
         padding-bottom: 0;
-    }
-    img.t{
-        height:50px;
+        height:410px;
+        div{
+            margin-bottom: 30px;
+        }
+        img.t{
+            height:30px;
+        }
     }
 }
 img.end{
