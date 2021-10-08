@@ -560,16 +560,17 @@ div.trans img.transimg {
   margin: 0 auto;
   height: 443px;
   object-fit: cover;
+  position: relative;
 }
 
 div.trans div.detailtrans {
   background-color: #ffffff;
   border: 1px solid #181818;
   padding: 30px 20px;
-  width: 502px;
+  width: 500px;
   height: 383px;
   position: absolute;
-  right: 10%;
+  right: 110px;
   z-index: 10;
 }
 
